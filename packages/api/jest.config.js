@@ -12,6 +12,8 @@ module.exports = {
   },
   transformIgnorePatterns: ["/node_modules/(?!cookie)/"],
   clearMocks: true,
+  // Watchman's file map lags behind new test files here; the plain crawler does not.
+  watchman: false,
   coverageDirectory: "coverage",
   collectCoverageFrom: ["src/**/*.ts", "!src/index.ts", "!src/db/migrations/**"],
   coverageReporters: ["text", "lcov", "json-summary", "cobertura"]

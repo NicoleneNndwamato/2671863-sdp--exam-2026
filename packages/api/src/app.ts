@@ -7,6 +7,7 @@ import { controlRoutes } from "./routes/controls";
 import { auditRoutes } from "./routes/audit";
 import { arlRoutes } from "./routes/arl";
 import { alertRoutes } from "./alerts/routes";
+import { scanRoutes } from "./routes/scans";
 
 export async function buildApp() {
   const app = Fastify({
@@ -24,6 +25,7 @@ export async function buildApp() {
   await app.register(healthRoutes, { prefix: "/api" });
   await app.register(serviceRoutes, { prefix: "/api" });
   await app.register(controlRoutes, { prefix: "/api" });
+  await app.register(scanRoutes, { prefix: "/api" });
   await app.register(alertRoutes, { prefix: "/api" });
   await app.register(auditRoutes, { prefix: "/api" });
   await app.register(arlRoutes, { prefix: "/api" });

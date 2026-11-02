@@ -30,7 +30,7 @@ async function main() {
   // "limit unavailable".
   await prefetchAlertLimits(services.map((service) => service.id));
 
-  const client = startBroker(buffer, log);
+  const broker = startBroker(buffer, log);
 
   const flushTimer = setInterval(() => {
     buffer.flush().catch((err) => app.log.error({ err }, "ingest flush failed"));
@@ -47,7 +47,7 @@ async function main() {
     clearInterval(flushTimer);
     try {
       await buffer.flush();
-      client.end(true);
+      broker.stop();
       await app.close();
       process.exit(0);
     } catch (err) {

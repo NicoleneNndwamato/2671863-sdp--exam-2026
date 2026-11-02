@@ -1,4 +1,5 @@
 import type { IngestStats } from "@sdp/shared";
+import type { BrokerStatus } from "./mqtt/connection";
 
 /**
  * Small mutable runtime state shared between the ingest side and the HTTP API.
@@ -15,6 +16,17 @@ export function setIngestStatsProvider(provider: () => IngestStats): void {
 
 export function ingestStats(): IngestStats {
   return statsProvider();
+}
+
+let brokerProvider: () => BrokerStatus | null = () => null;
+
+export function setBrokerStatusProvider(provider: () => BrokerStatus | null): void {
+  brokerProvider = provider;
+}
+
+/** Null until a broker connection has been started (e.g. in tests). */
+export function brokerStatus(): BrokerStatus | null {
+  return brokerProvider();
 }
 
 const lastSeen = new Map<string, number>();

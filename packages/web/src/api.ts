@@ -88,11 +88,71 @@ export function fetchReadings(
   return request<ReadingsWindow>(`/api/services/${service}/readings?${query.toString()}`);
 }
 
+// --- RTA scan reconstruction -----------------------------------------------
+
+export interface ScanSummary {
+  scanId: string;
+  subarray: string | null;
+  target: string | null;
+  state: string;
+  origin: string | null;
+  startedAt: string | null;
+  endedAt: string | null;
+  gridSize: number | null;
+  fovRad: number | null;
+  bandHz: number | null;
+  raRad: number | null;
+  decRad: number | null;
+}
+
+export interface ScanCleaning {
+  total: number;
+  empty: number;
+  outOfField: number;
+  faulty: number;
+  outliers: number;
+  excluded: number;
+  used: number;
+  excludedDishes: string[];
+}
+
+export interface ScanImageResponse {
+  scan: ScanSummary | null;
+  scanId: string;
+  complete: boolean;
+  gridSize: number;
+  fovRad: number;
+  /** Row-major grid; null is a missing pixel, not zero signal. */
+  pixels: Array<number | null>;
+  coverage: number;
+  min: number | null;
+  max: number | null;
+  /** Display endpoints: the 2nd and 98th percentiles of measured pixels. */
+  low: number | null;
+  high: number | null;
+  cleaning: ScanCleaning;
+}
+
+export function fetchScans(signal?: AbortSignal): Promise<ScanSummary[]> {
+  return request<{ scans: ScanSummary[] }>("/api/services/rta/scans", { method: "GET", signal }).then((body) => body.scans);
+}
+
+/** Always bound the image to an explicit instant, including in live mode. */
+export function fetchScanImage(scanId: string, to: string, signal?: AbortSignal): Promise<ScanImageResponse> {
+  const query = new URLSearchParams({ to });
+  return request<ScanImageResponse>(`/api/services/rta/scans/${encodeURIComponent(scanId)}/image?${query}`, {
+    method: "GET",
+    signal
+  });
+}
+
 // --- Alerts ----------------------------------------------------------------
 
 export interface AlertQuery {
   status?: "raised" | "acknowledged" | "resolved" | "open";
   service?: string;
+  from?: string;
+  to?: string;
   limit?: number;
 }
 
@@ -100,6 +160,8 @@ export function fetchAlerts(params: AlertQuery = {}): Promise<AlertView[]> {
   const query = new URLSearchParams();
   if (params.status) query.set("status", params.status);
   if (params.service) query.set("service", params.service);
+  if (params.from) query.set("from", params.from);
+  if (params.to) query.set("to", params.to);
   if (params.limit) query.set("limit", String(params.limit));
   const qs = query.toString();
   return request<{ alerts: AlertView[] }>(`/api/alerts${qs ? `?${qs}` : ""}`).then((b) => b.alerts);
@@ -150,9 +212,13 @@ export function sendControl(
 
 // --- Audit / researchers / limits -----------------------------------------
 
-export function fetchAudit(params: { service?: string; limit?: number } = {}): Promise<AuditEntry[]> {
+export function fetchAudit(
+  params: { service?: string; from?: string; to?: string; limit?: number } = {}
+): Promise<AuditEntry[]> {
   const query = new URLSearchParams();
   if (params.service) query.set("service", params.service);
+  if (params.from) query.set("from", params.from);
+  if (params.to) query.set("to", params.to);
   if (params.limit) query.set("limit", String(params.limit));
   const qs = query.toString();
   return request<{ entries: AuditEntry[] }>(`/api/audit${qs ? `?${qs}` : ""}`).then((b) => b.entries);
@@ -193,6 +259,15 @@ export function fetchAlertLimits(service: string): Promise<AlertLimit[]> {
 export interface StatsResponse {
   at: string;
   ingest: { queued: number; dropped: number; written: number };
+  /** The API's own MQTT link; null when the API runs without a broker. */
+  broker?: {
+    state: "connecting" | "connected" | "reconnecting" | "stopped";
+    since: string;
+    attempts: number;
+    disconnects: number;
+    lastError: string | null;
+    nextRetryAt: string | null;
+  } | null;
   services: Array<{
     id: string;
     online: boolean;

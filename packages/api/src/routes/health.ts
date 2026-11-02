@@ -3,7 +3,7 @@ import { sql } from "drizzle-orm";
 import { db } from "../db/client";
 import { services } from "../services/registry";
 import { getTopology } from "../services/topology";
-import { ingestStats, serviceLastSeen, serviceMessageCount, serviceOnline } from "../state";
+import { brokerStatus, ingestStats, serviceLastSeen, serviceMessageCount, serviceOnline } from "../state";
 
 export async function healthRoutes(app: FastifyInstance) {
   app.get("/health", async () => ({
@@ -32,6 +32,7 @@ export async function healthRoutes(app: FastifyInstance) {
   app.get("/stats", async () => ({
     at: new Date().toISOString(),
     ingest: ingestStats(),
+    broker: brokerStatus(),
     services: services.map((service) => ({
       id: service.id,
       online: serviceOnline(service.id),

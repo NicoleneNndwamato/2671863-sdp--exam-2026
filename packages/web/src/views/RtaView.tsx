@@ -3,6 +3,7 @@ import { useTheme } from "../theme-provider";
 import { Badge, Btn, DetailRow, Empty, Field, Kpi, Panel } from "../components/ui";
 import { LineChart } from "../components/charts";
 import { DishGrid } from "../components/DishGrid";
+import { ScanImage } from "../components/ScanImage";
 import { ControlList } from "../components/ControlPanel";
 import { fmt, fmtInt, fmtTime, kelvinToCelsius } from "../format";
 import { entitiesOfKind, numOf, seriesFrom, stateBool, stateNumber, stateOf } from "../snapshot";
@@ -217,6 +218,7 @@ export function RtaView({ topology, snapshot, history, onSubmit, canControl, act
       </div>
 
       <div className="stack">
+        <ScanImage replayAt={replayAt} />
         <Panel title="Scan view" subtitle={`${dishId} signal-to-noise`}>
           <LineChart series={[{ label: "SNR (dB)", points: snrSeries, colour: t.chart2, fill: true }]} yDigits={1} unit="dB" height={140} />
         </Panel>

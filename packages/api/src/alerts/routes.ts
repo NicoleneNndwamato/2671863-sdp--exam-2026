@@ -1,5 +1,5 @@
 import type { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
-import { and, desc, eq, inArray } from "drizzle-orm";
+import { and, desc, eq, gte, inArray, lte } from "drizzle-orm";
 import { z } from "zod";
 import type { AlertStatus, AlertView } from "@sdp/shared";
 import { db } from "../db/client";
@@ -19,6 +19,9 @@ const idParam = z.object({ id: z.string().uuid() });
 const listQuery = z.object({
   status: z.enum(["raised", "acknowledged", "resolved", "open"]).optional(),
   service: z.string().optional(),
+  // Bounds on raisedAt, for replay windows.
+  from: z.coerce.date().optional(),
+  to: z.coerce.date().optional(),
   limit: z.coerce.number().int().positive().max(500).default(200)
 });
 
@@ -106,9 +109,11 @@ export async function alertRoutes(app: FastifyInstance) {
     const parsed = listQuery.safeParse(req.query);
     if (!parsed.success) return reply.code(400).send({ error: "invalid_query" });
 
-    const { status, service, limit } = parsed.data;
+    const { status, service, from, to, limit } = parsed.data;
     const filters = [];
     if (service) filters.push(eq(alerts.service, service));
+    if (from) filters.push(gte(alerts.raisedAt, from));
+    if (to) filters.push(lte(alerts.raisedAt, to));
     if (status === "open") filters.push(inArray(alerts.status, ["raised", "acknowledged"] as AlertStatus[]));
     else if (status) filters.push(eq(alerts.status, status));
 

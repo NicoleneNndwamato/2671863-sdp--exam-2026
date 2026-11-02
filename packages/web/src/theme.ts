@@ -2,20 +2,21 @@
  * Meridian Design System - Theme Tokens
  *
  * Ported value-for-value from the supplied mockup so the built console and the
- * design reference read as the same product: sharp corners everywhere, navy used
- * only for brand and for "this is the active thing", everything else neutral.
- * Red is reserved for critical alerts and faults, so it always means trouble.
+ * design reference read as the same product: sharp corners everywhere, dark red
+ * used only for brand and for "this is the active thing", everything else
+ * neutral. Critical alerts and faults use a brighter, more saturated red, so a
+ * fault never reads as "selected" and the active tab never reads as a fault.
  */
 
 export const theme = {
   light: {
-    // Primary brand (navy - use sparingly)
-    primary: "#1b2f5e",
-    primaryHi: "#2a4482",
-    primaryRgb: "27, 47, 94",
+    // Primary brand (dark red - use sparingly)
+    primary: "#801226",
+    primaryHi: "#d8062c",
+    primaryRgb: "128, 18, 38",
 
     // Backgrounds
-    bg: "#f4f4f6",
+    bg: "#e0dede",
     panel: "#ffffff",
     panel2: "#f0f0f3",
     panelSunken: "#fbfbfc",
@@ -26,7 +27,7 @@ export const theme = {
     lineSoft: "#ededf0",
     // Ruled tables need a rule you can actually see; --line is a hairline for
     // card edges, which disappears between white cells.
-    tableRule: "#93939e",
+    tableRule: "#2d2d83",
 
     // Text
     text: "#1c1c1e",
@@ -41,10 +42,10 @@ export const theme = {
     onPrimary: "#ffffff",
 
     // Semantic colours
-    crit: "#c8323f",
+    crit: "#e0202e",
     critFg: "#ffffff",
-    critBg: "rgba(200, 50, 63, 0.07)",
-    critBorder: "rgba(200, 50, 63, 0.32)",
+    critBg: "rgba(224, 32, 46, 0.08)",
+    critBorder: "rgba(224, 32, 46, 0.40)",
 
     warn: "#a4620a",
     warnFg: "#ffffff",
@@ -61,9 +62,9 @@ export const theme = {
     okBg: "#e8f5ee",
 
     // Active / replay accents
-    chipOnBg: "rgba(27, 47, 94, 0.10)",
-    tlWindowBg: "rgba(27, 47, 94, 0.16)",
-    tlWindowBorder: "rgba(27, 47, 94, 0.40)",
+    chipOnBg: "rgba(128, 18, 38, 0.10)",
+    tlWindowBg: "rgba(128, 18, 38, 0.16)",
+    tlWindowBorder: "rgba(128, 18, 38, 0.40)",
 
     // UI elements
     dot: "#4b4b54",
@@ -89,10 +90,10 @@ export const theme = {
     axisLabel: "#555555",
 
     // Heatmap
-    heatCool: "#588fcb",
-    heatMid: "#bac5cf",
+    heatCool: "#60a9e6",
+    heatMid: "#d8cc22",
     heatHot: "#c96f1c",
-    scanLo: "#d7e8f2",
+    scanLo: "#82ddd1",
     scanHi: "#1f5c96",
 
     // Dish states. Offline is a dark square with a light outline, so a dish
@@ -106,10 +107,10 @@ export const theme = {
   },
 
   dark: {
-    // Primary brand (navy, lifted a step so it still reads on the dark panels)
-    primary: "#2a4a8c",
-    primaryHi: "#3a5fa8",
-    primaryRgb: "42, 74, 140",
+    // Primary brand (dark red - use sparingly)
+    primary: "#801226",
+    primaryHi: "#a81b36",
+    primaryRgb: "128, 18, 38",
 
     // Backgrounds
     bg: "#17171a",
@@ -134,12 +135,12 @@ export const theme = {
     onPrimary: "#ffffff",
 
     // Semantic colours
-    crit: "#f2606f",
+    crit: "#ff4d5b",
     critFg: "#2b0b0f",
-    critBg: "rgba(242, 96, 111, 0.14)",
-    critBorder: "rgba(242, 96, 111, 0.45)",
+    critBg: "rgba(255, 77, 91, 0.16)",
+    critBorder: "rgba(255, 77, 91, 0.55)",
 
-    warn: "#e3a44f",
+    warn: "#ebbf31",
     warnFg: "#2a1c06",
     warnBg: "rgba(227, 164, 79, 0.14)",
     warnBorder: "rgba(227, 164, 79, 0.42)",
@@ -154,9 +155,9 @@ export const theme = {
     okBg: "rgba(69, 187, 128, 0.14)",
 
     // Active / replay accents
-    chipOnBg: "rgba(42, 74, 140, 0.28)",
-    tlWindowBg: "rgba(42, 74, 140, 0.45)",
-    tlWindowBorder: "rgba(58, 95, 168, 0.75)",
+    chipOnBg: "rgba(128, 18, 38, 0.28)",
+    tlWindowBg: "rgba(128, 18, 38, 0.45)",
+    tlWindowBorder: "rgba(168, 27, 54, 0.70)",
 
     // UI elements
     dot: "#d8dadb",
@@ -179,11 +180,11 @@ export const theme = {
     axisLabel: "#8b8e8e",
 
     // Heatmap
-    heatCool: "#4f83bb",
-    heatMid: "#70808d",
-    heatHot: "#c98a3c",
-    scanLo: "#1b2f4a",
-    scanHi: "#7fd6ea",
+    heatCool: "#60a9e6",
+    heatMid: "#d8cc22",
+    heatHot: "#c96f1c",
+    scanLo: "#82ddd1",
+    scanHi: "#1f5c96",
 
     // Dish states
     dishOfflineBg: "#3a3a42",

@@ -12,7 +12,9 @@ import type { ReplaySession } from "../views/ReplayView";
  * becomes the transport: step, scrub, speed, and a way back to live.
  *
  * Every button is a discrete cursor move rather than a video control, so an
- * incident can be reviewed one minute at a time.
+ * incident can be reviewed one minute at a time. Alerts (round, in severity
+ * colour) and operator controls (square) are marked on the rail; clicking a
+ * marker moves the cursor to it.
  */
 export function ReplayBar({
   session,
@@ -85,6 +87,23 @@ export function ReplayBar({
           <div className="tl-past" style={{ background: t.railPast, width: pastPercent }} />
           <div className="tl-window" style={{ left: "0%", width: "100%", background: t.tlWindowBg, borderColor: t.tlWindowBorder }} />
           <div className="tl-cursor" style={{ left: cursorPercent, background: t.cursor }} />
+          {!live
+            ? (session!.events ?? []).map((event) => {
+                const colour = { crit: t.crit, warn: t.warn, info: t.info, ok: t.ok, muted: t.muted3 }[event.tone];
+                const title = `${fmtTime(new Date(event.at).toISOString())} · ${event.label}`;
+                return (
+                  <button
+                    key={event.id}
+                    type="button"
+                    className={`tl-mark ${event.kind}`}
+                    style={{ left: toPercent(event.at), background: colour, borderColor: t.panel }}
+                    title={title}
+                    aria-label={`Jump to ${title}`}
+                    onClick={() => onSeek(event.at)}
+                  />
+                );
+              })
+            : null}
           {!live ? (
             <input
               className="tl-input"
@@ -108,7 +127,15 @@ export function ReplayBar({
           ) : (
             <>
               <span>{fmtTime(session!.from)}</span>
-              <span>{fmtDateTime(new Date(session!.cursor).toISOString())}</span>
+              <span>
+                {fmtDateTime(new Date(session!.cursor).toISOString())}
+                {session!.events?.length ? (
+                  <span style={{ color: t.muted2 }}>
+                    {" "}
+                    · {session!.events.length} event{session!.events.length === 1 ? "" : "s"} marked
+                  </span>
+                ) : null}
+              </span>
               <span>{fmtTime(session!.to)}</span>
             </>
           )}

@@ -4,45 +4,76 @@ import { parseMessage, services } from "../services/registry";
 import { isTopologyTopic } from "../services/base";
 import { recordTopology } from "../services/topology";
 import { setCommandPublisher } from "./publisher";
-import { markServiceSeen } from "../state";
+import { markServiceSeen, setBrokerStatusProvider } from "../state";
+import { ReconnectSupervisor, type BackoffOptions } from "./connection";
 import type { IngestBuffer } from "./ingest";
 
 /**
  * Connects to the shared broker and feeds the ingest buffer.
  *
  * Design notes worth defending in the write-up:
- *  - One client, one connection, resubscribed on every reconnect.
+ *  - One client, one connection, resubscribed on every reconnect. Reconnection
+ *    is driven by ReconnectSupervisor (exponential backoff with jitter) rather
+ *    than mqtt.js's fixed one-second retry.
  *  - Subscriptions are derived from the service registry's topic prefixes, and
  *    each service's `$topology` message is captured so the rest of the system is
  *    driven by the published topic structure rather than hard-coded guesses.
  *  - Malformed payloads are logged and skipped, never allowed to kill the loop.
+ *  - The command publisher is withdrawn while the link is down and restored on
+ *    every connect, so a control sent during an outage is reported as
+ *    "not published" instead of being queued and fired minutes later.
  */
+export interface BrokerTarget {
+  host: string;
+  port: number;
+  username?: string;
+  password?: string;
+}
+
+export interface BrokerConnection {
+  client: MqttClient;
+  supervisor: ReconnectSupervisor;
+  /** Stop reconnecting and close the link. */
+  stop(): void;
+}
+
 export function startBroker(
   buffer: IngestBuffer,
-  log: Pick<Console, "info" | "warn" | "error">
-): MqttClient {
-  const client = mqtt.connect({
+  log: Pick<Console, "info" | "warn" | "error">,
+  target: BrokerTarget = {
     host: env.MQTT_BROKER_ADDRESS,
     port: env.MQTT_BROKER_PORT,
     username: env.MQTT_BROKER_USER || undefined,
-    password: env.MQTT_BROKER_PASSWORD || undefined,
+    password: env.MQTT_BROKER_PASSWORD || undefined
+  },
+  backoff: BackoffOptions = {}
+): BrokerConnection {
+  const client = mqtt.connect({
+    host: target.host,
+    port: target.port,
+    username: target.username,
+    password: target.password,
     protocol: "mqtt",
-    reconnectPeriod: 1000,
+    // 0 turns the library's fixed-interval retry off; the supervisor owns it.
+    reconnectPeriod: 0,
     connectTimeout: 10_000,
+    // A dead TCP link is noticed within ~1.5 keepalives instead of never.
+    keepalive: 30,
     clean: true
   });
 
-  setCommandPublisher(client);
-
-  client.on("connect", () => {
-    log.info(`mqtt connected to ${env.MQTT_BROKER_ADDRESS}:${env.MQTT_BROKER_PORT}`);
-    subscribeAll(client, log);
+  const supervisor = new ReconnectSupervisor(client, {
+    ...backoff,
+    log,
+    onConnect: () => {
+      log.info(`mqtt connected to ${target.host}:${target.port}`);
+      setCommandPublisher(client);
+      subscribeAll(client, log);
+    }
   });
+  setBrokerStatusProvider(() => supervisor.snapshot);
 
-  client.on("reconnect", () => log.warn("mqtt reconnecting"));
-  client.on("offline", () => log.warn("mqtt offline"));
   client.on("close", () => setCommandPublisher(null));
-  client.on("error", (err) => log.error(`mqtt error: ${err.message}`));
 
   client.on("message", (topic, payloadBuffer) => {
     const payload = decode(payloadBuffer, log, topic);
@@ -61,7 +92,14 @@ export function startBroker(
     }
   });
 
-  return client;
+  return {
+    client,
+    supervisor,
+    stop: () => {
+      supervisor.stop();
+      setCommandPublisher(null);
+    }
+  };
 }
 
 /**

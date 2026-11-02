@@ -4,6 +4,7 @@ import { useTheme } from "./theme-provider";
 import {
   acknowledgeAlert,
   fetchAlerts,
+  fetchAudit,
   fetchLatest,
   fetchReadings,
   fetchStats,
@@ -16,6 +17,7 @@ import {
   type Target
 } from "./api";
 import { buildSnapshot, snapshotAt } from "./snapshot";
+import { buildReplayEvents } from "./replayEvents";
 import { Badge, Btn, Dot, Toasts, type ToastMessage } from "./components/ui";
 import { AlertList } from "./components/AlertList";
 import { PanelBoundary } from "./components/ErrorBoundary";
@@ -389,14 +391,33 @@ export function App() {
       error: null
     });
     try {
-      const window_ = await fetchReadings(service, from, to, { limit: 10_000 });
+      // Markers are context, not the replay itself: if the alert or audit
+      // read fails the window still plays, just without dots on the rail.
+      const [window_, windowAlerts, windowAudit] = await Promise.all([
+        fetchReadings(service, from, to, { limit: 10_000 }),
+        Promise.resolve()
+          .then(() => fetchAlerts({ service, from, to, limit: 500 }))
+          .catch(() => []),
+        Promise.resolve()
+          .then(() => fetchAudit({ service, from, to, limit: 1000 }))
+          .catch(() => [])
+      ]);
       const readings = window_?.readings ?? [];
+      const events = buildReplayEvents(
+        Array.isArray(windowAlerts) ? windowAlerts : [],
+        Array.isArray(windowAudit) ? windowAudit : [],
+        from,
+        to
+      );
       setReplay((previous) =>
         previous
           ? {
               ...previous,
               readings,
+              events,
               loading: false,
+              // "Play/Load window": start playing as soon as there is something to play.
+              playing: readings.length > 0,
               cursor: readings.length > 0 ? Date.parse(readings[0].observedAt) : Date.parse(from)
             }
           : previous
@@ -463,6 +484,8 @@ export function App() {
   };
 
   const onlineCount = stats?.services?.filter((service) => service.online).length ?? 0;
+  // The API lost the broker and is backing off; say so rather than "idle".
+  const linkDown = stats?.broker?.state === "reconnecting" || stats?.broker?.state === "connecting";
   const written = stats?.ingest.written ?? 0;
 
   return (
@@ -479,8 +502,15 @@ export function App() {
 
       <header className="topbar" style={{ background: t.panel, borderColor: t.line }}>
         <span className="pill" style={{ background: t.panel2, borderColor: t.line }}>
-          <Dot tone={onlineCount > 0 ? "ok" : "muted"} pulse={onlineCount > 0} />
-          broker <b>{onlineCount > 0 ? `${onlineCount} live` : "idle"}</b>
+          <Dot tone={linkDown ? "warn" : onlineCount > 0 ? "ok" : "muted"} pulse={!linkDown && onlineCount > 0} />
+          broker{" "}
+          <b title={linkDown ? stats?.broker?.lastError ?? undefined : undefined}>
+            {linkDown
+              ? `reconnecting${stats?.broker?.attempts ? ` (try ${stats.broker.attempts})` : ""}`
+              : onlineCount > 0
+                ? `${onlineCount} live`
+                : "idle"}
+          </b>
         </span>
         <span className="pill hide-md" style={{ background: t.panel2, borderColor: t.line }}>
           <Dot tone="info" />

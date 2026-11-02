@@ -3,12 +3,15 @@ import type { AlertView, Reading } from "@sdp/shared";
 import { useTheme } from "../theme-provider";
 import { Badge, Btn, Empty, Field, Kpi, Panel, Select, TextInput } from "../components/ui";
 import { fmtDateTime, fmtTime, splitTopic } from "../format";
+import type { ReplayEvent } from "../replayEvents";
 
 export interface ReplaySession {
   service: string;
   from: string;
   to: string;
   readings: Reading[];
+  /** Alerts and operator actions inside the window, drawn on the timeline. */
+  events?: ReplayEvent[];
   cursor: number;
   playing: boolean;
   speed: number;
@@ -115,7 +118,7 @@ export function ReplayView({
             onClick={() => onLoad(service, fromLocalInput(from), fromLocalInput(to))}
             disabled={session?.loading}
           >
-            {session?.loading ? "Loading…" : "Load window"}
+            {session?.loading ? "Loading…" : "Play/Load window"}
           </Btn>
         </div>
 

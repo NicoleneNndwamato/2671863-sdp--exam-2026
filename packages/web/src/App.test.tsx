@@ -14,6 +14,8 @@ jest.mock("./api", () => ({
   }),
   fetchTopology: jest.fn().mockResolvedValue(undefined),
   fetchTargets: jest.fn().mockResolvedValue([]),
+  fetchScans: jest.fn().mockResolvedValue([]),
+  fetchScanImage: jest.fn(),
   fetchAudit: jest.fn().mockResolvedValue([]),
   fetchResearcher: jest.fn(),
   verifyResearcher: jest.fn(),

@@ -35,6 +35,8 @@ jest.mock("../api", () => ({
   fetchAlertLimits: jest.fn().mockResolvedValue([]),
   fetchStats: jest.fn().mockResolvedValue({ at: "2026-11-02T12:00:00Z", ingest: { queued: 0, dropped: 0, written: 42 }, services: [] }),
   fetchTargets: jest.fn().mockResolvedValue([]),
+  fetchScans: jest.fn().mockResolvedValue([]),
+  fetchScanImage: jest.fn(),
   fetchResearcher: jest.fn(),
   verifyResearcher: jest.fn(),
   acknowledgeAlert: jest.fn().mockResolvedValue(undefined),
@@ -270,7 +272,7 @@ describe("every page renders its own data", () => {
     // No transport until a window is loaded: that rail belongs to this page.
     expect(screen.queryByLabelText("Replay transport")).not.toBeInTheDocument();
 
-    await user.click(screen.getByRole("button", { name: "Load window" }));
+    await user.click(screen.getByRole("button", { name: "Play/Load window" }));
 
     await waitFor(() => expect(fetchReadings).toHaveBeenCalled());
     expect(await screen.findByLabelText("Replay transport")).toBeInTheDocument();
