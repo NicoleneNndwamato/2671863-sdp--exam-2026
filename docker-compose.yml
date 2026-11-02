@@ -1,0 +1,26 @@
+services:
+  postgres:
+    image: docker.io/library/postgres:16-alpine
+    environment:
+      POSTGRES_USER: arl
+      POSTGRES_PASSWORD: arl
+      POSTGRES_DB: arl
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U arl -d arl"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+  mosquitto:
+    image: docker.io/library/eclipse-mosquitto:2
+    ports:
+      - "1883:1883"
+    volumes:
+      - ./mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+
+volumes:
+  pgdata:

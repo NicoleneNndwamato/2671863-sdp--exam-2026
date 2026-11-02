@@ -1,0 +1,8 @@
+{
+  "name": "@sdp/shared",
+  "private": true,
+  "version": "0.0.0",
+  "//": "Types only - no runtime code, so both packages can import it with `import type` and no build step.",
+  "main": "src/index.ts",
+  "types": "src/index.ts"
+}

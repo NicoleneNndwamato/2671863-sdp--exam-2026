@@ -1,0 +1,39 @@
+# Mirrors this Gitea repository to GitHub on every push, so Netlify can deploy
+# from the GitHub copy while the Gitea repo remains the submitted artefact.
+#
+# Required Gitea secrets (repo Settings -> Actions -> Secrets):
+#   MIRROR_GITHUB_USER  GitHub username that owns the token
+#   MIRROR_GITHUB_TOKEN GitHub token with Contents read/write on the mirror repo
+#   MIRROR_GITHUB_REPO  GitHub repo as "owner/name", e.g. "jsmith/sdp-exam-2026"
+#
+# The GitHub repo must already exist and be PRIVATE (a public mirror would
+# publish your exam work).
+# This is a force-push mirror: Gitea is the source of truth. Branches or tags
+# deleted on Gitea are NOT deleted on GitHub - remove them there manually.
+
+name: Mirror to GitHub
+
+on: push
+
+concurrency:
+  group: github-mirror
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Push all branches and tags to GitHub
+        env:
+          MIRROR_USER: ${{ secrets.MIRROR_GITHUB_USER }}
+          MIRROR_TOKEN: ${{ secrets.MIRROR_GITHUB_TOKEN }}
+          MIRROR_REPO: ${{ secrets.MIRROR_GITHUB_REPO }}
+        run: |
+          git remote add mirror "https://${MIRROR_USER}:${MIRROR_TOKEN}@github.com/${MIRROR_REPO}.git"
+          git push --force mirror "refs/remotes/origin/*:refs/heads/*"
+          git push --force mirror "refs/tags/*:refs/tags/*"

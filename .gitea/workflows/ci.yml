@@ -1,0 +1,50 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      # Commit package-lock.json before relying on this.
+      - name: Install
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Test with coverage
+        run: npm run coverage
+
+      - name: Upload coverage reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage
+          path: |
+            packages/api/coverage
+            packages/web/coverage
+          retention-days: 7
+
+      # When the integration tests need a database, add a service container:
+      #
+      # services:
+      #   postgres:
+      #     image: postgres:16-alpine
+      #     env:
+      #       POSTGRES_USER: arl
+      #       POSTGRES_PASSWORD: arl
+      #       POSTGRES_DB: arl
+      #     ports: ["5432:5432"]
+      #     options: >-
+      #       --health-cmd "pg_isready -U arl"
+      #       --health-interval 3s --health-timeout 3s --health-retries 20
+      #
+      # and set DATABASE_URL in the job env.
