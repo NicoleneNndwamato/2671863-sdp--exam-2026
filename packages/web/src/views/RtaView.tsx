@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useTheme } from "../theme-provider";
 import { Badge, Btn, DetailRow, Empty, Field, Kpi, Panel } from "../components/ui";
 import { LineChart } from "../components/charts";
@@ -85,17 +85,15 @@ export function RtaView({ topology, snapshot, history, onSubmit, canControl, act
 
   /**
    * Picking a dish should have a visible result at any window height. The detail
-   * and controls cards sit under the 100-cell grid, so the selection brings them
-   * into view instead of leaving the operator to find them.
+   * and controls cards sit under the 100-cell grid, so a selection brings them
+   * into view. This runs in an effect rather than a click handler because the
+   * card has to exist before it can be scrolled to, and because scroll animation
+   * frames are suspended in a background tab.
    */
-  function selectDish(id: string) {
-    setSelected(id);
-    requestAnimationFrame(() => {
-      // Not smooth: a smooth scroll is silently dropped in a background tab or
-      // hidden document, which would leave the operator looking at the grid.
-      document.getElementById("rta-dish-detail")?.scrollIntoView({ block: "start" });
-    });
-  }
+  useEffect(() => {
+    if (!selected) return;
+    document.getElementById("rta-dish-detail")?.scrollIntoView({ block: "start" });
+  }, [selected]);
 
   return (
     <>
@@ -136,7 +134,7 @@ export function RtaView({ topology, snapshot, history, onSubmit, canControl, act
           subtitle={`${dishes.length} dishes · colour = drive temperature band, red = fault`}
           actions={<Badge tone={hasFault ? "crit" : "ok"}>{hasFault ? `${faultCode}` : "all clear"}</Badge>}
         >
-          <DishGrid topology={topology} snapshot={snapshot} selected={selected} onSelect={selectDish} />
+          <DishGrid topology={topology} snapshot={snapshot} selected={selected} onSelect={setSelected} />
         </Panel>
 
         <div id="rta-dish-detail" style={{ display: "flex", flexDirection: "column", gap: 8, scrollMarginTop: 12 }}>
