@@ -15,9 +15,15 @@ import { fmt } from "../format";
  * dark outlined square when the dish is switched off or has stopped reporting.
  */
 
-/** Drive-temperature bands in °C, aligned with the alert thresholds. */
+/**
+ * Drive-temperature bands in °C. The warm and hot edges are the same 60 °C and
+ * 70 °C the alert engine uses, so a red square in the grid and a critical alert
+ * in the annunciator are the same event. Blue is deliberately low - below
+ * 15 °C a dish is colder than the site ever gets in daylight, which is worth
+ * knowing because condensation on the drive is a maintenance issue.
+ */
 const BANDS = {
-  cool: 40,
+  cool: 15,
   normal: 60,
   warm: 70
 } as const;
@@ -69,7 +75,8 @@ export function DishGrid({
               ? t.dishOfflineBg
               : t.heatMid;
 
-  const inkOf = (band: Band): string => (band === "offline" ? t.muted : band === "unknown" ? t.text : "#fff");
+  const inkOf = (band: Band): string =>
+    band === "offline" ? t.dishOfflineInk : band === "unknown" ? t.text : "#fff";
 
   // Legend counts. Same lookups as a cell, kept here so the legend can say how
   // many dishes are in each band without a second render pass.
@@ -118,8 +125,10 @@ export function DishGrid({
         const online = enabled !== false && sample?.status !== false;
         const celsius = temperature === undefined ? undefined : temperature - 273.15;
         const band = bandOf(celsius, online);
-        const background = colourOf(band);
-        const ink = inkOf(band);
+        // A fault outranks temperature: a dish with a reported fault is red
+        // whatever it reads, which is the one thing an operator must not miss.
+        const background = hasFault ? t.crit : colourOf(band);
+        const ink = hasFault ? "#fff" : inkOf(band);
         const label = dish.id.replace("dish-", "");
 
         return (
@@ -199,7 +208,8 @@ export function DishGrid({
       </div>
       <span className="visually-hidden">
         Dish colour shows drive temperature: blue below {BANDS.cool} degrees, green to {BANDS.normal}, amber to{" "}
-        {BANDS.warm}, red above that; a dashed outline means the dish is offline.
+        {BANDS.warm}, red above that; a dark dashed square means the dish is offline and a solid red square means it
+        is reporting a fault.
       </span>
     </div>
   );

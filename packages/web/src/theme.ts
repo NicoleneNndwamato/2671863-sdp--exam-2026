@@ -81,9 +81,11 @@ export const theme = {
     scanLo: "#d7e8f2",
     scanHi: "#1f5c96",
 
-    // Dish states
-    dishOfflineBg: "#f0f0f3",
-    dishOfflineBorder: "#c9c9d2",
+    // Dish states. Offline is a dark square with a light outline, so a dish
+    // that has stopped reporting is unmistakable rather than merely pale.
+    dishOfflineBg: "#4d4d55",
+    dishOfflineBorder: "#a9a9b4",
+    dishOfflineInk: "#f4f4f5",
 
     // Misc
     shadow: "0 1px 2px rgba(20, 20, 26, 0.05)"
@@ -162,8 +164,9 @@ export const theme = {
     scanHi: "#7fd6ea",
 
     // Dish states
-    dishOfflineBg: "#202024",
-    dishOfflineBorder: "#3d3d45",
+    dishOfflineBg: "#3a3a42",
+    dishOfflineBorder: "#7c7c88",
+    dishOfflineInk: "#dcdedf",
 
     // Misc
     shadow: "none"

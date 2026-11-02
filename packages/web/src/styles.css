@@ -587,8 +587,18 @@ p {
   border: 1px solid var(--line);
   min-width: 0;
   flex-wrap: wrap;
+}
+
+/* Sticky has to live on the wrapper: an element with `position: sticky` can
+ * only travel inside its own containing block, and the wrapper is exactly as
+ * tall as the bar, which is why pinning the bar itself did nothing. */
+.replay-dock {
   position: sticky;
   bottom: 0;
+  z-index: 5;
+  margin-top: 10px;
+  padding-top: 6px;
+  background: var(--bg);
 }
 
 .replay-state {

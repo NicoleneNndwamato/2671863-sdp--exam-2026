@@ -83,6 +83,20 @@ export function RtaView({ topology, snapshot, history, onSubmit, canControl, act
   const faultCode = (dishPayload?.fault_code as string | undefined) ?? "none";
   const hasFault = faultCode !== "none";
 
+  /**
+   * Picking a dish should have a visible result at any window height. The detail
+   * and controls cards sit under the 100-cell grid, so the selection brings them
+   * into view instead of leaving the operator to find them.
+   */
+  function selectDish(id: string) {
+    setSelected(id);
+    requestAnimationFrame(() => {
+      // Not smooth: a smooth scroll is silently dropped in a background tab or
+      // hidden document, which would leave the operator looking at the grid.
+      document.getElementById("rta-dish-detail")?.scrollIntoView({ block: "start" });
+    });
+  }
+
   return (
     <>
       <div className="kpi-row">
@@ -119,13 +133,13 @@ export function RtaView({ topology, snapshot, history, onSubmit, canControl, act
       <div className="stack">
         <Panel
           title="Dish array"
-          subtitle={`${dishes.length} dishes · colour = drive temperature, scaled across the array`}
+          subtitle={`${dishes.length} dishes · colour = drive temperature band, red = fault`}
           actions={<Badge tone={hasFault ? "crit" : "ok"}>{hasFault ? `${faultCode}` : "all clear"}</Badge>}
         >
-          <DishGrid topology={topology} snapshot={snapshot} selected={selected} onSelect={setSelected} />
+          <DishGrid topology={topology} snapshot={snapshot} selected={selected} onSelect={selectDish} />
         </Panel>
 
-        <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+        <div id="rta-dish-detail" style={{ display: "flex", flexDirection: "column", gap: 8, scrollMarginTop: 12 }}>
           <Panel
             title={`Dish ${dishId.replace("dish-", "")}`}
             subtitle={dishObservedAt ? `last sample ${fmtTime(dishObservedAt)} UTC` : "no sample yet"}

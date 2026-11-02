@@ -692,7 +692,7 @@ export function App() {
             loaded and disappears with the page, so live dashboards never show
             a paused transport they cannot use. */}
         {route === "replay" && replay ? (
-          <div style={{ marginTop: 10 }}>
+          <div className="replay-dock">
             <ReplayBar
               session={replay}
               onTogglePlay={togglePlay}
