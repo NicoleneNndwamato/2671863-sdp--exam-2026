@@ -12,6 +12,8 @@
     "dev": "npm run dev -w @sdp/api & npm run dev -w @sdp/web",
     "build": "npm run build -w @sdp/api && npm run build -w @sdp/web",
     "test": "npm run test -w @sdp/api && npm run test -w @sdp/web",
+    "test:watch": "npm run test:watch -w @sdp/api && npm run test:watch -w @sdp/web",
+    "test:verbose": "npm run test:verbose -w @sdp/api && npm run test:verbose -w @sdp/web",
     "coverage": "npm run coverage -w @sdp/api && npm run coverage -w @sdp/web",
     "db:generate": "npm run db:generate -w @sdp/api",
     "db:migrate": "npm run db:migrate -w @sdp/api",

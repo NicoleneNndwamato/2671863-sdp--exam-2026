@@ -2,16 +2,17 @@
  * Meridian Design System - Theme Tokens
  *
  * Ported value-for-value from the supplied mockup so the built console and the
- * design reference read as the same product: sharp corners everywhere, red used
+ * design reference read as the same product: sharp corners everywhere, navy used
  * only for brand and for "this is the active thing", everything else neutral.
+ * Red is reserved for critical alerts and faults, so it always means trouble.
  */
 
 export const theme = {
   light: {
-    // Primary brand (red - use sparingly)
-    primary: "#801226",
-    primaryHi: "#a81b36",
-    primaryRgb: "128, 18, 38",
+    // Primary brand (navy - use sparingly)
+    primary: "#1b2f5e",
+    primaryHi: "#2a4482",
+    primaryRgb: "27, 47, 94",
 
     // Backgrounds
     bg: "#f4f4f6",
@@ -25,7 +26,7 @@ export const theme = {
     lineSoft: "#ededf0",
     // Ruled tables need a rule you can actually see; --line is a hairline for
     // card edges, which disappears between white cells.
-    tableRule: "#b0b0bc",
+    tableRule: "#93939e",
 
     // Text
     text: "#1c1c1e",
@@ -60,9 +61,9 @@ export const theme = {
     okBg: "#e8f5ee",
 
     // Active / replay accents
-    chipOnBg: "rgba(128, 18, 38, 0.10)",
-    tlWindowBg: "rgba(128, 18, 38, 0.16)",
-    tlWindowBorder: "rgba(128, 18, 38, 0.40)",
+    chipOnBg: "rgba(27, 47, 94, 0.10)",
+    tlWindowBg: "rgba(27, 47, 94, 0.16)",
+    tlWindowBorder: "rgba(27, 47, 94, 0.40)",
 
     // UI elements
     dot: "#4b4b54",
@@ -105,10 +106,10 @@ export const theme = {
   },
 
   dark: {
-    // Primary brand (red - use sparingly)
-    primary: "#801226",
-    primaryHi: "#a81b36",
-    primaryRgb: "128, 18, 38",
+    // Primary brand (navy, lifted a step so it still reads on the dark panels)
+    primary: "#2a4a8c",
+    primaryHi: "#3a5fa8",
+    primaryRgb: "42, 74, 140",
 
     // Backgrounds
     bg: "#17171a",
@@ -120,7 +121,7 @@ export const theme = {
     // Borders
     line: "#33333a",
     lineSoft: "#2a2a30",
-    tableRule: "#4c4c57",
+    tableRule: "#6a6a77",
 
     // Text
     text: "#f4f4f5",
@@ -153,9 +154,9 @@ export const theme = {
     okBg: "rgba(69, 187, 128, 0.14)",
 
     // Active / replay accents
-    chipOnBg: "rgba(128, 18, 38, 0.28)",
-    tlWindowBg: "rgba(128, 18, 38, 0.45)",
-    tlWindowBorder: "rgba(168, 27, 54, 0.70)",
+    chipOnBg: "rgba(42, 74, 140, 0.28)",
+    tlWindowBg: "rgba(42, 74, 140, 0.45)",
+    tlWindowBorder: "rgba(58, 95, 168, 0.75)",
 
     // UI elements
     dot: "#d8dadb",
