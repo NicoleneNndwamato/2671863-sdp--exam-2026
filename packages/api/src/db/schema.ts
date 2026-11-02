@@ -67,3 +67,36 @@ export type AlertRow = typeof alerts.$inferSelect;
 export type NewAlert = typeof alerts.$inferInsert;
 export type RawMessageRow = typeof rawMessages.$inferSelect;
 export type NewRawMessage = typeof rawMessages.$inferInsert;
+
+/**
+ * Append-only audit trail for everything a person did to the platform.
+ *
+ * Alerts record their own lifecycle columns, but an audit log also covers
+ * rejected attempts and control commands - the questions an examiner (or an
+ * incident review) asks are "who tried what, when, against which entity, and
+ * what came back". Nothing in this table is ever updated or deleted.
+ */
+export const auditLog = pgTable(
+  "audit_log",
+  {
+    id: bigserial("id", { mode: "number" }).primaryKey(),
+    at: timestamp("at", { withTimezone: true }).notNull().defaultNow(),
+    /** Researcher code, or "system" for engine-originated entries. */
+    actor: text("actor").notNull(),
+    /** Dotted verb, e.g. `alert.acknowledge`, `control.start_scan`. */
+    action: text("action").notNull(),
+    service: text("service"),
+    entity: text("entity"),
+    /** Human-readable summary of what was attempted. */
+    detail: text("detail"),
+    /** `accepted`, `rejected` or `raised`. */
+    result: text("result").notNull().default("accepted"),
+    /** MQTT topic published to, for control entries. */
+    topic: text("topic"),
+    value: jsonb("value")
+  },
+  (t) => [index("audit_log_at_idx").on(t.at), index("audit_log_service_idx").on(t.service)]
+);
+
+export type AuditRow = typeof auditLog.$inferSelect;
+export type NewAuditRow = typeof auditLog.$inferInsert;

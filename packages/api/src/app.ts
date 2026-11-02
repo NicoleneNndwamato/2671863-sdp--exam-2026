@@ -3,7 +3,10 @@ import cors from "@fastify/cors";
 import { env, webOrigins } from "./env";
 import { healthRoutes } from "./routes/health";
 import { serviceRoutes } from "./routes/services";
-import { alertRoutes, replayRoutes } from "./alerts/routes";
+import { controlRoutes } from "./routes/controls";
+import { auditRoutes } from "./routes/audit";
+import { arlRoutes } from "./routes/arl";
+import { alertRoutes } from "./alerts/routes";
 
 export async function buildApp() {
   const app = Fastify({
@@ -20,8 +23,10 @@ export async function buildApp() {
 
   await app.register(healthRoutes, { prefix: "/api" });
   await app.register(serviceRoutes, { prefix: "/api" });
-  await app.register(replayRoutes, { prefix: "/api" });
+  await app.register(controlRoutes, { prefix: "/api" });
   await app.register(alertRoutes, { prefix: "/api" });
+  await app.register(auditRoutes, { prefix: "/api" });
+  await app.register(arlRoutes, { prefix: "/api" });
 
   return app;
 }

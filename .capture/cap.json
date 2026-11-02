@@ -1,0 +1,2070 @@
+{
+  "topologies": {
+    "arl/rta/$topology": "{\"v\":1,\"service\":\"rta\",\"version\":\"0.1.0\",\"entities\":[{\"id\":\"dish-001\",\"kind\":\"dish\",\"col\":0,\"lat\":-31.205657,\"lon\":21.6964285,\"row\":0},{\"id\":\"dish-002\",\"kind\":\"dish\",\"col\":1,\"lat\":-31.205657,\"lon\":21.6970594,\"row\":0},{\"id\":\"dish-003\",\"kind\":\"dish\",\"col\":2,\"lat\":-31.205657,\"lon\":21.6976903,\"row\":0},{\"id\":\"dish-004\",\"kind\":\"dish\",\"col\":3,\"lat\":-31.205657,\"lon\":21.6983212,\"row\":0},{\"id\":\"dish-005\",\"kind\":\"dish\",\"col\":4,\"lat\":-31.205657,\"lon\":21.6989521,\"row\":0},{\"id\":\"dish-006\",\"kind\":\"dish\",\"col\":5,\"lat\":-31.205657,\"lon\":21.699583,\"row\":0},{\"id\":\"dish-007\",\"kind\":\"dish\",\"col\":6,\"lat\":-31.205657,\"lon\":21.7002139,\"row\":0},{\"id\":\"dish-008\",\"kind\":\"dish\",\"col\":7,\"lat\":-31.205657,\"lon\":21.7008448,\"row\":0},{\"id\":\"dish-009\",\"kind\":\"dish\",\"col\":8,\"lat\":-31.205657,\"lon\":21.7014757,\"row\":0},{\"id\":\"dish-010\",\"kind\":\"dish\",\"col\":9,\"lat\":-31.205657,\"lon\":21.7021066,\"row\":0},{\"id\":\"dish-011\",\"kind\":\"dish\",\"col\":0,\"lat\":-31.2061243,\"lon\":21.6967439,\"row\":1},{\"id\":\"dish-012\",\"kind\":\"dish\",\"col\":1,\"lat\":-31.2061243,\"lon\":21.6973748,\"row\":1},{\"id\":\"dish-013\",\"kind\":\"dish\",\"col\":2,\"lat\":-31.2061243,\"lon\":21.6980058,\"row\":1},{\"id\":\"dish-014\",\"kind\":\"dish\",\"col\":3,\"lat\":-31.2061243,\"lon\":21.6986367,\"row\":1},{\"id\":\"dish-015\",\"kind\":\"dish\",\"col\":4,\"lat\":-31.2061243,\"lon\":21.6992676,\"row\":1},{\"id\":\"dish-016\",\"kind\":\"dish\",\"col\":5,\"lat\":-31.2061243,\"lon\":21.6998985,\"row\":1},{\"id\":\"dish-017\",\"kind\":\"dish\",\"col\":6,\"lat\":-31.2061243,\"lon\":21.7005294,\"row\":1},{\"id\":\"dish-018\",\"kind\":\"dish\",\"col\":7,\"lat\":-31.2061243,\"lon\":21.7011603,\"row\":1},{\"id\":\"dish-019\",\"kind\":\"dish\",\"col\":8,\"lat\":-31.2061243,\"lon\":21.7017912,\"row\":1},{\"id\":\"dish-020\",\"kind\":\"dish\",\"col\":9,\"lat\":-31.2061243,\"lon\":21.7024221,\"row\":1},{\"id\":\"dish-021\",\"kind\":\"dish\",\"col\":0,\"lat\":-31.2065916,\"lon\":21.6964285,\"row\":2},{\"id\":\"dish-022\",\"kind\":\"dish\",\"col\":1,\"lat\":-31.2065916,\"lon\":21.6970594,\"row\":2},{\"id\":\"dish-023\",\"kind\":\"dish\",\"col\":2,\"lat\":-31.2065916,\"lon\":21.6976903,\"row\":2},{\"id\":\"dish-024\",\"kind\":\"dish\",\"col\":3,\"lat\":-31.2065916,\"lon\":21.6983212,\"row\":2},{\"id\":\"dish-025\",\"kind\":\"dish\",\"col\":4,\"lat\":-31.2065916,\"lon\":21.6989521,\"row\":2},{\"id\":\"dish-026\",\"kind\":\"dish\",\"col\":5,\"lat\":-31.2065916,\"lon\":21.699583,\"row\":2},{\"id\":\"dish-027\",\"kind\":\"dish\",\"col\":6,\"lat\":-31.2065916,\"lon\":21.7002139,\"row\":2},{\"id\":\"dish-028\",\"kind\":\"dish\",\"col\":7,\"lat\":-31.2065916,\"lon\":21.7008448,\"row\":2},{\"id\":\"dish-029\",\"kind\":\"dish\",\"col\":8,\"lat\":-31.2065916,\"lon\":21.7014757,\"row\":2},{\"id\":\"dish-030\",\"kind\":\"dish\",\"col\":9,\"lat\":-31.2065916,\"lon\":21.7021066,\"row\":2},{\"id\":\"dish-031\",\"kind\":\"dish\",\"col\":0,\"lat\":-31.2070589,\"lon\":21.6967439,\"row\":3},{\"id\":\"dish-032\",\"kind\":\"dish\",\"col\":1,\"lat\":-31.2070589,\"lon\":21.6973748,\"row\":3},{\"id\":\"dish-033\",\"kind\":\"dish\",\"col\":2,\"lat\":-31.2070589,\"lon\":21.6980058,\"row\":3},{\"id\":\"dish-034\",\"kind\":\"dish\",\"col\":3,\"lat\":-31.2070589,\"lon\":21.6986367,\"row\":3},{\"id\":\"dish-035\",\"kind\":\"dish\",\"col\":4,\"lat\":-31.2070589,\"lon\":21.6992676,\"row\":3},{\"id\":\"dish-036\",\"kind\":\"dish\",\"col\":5,\"lat\":-31.2070589,\"lon\":21.6998985,\"row\":3},{\"id\":\"dish-037\",\"kind\":\"dish\",\"col\":6,\"lat\":-31.2070589,\"lon\":21.7005294,\"row\":3},{\"id\":\"dish-038\",\"kind\":\"dish\",\"col\":7,\"lat\":-31.2070589,\"lon\":21.7011603,\"row\":3},{\"id\":\"dish-039\",\"kind\":\"dish\",\"col\":8,\"lat\":-31.2070589,\"lon\":21.7017912,\"row\":3},{\"id\":\"dish-040\",\"kind\":\"dish\",\"col\":9,\"lat\":-31.2070589,\"lon\":21.7024221,\"row\":3},{\"id\":\"dish-041\",\"kind\":\"dish\",\"col\":0,\"lat\":-31.2075262,\"lon\":21.6964285,\"row\":4},{\"id\":\"dish-042\",\"kind\":\"dish\",\"col\":1,\"lat\":-31.2075262,\"lon\":21.6970594,\"row\":4},{\"id\":\"dish-043\",\"kind\":\"dish\",\"col\":2,\"lat\":-31.2075262,\"lon\":21.6976903,\"row\":4},{\"id\":\"dish-044\",\"kind\":\"dish\",\"col\":3,\"lat\":-31.2075262,\"lon\":21.6983212,\"row\":4},{\"id\":\"dish-045\",\"kind\":\"dish\",\"col\":4,\"lat\":-31.2075262,\"lon\":21.6989521,\"row\":4},{\"id\":\"dish-046\",\"kind\":\"dish\",\"col\":5,\"lat\":-31.2075262,\"lon\":21.699583,\"row\":4},{\"id\":\"dish-047\",\"kind\":\"dish\",\"col\":6,\"lat\":-31.2075262,\"lon\":21.7002139,\"row\":4},{\"id\":\"dish-048\",\"kind\":\"dish\",\"col\":7,\"lat\":-31.2075262,\"lon\":21.7008448,\"row\":4},{\"id\":\"dish-049\",\"kind\":\"dish\",\"col\":8,\"lat\":-31.2075262,\"lon\":21.7014757,\"row\":4},{\"id\":\"dish-050\",\"kind\":\"dish\",\"col\":9,\"lat\":-31.2075262,\"lon\":21.7021066,\"row\":4},{\"id\":\"dish-051\",\"kind\":\"dish\",\"col\":0,\"lat\":-31.2079935,\"lon\":21.6967439,\"row\":5},{\"id\":\"dish-052\",\"kind\":\"dish\",\"col\":1,\"lat\":-31.2079935,\"lon\":21.6973748,\"row\":5},{\"id\":\"dish-053\",\"kind\":\"dish\",\"col\":2,\"lat\":-31.2079935,\"lon\":21.6980058,\"row\":5},{\"id\":\"dish-054\",\"kind\":\"dish\",\"col\":3,\"lat\":-31.2079935,\"lon\":21.6986367,\"row\":5},{\"id\":\"dish-055\",\"kind\":\"dish\",\"col\":4,\"lat\":-31.2079935,\"lon\":21.6992676,\"row\":5},{\"id\":\"dish-056\",\"kind\":\"dish\",\"col\":5,\"lat\":-31.2079935,\"lon\":21.6998985,\"row\":5},{\"id\":\"dish-057\",\"kind\":\"dish\",\"col\":6,\"lat\":-31.2079935,\"lon\":21.7005294,\"row\":5},{\"id\":\"dish-058\",\"kind\":\"dish\",\"col\":7,\"lat\":-31.2079935,\"lon\":21.7011603,\"row\":5},{\"id\":\"dish-059\",\"kind\":\"dish\",\"col\":8,\"lat\":-31.2079935,\"lon\":21.7017912,\"row\":5},{\"id\":\"dish-060\",\"kind\":\"dish\",\"col\":9,\"lat\":-31.2079935,\"lon\":21.7024221,\"row\":5},{\"id\":\"dish-061\",\"kind\":\"dish\",\"col\":0,\"lat\":-31.2084608,\"lon\":21.6964285,\"row\":6},{\"id\":\"dish-062\",\"kind\":\"dish\",\"col\":1,\"lat\":-31.2084608,\"lon\":21.6970594,\"row\":6},{\"id\":\"dish-063\",\"kind\":\"dish\",\"col\":2,\"lat\":-31.2084608,\"lon\":21.6976903,\"row\":6},{\"id\":\"dish-064\",\"kind\":\"dish\",\"col\":3,\"lat\":-31.2084608,\"lon\":21.6983212,\"row\":6},{\"id\":\"dish-065\",\"kind\":\"dish\",\"col\":4,\"lat\":-31.2084608,\"lon\":21.6989521,\"row\":6},{\"id\":\"dish-066\",\"kind\":\"dish\",\"col\":5,\"lat\":-31.2084608,\"lon\":21.699583,\"row\":6},{\"id\":\"dish-067\",\"kind\":\"dish\",\"col\":6,\"lat\":-31.2084608,\"lon\":21.7002139,\"row\":6},{\"id\":\"dish-068\",\"kind\":\"dish\",\"col\":7,\"lat\":-31.2084608,\"lon\":21.7008448,\"row\":6},{\"id\":\"dish-069\",\"kind\":\"dish\",\"col\":8,\"lat\":-31.2084608,\"lon\":21.7014757,\"row\":6},{\"id\":\"dish-070\",\"kind\":\"dish\",\"col\":9,\"lat\":-31.2084608,\"lon\":21.7021066,\"row\":6},{\"id\":\"dish-071\",\"kind\":\"dish\",\"col\":0,\"lat\":-31.2089281,\"lon\":21.6967439,\"row\":7},{\"id\":\"dish-072\",\"kind\":\"dish\",\"col\":1,\"lat\":-31.2089281,\"lon\":21.6973748,\"row\":7},{\"id\":\"dish-073\",\"kind\":\"dish\",\"col\":2,\"lat\":-31.2089281,\"lon\":21.6980058,\"row\":7},{\"id\":\"dish-074\",\"kind\":\"dish\",\"col\":3,\"lat\":-31.2089281,\"lon\":21.6986367,\"row\":7},{\"id\":\"dish-075\",\"kind\":\"dish\",\"col\":4,\"lat\":-31.2089281,\"lon\":21.6992676,\"row\":7},{\"id\":\"dish-076\",\"kind\":\"dish\",\"col\":5,\"lat\":-31.2089281,\"lon\":21.6998985,\"row\":7},{\"id\":\"dish-077\",\"kind\":\"dish\",\"col\":6,\"lat\":-31.2089281,\"lon\":21.7005294,\"row\":7},{\"id\":\"dish-078\",\"kind\":\"dish\",\"col\":7,\"lat\":-31.2089281,\"lon\":21.7011603,\"row\":7},{\"id\":\"dish-079\",\"kind\":\"dish\",\"col\":8,\"lat\":-31.2089281,\"lon\":21.7017912,\"row\":7},{\"id\":\"dish-080\",\"kind\":\"dish\",\"col\":9,\"lat\":-31.2089281,\"lon\":21.7024221,\"row\":7},{\"id\":\"dish-081\",\"kind\":\"dish\",\"col\":0,\"lat\":-31.2093954,\"lon\":21.6964285,\"row\":8},{\"id\":\"dish-082\",\"kind\":\"dish\",\"col\":1,\"lat\":-31.2093954,\"lon\":21.6970594,\"row\":8},{\"id\":\"dish-083\",\"kind\":\"dish\",\"col\":2,\"lat\":-31.2093954,\"lon\":21.6976903,\"row\":8},{\"id\":\"dish-084\",\"kind\":\"dish\",\"col\":3,\"lat\":-31.2093954,\"lon\":21.6983212,\"row\":8},{\"id\":\"dish-085\",\"kind\":\"dish\",\"col\":4,\"lat\":-31.2093954,\"lon\":21.6989521,\"row\":8},{\"id\":\"dish-086\",\"kind\":\"dish\",\"col\":5,\"lat\":-31.2093954,\"lon\":21.699583,\"row\":8},{\"id\":\"dish-087\",\"kind\":\"dish\",\"col\":6,\"lat\":-31.2093954,\"lon\":21.7002139,\"row\":8},{\"id\":\"dish-088\",\"kind\":\"dish\",\"col\":7,\"lat\":-31.2093954,\"lon\":21.7008448,\"row\":8},{\"id\":\"dish-089\",\"kind\":\"dish\",\"col\":8,\"lat\":-31.2093954,\"lon\":21.7014757,\"row\":8},{\"id\":\"dish-090\",\"kind\":\"dish\",\"col\":9,\"lat\":-31.2093954,\"lon\":21.7021066,\"row\":8},{\"id\":\"dish-091\",\"kind\":\"dish\",\"col\":0,\"lat\":-31.2098627,\"lon\":21.6967439,\"row\":9},{\"id\":\"dish-092\",\"kind\":\"dish\",\"col\":1,\"lat\":-31.2098627,\"lon\":21.6973748,\"row\":9},{\"id\":\"dish-093\",\"kind\":\"dish\",\"col\":2,\"lat\":-31.2098627,\"lon\":21.6980058,\"row\":9},{\"id\":\"dish-094\",\"kind\":\"dish\",\"col\":3,\"lat\":-31.2098627,\"lon\":21.6986367,\"row\":9},{\"id\":\"dish-095\",\"kind\":\"dish\",\"col\":4,\"lat\":-31.2098627,\"lon\":21.6992676,\"row\":9},{\"id\":\"dish-096\",\"kind\":\"dish\",\"col\":5,\"lat\":-31.2098627,\"lon\":21.6998985,\"row\":9},{\"id\":\"dish-097\",\"kind\":\"dish\",\"col\":6,\"lat\":-31.2098627,\"lon\":21.7005294,\"row\":9},{\"id\":\"dish-098\",\"kind\":\"dish\",\"col\":7,\"lat\":-31.2098627,\"lon\":21.7011603,\"row\":9},{\"id\":\"dish-099\",\"kind\":\"dish\",\"col\":8,\"lat\":-31.2098627,\"lon\":21.7017912,\"row\":9},{\"id\":\"dish-100\",\"kind\":\"dish\",\"col\":9,\"lat\":-31.2098627,\"lon\":21.7024221,\"row\":9},{\"id\":\"main\",\"kind\":\"subarray\"},{\"id\":\"global\",\"kind\":\"service\"}],\"streams\":[{\"topic\":\"arl/rta/+/telemetry/normal\",\"entity_kinds\":[\"dish\"],\"period_s\":120,\"fields\":[{\"key\":\"temperature_k\",\"type\":\"float\",\"unit\":\"K\"},{\"key\":\"elevation_rad\",\"type\":\"float\",\"unit\":\"rad\"},{\"key\":\"azimuth_rad\",\"type\":\"float\",\"unit\":\"rad\"},{\"key\":\"power_w\",\"type\":\"integer\",\"unit\":\"W\"},{\"key\":\"system_temperature_k\",\"type\":\"float\",\"unit\":\"K\"},{\"key\":\"fault_code\",\"type\":\"enum\",\"values\":[\"none\",\"drive_stall\",\"overheat\",\"receiver_fault\",\"power_fault\",\"comms_loss\",\"encoder_error\"]},{\"key\":\"status\",\"type\":\"bool\"}]},{\"topic\":\"arl/rta/+/telemetry/scan\",\"entity_kinds\":[\"dish\"],\"period_s\":1,\"fields\":[{\"key\":\"temperature_k\",\"type\":\"float\",\"unit\":\"K\"},{\"key\":\"elevation_rad\",\"type\":\"float\",\"unit\":\"rad\"},{\"key\":\"azimuth_rad\",\"type\":\"float\",\"unit\":\"rad\"},{\"key\":\"power_w\",\"type\":\"integer\",\"unit\":\"W\"},{\"key\":\"system_temperature_k\",\"type\":\"float\",\"unit\":\"K\"},{\"key\":\"fault_code\",\"type\":\"enum\",\"values\":[\"none\",\"drive_stall\",\"overheat\",\"receiver_fault\",\"power_fault\",\"comms_loss\",\"encoder_error\"]},{\"key\":\"status\",\"type\":\"bool\"},{\"key\":\"scan_id\",\"type\":\"string\"},{\"key\":\"pointing_offset_ra_rad\",\"type\":\"float\",\"unit\":\"rad\"},{\"key\":\"pointing_offset_dec_rad\",\"type\":\"float\",\"unit\":\"rad\"},{\"key\":\"signal_strength\",\"type\":\"float\"},{\"key\":\"snr_db\",\"type\":\"float\",\"unit\":\"dB\"},{\"key\":\"band_hz\",\"type\":\"float\",\"unit\":\"Hz\"},{\"key\":\"scan_progress\",\"type\":\"float\"}]}],\"state\":[{\"topic\":\"arl/rta/+/state/commanded\",\"type\":\"object\"},{\"topic\":\"arl/rta/+/state/subarray\",\"type\":\"string\"},{\"topic\":\"arl/rta/+/state/last_calibration\",\"type\":\"timestamp\",\"unit\":\"ms\"},{\"topic\":\"arl/rta/+/state/enabled\",\"type\":\"bool\"},{\"topic\":\"arl/rta/+/state/stowed\",\"type\":\"bool\"},{\"topic\":\"arl/rta/global/state/active_dishes\",\"type\":\"integer\"},{\"topic\":\"arl/rta/global/state/wind_stow\",\"type\":\"bool\"},{\"topic\":\"arl/rta/+/state/scan_state\",\"type\":\"enum\"},{\"topic\":\"arl/rta/+/state/target\",\"type\":\"object\"},{\"topic\":\"arl/rta/+/state/observation_frequency\",\"type\":\"float\",\"unit\":\"Hz\"},{\"topic\":\"arl/rta/+/state/next_scan\",\"type\":\"timestamp\",\"unit\":\"ms\"},{\"topic\":\"arl/rta/+/state/scan_id\",\"type\":\"string\"},{\"topic\":\"arl/rta/+/state/members\",\"type\":\"array\"},{\"topic\":\"arl/rta/global/state/online\",\"type\":\"bool\"},{\"topic\":\"arl/rta/global/state/active_alerts\",\"type\":\"array\"}],\"events\":[{\"topic\":\"arl/rta/events/alert\"},{\"topic\":\"arl/rta/events/scan\"}],\"controls\":[{\"topic\":\"arl/rta/cmd/+/start_scan\",\"entity_kinds\":[\"subarray\"],\"value\":{\"type\":\"bool\"}},{\"topic\":\"arl/rta/cmd/+/schedule_scan\",\"entity_kinds\":[\"subarray\"],\"value\":{\"type\":\"timestamp\",\"unit\":\"ms\"}},{\"topic\":\"arl/rta/cmd/+/pause_scan\",\"entity_kinds\":[\"subarray\"],\"value\":{\"type\":\"bool\"}},{\"topic\":\"arl/rta/cmd/+/cancel_scan\",\"entity_kinds\":[\"subarray\"],\"value\":{\"type\":\"bool\"}},{\"topic\":\"arl/rta/cmd/+/set_target\",\"entity_kinds\":[\"subarray\"],\"value\":{\"type\":\"object\",\"fields\":[{\"key\":\"ra_rad\",\"type\":\"float\",\"unit\":\"rad\"},{\"key\":\"dec_rad\",\"type\":\"float\",\"unit\":\"rad\"},{\"key\":\"fov_rad\",\"type\":\"float\",\"unit\":\"rad\"}]}},{\"topic\":\"arl/rta/cmd/+/set_observation_frequency\",\"entity_kinds\":[\"subarray\"],\"value\":{\"type\":\"float\",\"min\":500000000.0,\"max\":50000000000.0,\"unit\":\"Hz\"}},{\"topic\":\"arl/rta/cmd/+/assign_subarray\",\"entity_kinds\":[\"dish\"],\"value\":{\"type\":\"string\"}},{\"topic\":\"arl/rta/cmd/+/adjust_azimuth\",\"entity_kinds\":[\"dish\"],\"value\":{\"type\":\"float\",\"min\":0.0,\"max\":6.283185307179586,\"unit\":\"rad\"}},{\"topic\":\"arl/rta/cmd/+/adjust_elevation\",\"entity_kinds\":[\"dish\"],\"value\":{\"type\":\"float\",\"min\":0.0873,\"max\":1.5707963267948966,\"unit\":\"rad\"}},{\"topic\":\"arl/rta/cmd/+/enable_dish\",\"entity_kinds\":[\"dish\"],\"value\":{\"type\":\"bool\"}},{\"topic\":\"arl/rta/cmd/+/stow_dish\",\"entity_kinds\":[\"dish\"],\"value\":{\"type\":\"bool\"}},{\"topic\":\"arl/rta/cmd/+/request_recalibration\",\"entity_kinds\":[\"dish\"],\"value\":{\"type\":\"bool\"}}]}",
+    "arl/lwm/$topology": "{\"v\":1,\"service\":\"lwm\",\"version\":\"0.1.0\",\"entities\":[{\"id\":\"lwm-1\",\"kind\":\"site\",\"lat\":-31.1999578,\"lon\":21.6730752},{\"id\":\"lwm-2\",\"kind\":\"site\",\"lat\":-31.1895282,\"lon\":21.7070772},{\"id\":\"lwm-3\",\"kind\":\"site\",\"lat\":-31.2072053,\"lon\":21.7293189},{\"id\":\"lwm-4\",\"kind\":\"site\",\"lat\":-31.2283236,\"lon\":21.7009074},{\"id\":\"lwm-5\",\"kind\":\"site\",\"lat\":-31.227084,\"lon\":21.6635505},{\"id\":\"global\",\"kind\":\"service\"}],\"streams\":[{\"topic\":\"arl/lwm/+/telemetry/weather\",\"entity_kinds\":[\"site\"],\"period_s\":60,\"fields\":[{\"key\":\"temperature_k\",\"type\":\"float\",\"unit\":\"K\"},{\"key\":\"humidity_pct\",\"type\":\"float\",\"unit\":\"%\"},{\"key\":\"pressure_hpa\",\"type\":\"float\",\"unit\":\"hPa\"},{\"key\":\"wind_speed_ms\",\"type\":\"float\",\"unit\":\"m/s\"},{\"key\":\"wind_gust_ms\",\"type\":\"float\",\"unit\":\"m/s\"},{\"key\":\"wind_direction_rad\",\"type\":\"float\",\"unit\":\"rad\"},{\"key\":\"rainfall_mm\",\"type\":\"float\",\"unit\":\"mm\"},{\"key\":\"irradiance_wm2\",\"type\":\"integer\",\"unit\":\"W/m2\"},{\"key\":\"lightning_strikes\",\"type\":\"integer\"},{\"key\":\"battery_v\",\"type\":\"float\",\"unit\":\"V\"},{\"key\":\"status\",\"type\":\"bool\"},{\"key\":\"backfill\",\"type\":\"bool\"}]},{\"topic\":\"arl/lwm/lwm-3/telemetry/sonic\",\"entity_kinds\":[\"site\"],\"period_s\":60,\"fields\":[{\"key\":\"wind_u_ms\",\"type\":\"float\",\"unit\":\"m/s\"},{\"key\":\"wind_v_ms\",\"type\":\"float\",\"unit\":\"m/s\"},{\"key\":\"wind_w_ms\",\"type\":\"float\",\"unit\":\"m/s\"},{\"key\":\"turbulence_intensity\",\"type\":\"float\"},{\"key\":\"gust_factor\",\"type\":\"float\"},{\"key\":\"direction_std_rad\",\"type\":\"float\",\"unit\":\"rad\"},{\"key\":\"sonic_temperature_k\",\"type\":\"float\",\"unit\":\"K\"},{\"key\":\"backfill\",\"type\":\"bool\"}]},{\"topic\":\"arl/lwm/lwm-4/telemetry/soiling\",\"entity_kinds\":[\"site\"],\"period_s\":60,\"fields\":[{\"key\":\"reference_irradiance_wm2\",\"type\":\"integer\",\"unit\":\"W/m2\"},{\"key\":\"exposed_irradiance_wm2\",\"type\":\"integer\",\"unit\":\"W/m2\"},{\"key\":\"soiling_ratio\",\"type\":\"float\"},{\"key\":\"backfill\",\"type\":\"bool\"}]},{\"topic\":\"arl/lwm/lwm-5/telemetry/pan\",\"entity_kinds\":[\"site\"],\"period_s\":60,\"fields\":[{\"key\":\"pan_level_mm\",\"type\":\"float\",\"unit\":\"mm\"},{\"key\":\"evaporation_mm\",\"type\":\"float\",\"unit\":\"mm\"},{\"key\":\"backfill\",\"type\":\"bool\"}]},{\"topic\":\"arl/lwm/global/telemetry/lightning\",\"entity_kinds\":[\"service\"],\"period_s\":60,\"fields\":[{\"key\":\"nearest_strike_km\",\"type\":\"float\",\"unit\":\"km\"},{\"key\":\"strikes_last_min\",\"type\":\"integer\"}]}],\"state\":[{\"topic\":\"arl/lwm/lwm-4/state/last_cleaning\",\"type\":\"timestamp\",\"unit\":\"ms\"},{\"topic\":\"arl/lwm/lwm-5/state/last_refill\",\"type\":\"timestamp\",\"unit\":\"ms\"},{\"topic\":\"arl/lwm/+/state/enabled\",\"type\":\"bool\"},{\"topic\":\"arl/lwm/+/state/sample_interval_s\",\"type\":\"integer\",\"unit\":\"s\"},{\"topic\":\"arl/lwm/+/state/last_calibration\",\"type\":\"timestamp\",\"unit\":\"ms\"},{\"topic\":\"arl/lwm/+/state/last_anemometer_service\",\"type\":\"timestamp\",\"unit\":\"ms\"},{\"topic\":\"arl/lwm/+/state/position\",\"type\":\"object\"},{\"topic\":\"arl/lwm/global/state/active_sites\",\"type\":\"integer\"},{\"topic\":\"arl/lwm/global/state/online\",\"type\":\"bool\"},{\"topic\":\"arl/lwm/global/state/active_alerts\",\"type\":\"array\"}],\"events\":[{\"topic\":\"arl/lwm/events/alert\"},{\"topic\":\"arl/lwm/events/lightning\"}],\"controls\":[{\"topic\":\"arl/lwm/cmd/lwm-4/clean_reference_cell\",\"entity_kinds\":[\"site\"],\"value\":{\"type\":\"bool\"}},{\"topic\":\"arl/lwm/cmd/lwm-5/refill_pan\",\"entity_kinds\":[\"site\"],\"value\":{\"type\":\"bool\"}},{\"topic\":\"arl/lwm/cmd/+/enable_site\",\"entity_kinds\":[\"site\"],\"value\":{\"type\":\"bool\"}},{\"topic\":\"arl/lwm/cmd/+/sample_interval\",\"entity_kinds\":[\"site\"],\"value\":{\"type\":\"integer\",\"min\":10,\"max\":3600,\"unit\":\"s\"}},{\"topic\":\"arl/lwm/cmd/+/request_recalibration\",\"entity_kinds\":[\"site\"],\"value\":{\"type\":\"bool\"}},{\"topic\":\"arl/lwm/cmd/+/service_anemometer\",\"entity_kinds\":[\"site\"],\"value\":{\"type\":\"bool\"}}]}",
+    "arl/opg/$topology": "{\"v\":1,\"service\":\"opg\",\"version\":\"0.1.0\",\"entities\":[{\"id\":\"global\",\"kind\":\"service\"},{\"id\":\"solar\",\"kind\":\"array\"},{\"id\":\"batteries\",\"kind\":\"bank\"},{\"id\":\"diesel\",\"kind\":\"generators\"}],\"streams\":[{\"topic\":\"arl/opg/global/telemetry/power\",\"entity_kinds\":[\"service\"],\"period_s\":60,\"fields\":[{\"key\":\"total_generation_w\",\"type\":\"integer\",\"unit\":\"W\"},{\"key\":\"total_load_w\",\"type\":\"integer\",\"unit\":\"W\"},{\"key\":\"supply_mode\",\"type\":\"enum\",\"values\":[\"solar\",\"battery\",\"diesel\",\"mixed\"]}]},{\"topic\":\"arl/opg/solar/telemetry/power\",\"entity_kinds\":[\"array\"],\"period_s\":60,\"fields\":[{\"key\":\"power_output_w\",\"type\":\"integer\",\"unit\":\"W\"},{\"key\":\"irradiance_wm2\",\"type\":\"integer\",\"unit\":\"W/m2\"},{\"key\":\"panel_temperature_k\",\"type\":\"float\",\"unit\":\"K\"},{\"key\":\"inverter_status\",\"type\":\"enum\",\"values\":[\"online\",\"offline\",\"fault\"]}]},{\"topic\":\"arl/opg/batteries/telemetry/power\",\"entity_kinds\":[\"bank\"],\"period_s\":60,\"fields\":[{\"key\":\"state_of_charge_pct\",\"type\":\"float\",\"unit\":\"%\"},{\"key\":\"battery_power_w\",\"type\":\"integer\",\"unit\":\"W\"},{\"key\":\"battery_temperature_k\",\"type\":\"float\",\"unit\":\"K\"},{\"key\":\"battery_health_pct\",\"type\":\"float\",\"unit\":\"%\"}]},{\"topic\":\"arl/opg/diesel/telemetry/power\",\"entity_kinds\":[\"generators\"],\"period_s\":60,\"fields\":[{\"key\":\"fuel_level_pct\",\"type\":\"float\",\"unit\":\"%\"},{\"key\":\"power_output_w\",\"type\":\"integer\",\"unit\":\"W\"},{\"key\":\"generator_status\",\"type\":\"enum\",\"values\":[\"off\",\"starting\",\"running\",\"fault\"]},{\"key\":\"runtime_h\",\"type\":\"float\",\"unit\":\"h\"}]}],\"state\":[{\"topic\":\"arl/opg/global/state/generation_priority\",\"type\":\"enum\"},{\"topic\":\"arl/opg/global/state/load_shed\",\"type\":\"bool\"},{\"topic\":\"arl/opg/solar/state/enabled\",\"type\":\"bool\"},{\"topic\":\"arl/opg/batteries/state/reserve_pct\",\"type\":\"float\",\"unit\":\"%\"},{\"topic\":\"arl/opg/global/state/online\",\"type\":\"bool\"},{\"topic\":\"arl/opg/global/state/active_alerts\",\"type\":\"array\"}],\"events\":[{\"topic\":\"arl/opg/events/alert\"},{\"topic\":\"arl/opg/events/refuel\"}],\"controls\":[{\"topic\":\"arl/opg/cmd/global/generation_priority\",\"entity_kinds\":[\"service\"],\"value\":{\"type\":\"enum\",\"values\":[\"solar_first\",\"battery_first\",\"diesel_first\"]}},{\"topic\":\"arl/opg/cmd/global/load_shed\",\"entity_kinds\":[\"service\"],\"value\":{\"type\":\"bool\"}},{\"topic\":\"arl/opg/cmd/solar/enable_solar_array\",\"entity_kinds\":[\"array\"],\"value\":{\"type\":\"bool\"}},{\"topic\":\"arl/opg/cmd/batteries/battery_reserve\",\"entity_kinds\":[\"bank\"],\"value\":{\"type\":\"float\",\"min\":10.0,\"max\":80.0,\"unit\":\"%\"}},{\"topic\":\"arl/opg/cmd/diesel/start_generator\",\"entity_kinds\":[\"generators\"],\"value\":{\"type\":\"bool\"}},{\"topic\":\"arl/opg/cmd/diesel/stop_generator\",\"entity_kinds\":[\"generators\"],\"value\":{\"type\":\"bool\"}}]}"
+  },
+  "telemetry": {
+    "arl/rta/dish-002/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-002\",\"temperature_k\":295.03,\"elevation_rad\":0.51535,\"azimuth_rad\":4.05638,\"power_w\":3800,\"system_temperature_k\":35.81,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.000234,\"pointing_offset_dec_rad\":-0.004297,\"signal_strength\":6.58,\"snr_db\":9.69,\"band_hz\":1500000000.0,\"scan_progress\":0.296}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-002\",\"temperature_k\":295.03,\"elevation_rad\":0.51535,\"azimuth_rad\":4.05638,\"power_w\":1307,\"system_temperature_k\":35.81,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.005547,\"pointing_offset_dec_rad\":0.002891,\"signal_strength\":8.306,\"snr_db\":10.89,\"band_hz\":1500000000.0,\"scan_progress\":0.2977}"
+    ],
+    "arl/rta/dish-003/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-003\",\"temperature_k\":295.13,\"elevation_rad\":0.5156,\"azimuth_rad\":4.05646,\"power_w\":1326,\"system_temperature_k\":43.32,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.000078,\"pointing_offset_dec_rad\":0.006953,\"signal_strength\":5.933,\"snr_db\":7.34,\"band_hz\":1500000000.0,\"scan_progress\":0.2304}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-003\",\"temperature_k\":295.13,\"elevation_rad\":0.5156,\"azimuth_rad\":4.05646,\"power_w\":1332,\"system_temperature_k\":43.32,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.002578,\"pointing_offset_dec_rad\":-0.008359,\"signal_strength\":10.749,\"snr_db\":10.84,\"band_hz\":1500000000.0,\"scan_progress\":0.2321}"
+    ],
+    "arl/rta/dish-004/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-004\",\"temperature_k\":295.07,\"elevation_rad\":0.51565,\"azimuth_rad\":4.05648,\"power_w\":1318,\"system_temperature_k\":35.33,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.001172,\"pointing_offset_dec_rad\":0.003984,\"signal_strength\":4.932,\"snr_db\":8.53,\"band_hz\":1500000000.0,\"scan_progress\":0.2683}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-004\",\"temperature_k\":295.07,\"elevation_rad\":0.51565,\"azimuth_rad\":4.05648,\"power_w\":1266,\"system_temperature_k\":35.33,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.004609,\"pointing_offset_dec_rad\":0.003047,\"signal_strength\":8.092,\"snr_db\":10.51,\"band_hz\":1500000000.0,\"scan_progress\":0.27}"
+    ],
+    "arl/rta/dish-006/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-006\",\"temperature_k\":295.06,\"elevation_rad\":0.51584,\"azimuth_rad\":4.05654,\"power_w\":1284,\"system_temperature_k\":44.99,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.003203,\"pointing_offset_dec_rad\":-0.001484,\"signal_strength\":7.736,\"snr_db\":9.12,\"band_hz\":1500000000.0,\"scan_progress\":0.275}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-006\",\"temperature_k\":295.06,\"elevation_rad\":0.5153,\"azimuth_rad\":4.05637,\"power_w\":3729,\"system_temperature_k\":44.99,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.004141,\"pointing_offset_dec_rad\":-0.001328,\"signal_strength\":7.708,\"snr_db\":9.97,\"band_hz\":1500000000.0,\"scan_progress\":0.2767}"
+    ],
+    "arl/rta/dish-008/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-008\",\"temperature_k\":295.08,\"elevation_rad\":0.51545,\"azimuth_rad\":4.05641,\"power_w\":1316,\"system_temperature_k\":30.93,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.000859,\"pointing_offset_dec_rad\":-0.009922,\"signal_strength\":14.707,\"snr_db\":13.43,\"band_hz\":1500000000.0,\"scan_progress\":0.2617}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-008\",\"temperature_k\":295.08,\"elevation_rad\":0.51545,\"azimuth_rad\":4.05641,\"power_w\":1314,\"system_temperature_k\":30.93,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.005703,\"pointing_offset_dec_rad\":-0.006172,\"signal_strength\":2.806,\"snr_db\":6.75,\"band_hz\":1500000000.0,\"scan_progress\":0.2633}"
+    ],
+    "arl/rta/dish-009/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-009\",\"temperature_k\":295.15,\"elevation_rad\":0.51584,\"azimuth_rad\":4.05654,\"power_w\":1268,\"system_temperature_k\":45.05,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.001641,\"pointing_offset_dec_rad\":0.007891,\"signal_strength\":5.619,\"snr_db\":8.88,\"band_hz\":1500000000.0,\"scan_progress\":0.22}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-009\",\"temperature_k\":295.15,\"elevation_rad\":0.5153,\"azimuth_rad\":4.05637,\"power_w\":3722,\"system_temperature_k\":45.06,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.008047,\"pointing_offset_dec_rad\":0.004453,\"signal_strength\":8.792,\"snr_db\":10.37,\"band_hz\":1500000000.0,\"scan_progress\":0.2217}"
+    ],
+    "arl/rta/dish-010/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-010\",\"temperature_k\":294.99,\"elevation_rad\":0.5156,\"azimuth_rad\":4.05646,\"power_w\":1301,\"system_temperature_k\":40.19,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.005547,\"pointing_offset_dec_rad\":-0.008203,\"signal_strength\":5.775,\"snr_db\":8.96,\"band_hz\":1500000000.0,\"scan_progress\":0.3217}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-010\",\"temperature_k\":294.99,\"elevation_rad\":0.5156,\"azimuth_rad\":4.05646,\"power_w\":1278,\"system_temperature_k\":40.19,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.005859,\"pointing_offset_dec_rad\":-0.007578,\"signal_strength\":9.555,\"snr_db\":10.64,\"band_hz\":1500000000.0,\"scan_progress\":0.3233}"
+    ],
+    "arl/rta/dish-011/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-011\",\"temperature_k\":295.07,\"elevation_rad\":0.51575,\"azimuth_rad\":4.05651,\"power_w\":1282,\"system_temperature_k\":31.1,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.007578,\"pointing_offset_dec_rad\":0.008203,\"signal_strength\":3.281,\"snr_db\":7.21,\"band_hz\":1500000000.0,\"scan_progress\":0.2717}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-011\",\"temperature_k\":295.07,\"elevation_rad\":0.51575,\"azimuth_rad\":4.05651,\"power_w\":1325,\"system_temperature_k\":31.1,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.000703,\"pointing_offset_dec_rad\":0.005391,\"signal_strength\":6.837,\"snr_db\":9.97,\"band_hz\":1500000000.0,\"scan_progress\":0.2733}"
+    ],
+    "arl/rta/dish-012/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-012\",\"temperature_k\":295.09,\"elevation_rad\":0.51535,\"azimuth_rad\":4.05638,\"power_w\":3902,\"system_temperature_k\":40.64,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.009922,\"pointing_offset_dec_rad\":-0.005391,\"signal_strength\":4.714,\"snr_db\":8.0,\"band_hz\":1500000000.0,\"scan_progress\":0.2583}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-012\",\"temperature_k\":295.09,\"elevation_rad\":0.51535,\"azimuth_rad\":4.05638,\"power_w\":1315,\"system_temperature_k\":40.64,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.001016,\"pointing_offset_dec_rad\":-0.008047,\"signal_strength\":7.878,\"snr_db\":9.15,\"band_hz\":1500000000.0,\"scan_progress\":0.26}"
+    ],
+    "arl/rta/dish-013/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-013\",\"temperature_k\":295.09,\"elevation_rad\":0.51584,\"azimuth_rad\":4.05654,\"power_w\":1320,\"system_temperature_k\":41.16,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.002891,\"pointing_offset_dec_rad\":-0.001953,\"signal_strength\":4.967,\"snr_db\":8.85,\"band_hz\":1500000000.0,\"scan_progress\":0.2567}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-013\",\"temperature_k\":295.09,\"elevation_rad\":0.5153,\"azimuth_rad\":4.05637,\"power_w\":3861,\"system_temperature_k\":41.16,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.004141,\"pointing_offset_dec_rad\":0.006328,\"signal_strength\":15.254,\"snr_db\":12.54,\"band_hz\":1500000000.0,\"scan_progress\":0.2583}"
+    ],
+    "arl/rta/dish-014/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-014\",\"temperature_k\":294.97,\"elevation_rad\":0.5154,\"azimuth_rad\":4.0564,\"power_w\":1282,\"system_temperature_k\":33.14,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.000078,\"pointing_offset_dec_rad\":0.000703,\"signal_strength\":10.303,\"snr_db\":12.27,\"band_hz\":1500000000.0,\"scan_progress\":0.3333}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-014\",\"temperature_k\":294.97,\"elevation_rad\":0.5154,\"azimuth_rad\":4.0564,\"power_w\":1332,\"system_temperature_k\":33.14,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.008672,\"pointing_offset_dec_rad\":-0.009141,\"signal_strength\":4.514,\"snr_db\":8.14,\"band_hz\":1500000000.0,\"scan_progress\":0.335}"
+    ],
+    "arl/rta/dish-015/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-015\",\"temperature_k\":295.06,\"elevation_rad\":0.5154,\"azimuth_rad\":4.0564,\"power_w\":1332,\"system_temperature_k\":44.2,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.001484,\"pointing_offset_dec_rad\":-0.009453,\"signal_strength\":4.099,\"snr_db\":6.86,\"band_hz\":1500000000.0,\"scan_progress\":0.2783}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-015\",\"temperature_k\":295.06,\"elevation_rad\":0.5154,\"azimuth_rad\":4.0564,\"power_w\":1302,\"system_temperature_k\":44.2,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.001016,\"pointing_offset_dec_rad\":-0.004297,\"signal_strength\":6.859,\"snr_db\":9.17,\"band_hz\":1500000000.0,\"scan_progress\":0.28}"
+    ],
+    "arl/rta/dish-016/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-016\",\"temperature_k\":295.17,\"elevation_rad\":0.5155,\"azimuth_rad\":4.05643,\"power_w\":1304,\"system_temperature_k\":43.9,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.009453,\"pointing_offset_dec_rad\":-0.008359,\"signal_strength\":3.883,\"snr_db\":7.79,\"band_hz\":1500000000.0,\"scan_progress\":0.2083}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-016\",\"temperature_k\":295.17,\"elevation_rad\":0.5155,\"azimuth_rad\":4.05643,\"power_w\":1272,\"system_temperature_k\":43.9,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.000703,\"pointing_offset_dec_rad\":0.007266,\"signal_strength\":9.521,\"snr_db\":10.36,\"band_hz\":1500000000.0,\"scan_progress\":0.21}"
+    ],
+    "arl/rta/dish-017/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-017\",\"temperature_k\":295.03,\"elevation_rad\":0.5154,\"azimuth_rad\":4.0564,\"power_w\":1298,\"system_temperature_k\":44.16,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.005547,\"pointing_offset_dec_rad\":-0.003359,\"signal_strength\":7.586,\"snr_db\":9.19,\"band_hz\":1500000000.0,\"scan_progress\":0.2967}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-017\",\"temperature_k\":295.03,\"elevation_rad\":0.5154,\"azimuth_rad\":4.0564,\"power_w\":1284,\"system_temperature_k\":44.16,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.002109,\"pointing_offset_dec_rad\":-0.003047,\"signal_strength\":5.453,\"snr_db\":8.15,\"band_hz\":1500000000.0,\"scan_progress\":0.2983}"
+    ],
+    "arl/rta/dish-018/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-018\",\"temperature_k\":295.11,\"elevation_rad\":0.51545,\"azimuth_rad\":4.05641,\"power_w\":1282,\"system_temperature_k\":46.07,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.001016,\"pointing_offset_dec_rad\":-0.006953,\"signal_strength\":6.624,\"snr_db\":7.23,\"band_hz\":1500000000.0,\"scan_progress\":0.2433}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-018\",\"temperature_k\":295.11,\"elevation_rad\":0.51545,\"azimuth_rad\":4.05641,\"power_w\":1332,\"system_temperature_k\":46.07,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.003516,\"pointing_offset_dec_rad\":-0.001953,\"signal_strength\":6.985,\"snr_db\":8.86,\"band_hz\":1500000000.0,\"scan_progress\":0.245}"
+    ],
+    "arl/rta/dish-019/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-019\",\"temperature_k\":295.15,\"elevation_rad\":0.51575,\"azimuth_rad\":4.05651,\"power_w\":1279,\"system_temperature_k\":36.92,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.007266,\"pointing_offset_dec_rad\":0.009922,\"signal_strength\":2.578,\"snr_db\":4.86,\"band_hz\":1500000000.0,\"scan_progress\":0.2167}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-019\",\"temperature_k\":295.15,\"elevation_rad\":0.51575,\"azimuth_rad\":4.05651,\"power_w\":1261,\"system_temperature_k\":36.92,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.003984,\"pointing_offset_dec_rad\":0.000078,\"signal_strength\":5.742,\"snr_db\":9.01,\"band_hz\":1500000000.0,\"scan_progress\":0.2183}"
+    ],
+    "arl/rta/dish-020/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-020\",\"temperature_k\":294.98,\"elevation_rad\":0.51575,\"azimuth_rad\":4.05651,\"power_w\":1303,\"system_temperature_k\":33.26,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.002109,\"pointing_offset_dec_rad\":-0.008359,\"signal_strength\":4.544,\"snr_db\":8.66,\"band_hz\":1500000000.0,\"scan_progress\":0.3267}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-020\",\"temperature_k\":294.98,\"elevation_rad\":0.51575,\"azimuth_rad\":4.05651,\"power_w\":1312,\"system_temperature_k\":33.26,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.004453,\"pointing_offset_dec_rad\":-0.003984,\"signal_strength\":4.212,\"snr_db\":7.67,\"band_hz\":1500000000.0,\"scan_progress\":0.3283}"
+    ],
+    "arl/rta/dish-022/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-022\",\"temperature_k\":295.01,\"elevation_rad\":0.51579,\"azimuth_rad\":4.05653,\"power_w\":1332,\"system_temperature_k\":40.74,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.009453,\"pointing_offset_dec_rad\":0.005703,\"signal_strength\":4.817,\"snr_db\":7.06,\"band_hz\":1500000000.0,\"scan_progress\":0.31}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-022\",\"temperature_k\":295.01,\"elevation_rad\":0.51579,\"azimuth_rad\":4.05653,\"power_w\":1288,\"system_temperature_k\":40.74,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.001641,\"pointing_offset_dec_rad\":0.000547,\"signal_strength\":8.395,\"snr_db\":10.47,\"band_hz\":1500000000.0,\"scan_progress\":0.3117}"
+    ],
+    "arl/rta/dish-023/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-023\",\"temperature_k\":295.16,\"elevation_rad\":0.5156,\"azimuth_rad\":4.05646,\"power_w\":1331,\"system_temperature_k\":35.81,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.009922,\"pointing_offset_dec_rad\":-0.003672,\"signal_strength\":3.562,\"snr_db\":7.83,\"band_hz\":1500000000.0,\"scan_progress\":0.2117}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-023\",\"temperature_k\":295.16,\"elevation_rad\":0.5156,\"azimuth_rad\":4.05646,\"power_w\":1291,\"system_temperature_k\":35.81,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.007891,\"pointing_offset_dec_rad\":0.007734,\"signal_strength\":5.707,\"snr_db\":7.79,\"band_hz\":1500000000.0,\"scan_progress\":0.2133}"
+    ],
+    "arl/rta/dish-024/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-024\",\"temperature_k\":295.06,\"elevation_rad\":0.5154,\"azimuth_rad\":4.0564,\"power_w\":1269,\"system_temperature_k\":31.6,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.001172,\"pointing_offset_dec_rad\":0.007891,\"signal_strength\":8.142,\"snr_db\":11.35,\"band_hz\":1500000000.0,\"scan_progress\":0.2783}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-024\",\"temperature_k\":295.06,\"elevation_rad\":0.5154,\"azimuth_rad\":4.0564,\"power_w\":1318,\"system_temperature_k\":31.6,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.007422,\"pointing_offset_dec_rad\":0.003516,\"signal_strength\":13.804,\"snr_db\":13.15,\"band_hz\":1500000000.0,\"scan_progress\":0.28}"
+    ],
+    "arl/rta/dish-025/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-025\",\"temperature_k\":295.09,\"elevation_rad\":0.51584,\"azimuth_rad\":4.05654,\"power_w\":1329,\"system_temperature_k\":42.2,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.008984,\"pointing_offset_dec_rad\":-0.006016,\"signal_strength\":15.163,\"snr_db\":12.4,\"band_hz\":1500000000.0,\"scan_progress\":0.2567}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-025\",\"temperature_k\":295.09,\"elevation_rad\":0.5153,\"azimuth_rad\":4.05637,\"power_w\":3907,\"system_temperature_k\":42.21,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.000078,\"pointing_offset_dec_rad\":-0.009141,\"signal_strength\":3.609,\"snr_db\":5.89,\"band_hz\":1500000000.0,\"scan_progress\":0.2583}"
+    ],
+    "arl/rta/dish-026/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-026\",\"temperature_k\":295.05,\"elevation_rad\":0.5156,\"azimuth_rad\":4.05646,\"power_w\":1292,\"system_temperature_k\":30.81,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.003203,\"pointing_offset_dec_rad\":-0.006172,\"signal_strength\":4.127,\"snr_db\":6.92,\"band_hz\":1500000000.0,\"scan_progress\":0.285}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-026\",\"temperature_k\":295.05,\"elevation_rad\":0.5156,\"azimuth_rad\":4.05646,\"power_w\":1336,\"system_temperature_k\":30.81,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.005859,\"pointing_offset_dec_rad\":0.006328,\"signal_strength\":8.267,\"snr_db\":11.41,\"band_hz\":1500000000.0,\"scan_progress\":0.2867}"
+    ],
+    "arl/rta/dish-027/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-027\",\"temperature_k\":295.0,\"elevation_rad\":0.51535,\"azimuth_rad\":4.05638,\"power_w\":3806,\"system_temperature_k\":37.02,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.003984,\"pointing_offset_dec_rad\":-0.003984,\"signal_strength\":9.579,\"snr_db\":10.75,\"band_hz\":1500000000.0,\"scan_progress\":0.3133}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-027\",\"temperature_k\":295.0,\"elevation_rad\":0.51535,\"azimuth_rad\":4.05638,\"power_w\":1274,\"system_temperature_k\":37.02,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.004297,\"pointing_offset_dec_rad\":-0.008516,\"signal_strength\":3.101,\"snr_db\":6.74,\"band_hz\":1500000000.0,\"scan_progress\":0.315}"
+    ],
+    "arl/rta/dish-029/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-029\",\"temperature_k\":295.0,\"elevation_rad\":0.51535,\"azimuth_rad\":4.05638,\"power_w\":3820,\"system_temperature_k\":38.89,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.001328,\"pointing_offset_dec_rad\":-0.003984,\"signal_strength\":3.465,\"snr_db\":6.84,\"band_hz\":1500000000.0,\"scan_progress\":0.3133}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-029\",\"temperature_k\":295.0,\"elevation_rad\":0.51535,\"azimuth_rad\":4.05638,\"power_w\":1272,\"system_temperature_k\":38.89,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.009609,\"pointing_offset_dec_rad\":0.005703,\"signal_strength\":4.866,\"snr_db\":7.41,\"band_hz\":1500000000.0,\"scan_progress\":0.315}"
+    ],
+    "arl/rta/dish-030/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-030\",\"temperature_k\":294.99,\"elevation_rad\":0.5156,\"azimuth_rad\":4.05646,\"power_w\":1332,\"system_temperature_k\":36.44,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.001016,\"pointing_offset_dec_rad\":-0.004453,\"signal_strength\":4.123,\"snr_db\":8.15,\"band_hz\":1500000000.0,\"scan_progress\":0.3217}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-030\",\"temperature_k\":294.99,\"elevation_rad\":0.5156,\"azimuth_rad\":4.05646,\"power_w\":1276,\"system_temperature_k\":36.44,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.001016,\"pointing_offset_dec_rad\":-0.000547,\"signal_strength\":11.328,\"snr_db\":11.67,\"band_hz\":1500000000.0,\"scan_progress\":0.3233}"
+    ],
+    "arl/rta/dish-031/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-031\",\"temperature_k\":295.07,\"elevation_rad\":0.51565,\"azimuth_rad\":4.05648,\"power_w\":1275,\"system_temperature_k\":41.64,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.008359,\"pointing_offset_dec_rad\":-0.004609,\"signal_strength\":7.493,\"snr_db\":9.33,\"band_hz\":1500000000.0,\"scan_progress\":0.2683}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-031\",\"temperature_k\":295.07,\"elevation_rad\":0.51565,\"azimuth_rad\":4.05648,\"power_w\":1279,\"system_temperature_k\":41.64,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.001484,\"pointing_offset_dec_rad\":0.008984,\"signal_strength\":6.22,\"snr_db\":8.78,\"band_hz\":1500000000.0,\"scan_progress\":0.27}"
+    ],
+    "arl/rta/dish-032/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-032\",\"temperature_k\":295.1,\"elevation_rad\":0.5156,\"azimuth_rad\":4.05646,\"power_w\":1307,\"system_temperature_k\":34.12,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.000859,\"pointing_offset_dec_rad\":0.003672,\"signal_strength\":9.612,\"snr_db\":11.25,\"band_hz\":1500000000.0,\"scan_progress\":0.2483}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-032\",\"temperature_k\":295.1,\"elevation_rad\":0.5156,\"azimuth_rad\":4.05646,\"power_w\":1333,\"system_temperature_k\":34.12,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.001484,\"pointing_offset_dec_rad\":0.005234,\"signal_strength\":3.788,\"snr_db\":8.57,\"band_hz\":1500000000.0,\"scan_progress\":0.25}"
+    ],
+    "arl/rta/dish-033/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-033\",\"temperature_k\":295.03,\"elevation_rad\":0.51579,\"azimuth_rad\":4.05653,\"power_w\":1273,\"system_temperature_k\":31.8,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.001797,\"pointing_offset_dec_rad\":0.000703,\"signal_strength\":11.877,\"snr_db\":12.08,\"band_hz\":1500000000.0,\"scan_progress\":0.2917}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-033\",\"temperature_k\":295.03,\"elevation_rad\":0.51579,\"azimuth_rad\":4.05653,\"power_w\":1317,\"system_temperature_k\":31.8,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.004453,\"pointing_offset_dec_rad\":0.000703,\"signal_strength\":18.182,\"snr_db\":14.53,\"band_hz\":1500000000.0,\"scan_progress\":0.2933}"
+    ],
+    "arl/rta/dish-034/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-034\",\"temperature_k\":295.09,\"elevation_rad\":0.5154,\"azimuth_rad\":4.0564,\"power_w\":1331,\"system_temperature_k\":41.95,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.008203,\"pointing_offset_dec_rad\":0.007891,\"signal_strength\":3.506,\"snr_db\":6.5,\"band_hz\":1500000000.0,\"scan_progress\":0.26}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-034\",\"temperature_k\":295.09,\"elevation_rad\":0.5154,\"azimuth_rad\":4.0564,\"power_w\":1273,\"system_temperature_k\":41.95,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.008828,\"pointing_offset_dec_rad\":0.006797,\"signal_strength\":4.404,\"snr_db\":5.62,\"band_hz\":1500000000.0,\"scan_progress\":0.2617}"
+    ],
+    "arl/rta/dish-035/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-035\",\"temperature_k\":295.0,\"elevation_rad\":0.51579,\"azimuth_rad\":4.05653,\"power_w\":1304,\"system_temperature_k\":34.93,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.006484,\"pointing_offset_dec_rad\":0.009609,\"signal_strength\":1.365,\"snr_db\":5.19,\"band_hz\":1500000000.0,\"scan_progress\":0.3133}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-035\",\"temperature_k\":295.0,\"elevation_rad\":0.51579,\"azimuth_rad\":4.05653,\"power_w\":1272,\"system_temperature_k\":34.93,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.001484,\"pointing_offset_dec_rad\":-0.006016,\"signal_strength\":1.777,\"snr_db\":6.29,\"band_hz\":1500000000.0,\"scan_progress\":0.315}"
+    ],
+    "arl/rta/dish-036/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-036\",\"temperature_k\":294.94,\"elevation_rad\":0.51545,\"azimuth_rad\":4.05641,\"power_w\":1281,\"system_temperature_k\":36.29,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.004297,\"pointing_offset_dec_rad\":-0.002266,\"signal_strength\":8.275,\"snr_db\":10.48,\"band_hz\":1500000000.0,\"scan_progress\":0.3533}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-036\",\"temperature_k\":294.94,\"elevation_rad\":0.51545,\"azimuth_rad\":4.05641,\"power_w\":1288,\"system_temperature_k\":36.29,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.008203,\"pointing_offset_dec_rad\":-0.008516,\"signal_strength\":2.83,\"snr_db\":5.58,\"band_hz\":1500000000.0,\"scan_progress\":0.355}"
+    ],
+    "arl/rta/dish-037/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-037\",\"temperature_k\":295.03,\"elevation_rad\":0.51579,\"azimuth_rad\":4.05653,\"power_w\":1273,\"system_temperature_k\":39.04,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.008047,\"pointing_offset_dec_rad\":-0.000391,\"signal_strength\":6.691,\"snr_db\":9.21,\"band_hz\":1500000000.0,\"scan_progress\":0.2917}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-037\",\"temperature_k\":295.03,\"elevation_rad\":0.51579,\"azimuth_rad\":4.05653,\"power_w\":1326,\"system_temperature_k\":39.04,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.001328,\"pointing_offset_dec_rad\":-0.000703,\"signal_strength\":13.319,\"snr_db\":12.35,\"band_hz\":1500000000.0,\"scan_progress\":0.2933}"
+    ],
+    "arl/rta/dish-038/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-038\",\"temperature_k\":294.94,\"elevation_rad\":0.51579,\"azimuth_rad\":4.05653,\"power_w\":1286,\"system_temperature_k\":39.16,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.003047,\"pointing_offset_dec_rad\":-0.005703,\"signal_strength\":6.538,\"snr_db\":9.21,\"band_hz\":1500000000.0,\"scan_progress\":0.3517}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-038\",\"temperature_k\":294.94,\"elevation_rad\":0.51579,\"azimuth_rad\":4.05653,\"power_w\":1268,\"system_temperature_k\":39.16,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.002578,\"pointing_offset_dec_rad\":0.007422,\"signal_strength\":4.415,\"snr_db\":8.53,\"band_hz\":1500000000.0,\"scan_progress\":0.3533}"
+    ],
+    "arl/rta/dish-039/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-039\",\"temperature_k\":295.07,\"elevation_rad\":0.51575,\"azimuth_rad\":4.05651,\"power_w\":1334,\"system_temperature_k\":33.07,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.008359,\"pointing_offset_dec_rad\":-0.004141,\"signal_strength\":18.559,\"snr_db\":14.36,\"band_hz\":1500000000.0,\"scan_progress\":0.2717}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-039\",\"temperature_k\":295.07,\"elevation_rad\":0.51575,\"azimuth_rad\":4.05651,\"power_w\":1279,\"system_temperature_k\":33.07,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.009297,\"pointing_offset_dec_rad\":0.003672,\"signal_strength\":4.325,\"snr_db\":8.2,\"band_hz\":1500000000.0,\"scan_progress\":0.2733}"
+    ],
+    "arl/rta/dish-040/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-040\",\"temperature_k\":295.13,\"elevation_rad\":0.51565,\"azimuth_rad\":4.05648,\"power_w\":1299,\"system_temperature_k\":35.79,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.009766,\"pointing_offset_dec_rad\":0.005234,\"signal_strength\":2.279,\"snr_db\":6.36,\"band_hz\":1500000000.0,\"scan_progress\":0.2317}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-040\",\"temperature_k\":295.13,\"elevation_rad\":0.51565,\"azimuth_rad\":4.05648,\"power_w\":1334,\"system_temperature_k\":35.79,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.007109,\"pointing_offset_dec_rad\":0.000391,\"signal_strength\":5.736,\"snr_db\":8.49,\"band_hz\":1500000000.0,\"scan_progress\":0.2333}"
+    ],
+    "arl/rta/dish-042/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-042\",\"temperature_k\":295.0,\"elevation_rad\":0.51584,\"azimuth_rad\":4.05654,\"power_w\":1276,\"system_temperature_k\":39.85,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.004609,\"pointing_offset_dec_rad\":0.008828,\"signal_strength\":0.938,\"snr_db\":2.51,\"band_hz\":1500000000.0,\"scan_progress\":0.3117}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-042\",\"temperature_k\":295.01,\"elevation_rad\":0.5153,\"azimuth_rad\":4.05637,\"power_w\":3738,\"system_temperature_k\":39.86,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.002891,\"pointing_offset_dec_rad\":0.005703,\"signal_strength\":5.904,\"snr_db\":9.28,\"band_hz\":1500000000.0,\"scan_progress\":0.3133}"
+    ],
+    "arl/rta/dish-043/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-043\",\"temperature_k\":295.09,\"elevation_rad\":0.51579,\"azimuth_rad\":4.05653,\"power_w\":1263,\"system_temperature_k\":34.81,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.002734,\"pointing_offset_dec_rad\":0.000234,\"signal_strength\":9.141,\"snr_db\":11.27,\"band_hz\":1500000000.0,\"scan_progress\":0.255}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-043\",\"temperature_k\":295.09,\"elevation_rad\":0.51579,\"azimuth_rad\":4.05653,\"power_w\":1302,\"system_temperature_k\":34.81,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.003516,\"pointing_offset_dec_rad\":-0.003359,\"signal_strength\":8.136,\"snr_db\":10.5,\"band_hz\":1500000000.0,\"scan_progress\":0.2567}"
+    ],
+    "arl/rta/dish-044/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-044\",\"temperature_k\":295.03,\"elevation_rad\":0.51584,\"azimuth_rad\":4.05654,\"power_w\":1289,\"system_temperature_k\":35.9,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.000859,\"pointing_offset_dec_rad\":0.008359,\"signal_strength\":6.068,\"snr_db\":9.29,\"band_hz\":1500000000.0,\"scan_progress\":0.2933}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-044\",\"temperature_k\":295.03,\"elevation_rad\":0.5153,\"azimuth_rad\":4.05637,\"power_w\":3707,\"system_temperature_k\":35.91,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.002734,\"pointing_offset_dec_rad\":0.002734,\"signal_strength\":7.065,\"snr_db\":10.32,\"band_hz\":1500000000.0,\"scan_progress\":0.295}"
+    ],
+    "arl/rta/dish-046/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-046\",\"temperature_k\":295.09,\"elevation_rad\":0.5154,\"azimuth_rad\":4.0564,\"power_w\":1327,\"system_temperature_k\":38.54,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.007734,\"pointing_offset_dec_rad\":0.009141,\"signal_strength\":2.183,\"snr_db\":4.81,\"band_hz\":1500000000.0,\"scan_progress\":0.26}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-046\",\"temperature_k\":295.09,\"elevation_rad\":0.5154,\"azimuth_rad\":4.0564,\"power_w\":1334,\"system_temperature_k\":38.54,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.008828,\"pointing_offset_dec_rad\":-0.000547,\"signal_strength\":15.031,\"snr_db\":12.69,\"band_hz\":1500000000.0,\"scan_progress\":0.2617}"
+    ],
+    "arl/rta/dish-047/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-047\",\"temperature_k\":295.15,\"elevation_rad\":0.51579,\"azimuth_rad\":4.05653,\"power_w\":1336,\"system_temperature_k\":31.85,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.002109,\"pointing_offset_dec_rad\":-0.002578,\"signal_strength\":5.5,\"snr_db\":9.19,\"band_hz\":1500000000.0,\"scan_progress\":0.2183}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-047\",\"temperature_k\":295.15,\"elevation_rad\":0.51579,\"azimuth_rad\":4.05653,\"power_w\":1273,\"system_temperature_k\":31.85,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.005078,\"pointing_offset_dec_rad\":0.006641,\"signal_strength\":10.91,\"snr_db\":12.44,\"band_hz\":1500000000.0,\"scan_progress\":0.22}"
+    ],
+    "arl/rta/dish-049/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-049\",\"temperature_k\":295.16,\"elevation_rad\":0.51565,\"azimuth_rad\":4.05648,\"power_w\":1316,\"system_temperature_k\":33.94,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.000703,\"pointing_offset_dec_rad\":-0.008359,\"signal_strength\":6.604,\"snr_db\":9.37,\"band_hz\":1500000000.0,\"scan_progress\":0.2133}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-049\",\"temperature_k\":295.16,\"elevation_rad\":0.51565,\"azimuth_rad\":4.05648,\"power_w\":1310,\"system_temperature_k\":33.94,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.002891,\"pointing_offset_dec_rad\":-0.007422,\"signal_strength\":2.616,\"snr_db\":5.88,\"band_hz\":1500000000.0,\"scan_progress\":0.215}"
+    ],
+    "arl/rta/dish-050/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-050\",\"temperature_k\":295.09,\"elevation_rad\":0.5154,\"azimuth_rad\":4.0564,\"power_w\":1285,\"system_temperature_k\":44.36,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.003984,\"pointing_offset_dec_rad\":-0.000078,\"signal_strength\":4.909,\"snr_db\":8.31,\"band_hz\":1500000000.0,\"scan_progress\":0.26}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-050\",\"temperature_k\":295.09,\"elevation_rad\":0.5154,\"azimuth_rad\":4.0564,\"power_w\":1322,\"system_temperature_k\":44.36,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.009922,\"pointing_offset_dec_rad\":-0.007422,\"signal_strength\":2.419,\"snr_db\":4.74,\"band_hz\":1500000000.0,\"scan_progress\":0.2617}"
+    ],
+    "arl/rta/dish-051/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-051\",\"temperature_k\":295.08,\"elevation_rad\":0.51555,\"azimuth_rad\":4.05645,\"power_w\":1286,\"system_temperature_k\":43.02,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.002891,\"pointing_offset_dec_rad\":0.008984,\"signal_strength\":6.21,\"snr_db\":9.0,\"band_hz\":1500000000.0,\"scan_progress\":0.265}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-051\",\"temperature_k\":295.08,\"elevation_rad\":0.51555,\"azimuth_rad\":4.05645,\"power_w\":1270,\"system_temperature_k\":43.02,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.009766,\"pointing_offset_dec_rad\":-0.002891,\"signal_strength\":7.409,\"snr_db\":8.99,\"band_hz\":1500000000.0,\"scan_progress\":0.2667}"
+    ],
+    "arl/rta/dish-052/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-052\",\"temperature_k\":294.95,\"elevation_rad\":0.5157,\"azimuth_rad\":4.0565,\"power_w\":1334,\"system_temperature_k\":39.84,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.008516,\"pointing_offset_dec_rad\":-0.009766,\"signal_strength\":3.876,\"snr_db\":4.91,\"band_hz\":1500000000.0,\"scan_progress\":0.3433}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-052\",\"temperature_k\":294.95,\"elevation_rad\":0.5157,\"azimuth_rad\":4.0565,\"power_w\":1335,\"system_temperature_k\":39.84,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.007109,\"pointing_offset_dec_rad\":-0.001953,\"signal_strength\":8.723,\"snr_db\":10.14,\"band_hz\":1500000000.0,\"scan_progress\":0.345}"
+    ],
+    "arl/rta/dish-053/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-053\",\"temperature_k\":295.07,\"elevation_rad\":0.5157,\"azimuth_rad\":4.0565,\"power_w\":1300,\"system_temperature_k\":36.39,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.009453,\"pointing_offset_dec_rad\":0.007734,\"signal_strength\":1.519,\"snr_db\":3.13,\"band_hz\":1500000000.0,\"scan_progress\":0.27}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-053\",\"temperature_k\":295.07,\"elevation_rad\":0.5157,\"azimuth_rad\":4.0565,\"power_w\":1297,\"system_temperature_k\":36.39,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.009922,\"pointing_offset_dec_rad\":0.002891,\"signal_strength\":9.52,\"snr_db\":10.89,\"band_hz\":1500000000.0,\"scan_progress\":0.2717}"
+    ],
+    "arl/rta/dish-054/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-054\",\"temperature_k\":295.03,\"elevation_rad\":0.5154,\"azimuth_rad\":4.0564,\"power_w\":1268,\"system_temperature_k\":44.35,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.005547,\"pointing_offset_dec_rad\":0.001172,\"signal_strength\":10.955,\"snr_db\":10.54,\"band_hz\":1500000000.0,\"scan_progress\":0.2967}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-054\",\"temperature_k\":295.03,\"elevation_rad\":0.5154,\"azimuth_rad\":4.0564,\"power_w\":1304,\"system_temperature_k\":44.35,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.006797,\"pointing_offset_dec_rad\":-0.007891,\"signal_strength\":14.028,\"snr_db\":11.88,\"band_hz\":1500000000.0,\"scan_progress\":0.2983}"
+    ],
+    "arl/rta/dish-057/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-057\",\"temperature_k\":295.07,\"elevation_rad\":0.5157,\"azimuth_rad\":4.0565,\"power_w\":1338,\"system_temperature_k\":41.55,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.000391,\"pointing_offset_dec_rad\":-0.001953,\"signal_strength\":5.477,\"snr_db\":7.37,\"band_hz\":1500000000.0,\"scan_progress\":0.27}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-057\",\"temperature_k\":295.07,\"elevation_rad\":0.5157,\"azimuth_rad\":4.0565,\"power_w\":1292,\"system_temperature_k\":41.55,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.008047,\"pointing_offset_dec_rad\":0.005078,\"signal_strength\":3.116,\"snr_db\":6.21,\"band_hz\":1500000000.0,\"scan_progress\":0.2717}"
+    ],
+    "arl/rta/dish-059/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-059\",\"temperature_k\":295.09,\"elevation_rad\":0.51579,\"azimuth_rad\":4.05653,\"power_w\":1294,\"system_temperature_k\":34.23,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.004141,\"pointing_offset_dec_rad\":0.000547,\"signal_strength\":8.168,\"snr_db\":10.89,\"band_hz\":1500000000.0,\"scan_progress\":0.255}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-059\",\"temperature_k\":295.09,\"elevation_rad\":0.51579,\"azimuth_rad\":4.05653,\"power_w\":1309,\"system_temperature_k\":34.23,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.002578,\"pointing_offset_dec_rad\":0.008672,\"signal_strength\":5.667,\"snr_db\":7.44,\"band_hz\":1500000000.0,\"scan_progress\":0.2567}"
+    ],
+    "arl/rta/dish-060/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-060\",\"temperature_k\":295.15,\"elevation_rad\":0.51575,\"azimuth_rad\":4.05651,\"power_w\":1292,\"system_temperature_k\":38.7,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.003516,\"pointing_offset_dec_rad\":0.006641,\"signal_strength\":5.026,\"snr_db\":7.5,\"band_hz\":1500000000.0,\"scan_progress\":0.2167}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-060\",\"temperature_k\":295.15,\"elevation_rad\":0.51575,\"azimuth_rad\":4.05651,\"power_w\":1309,\"system_temperature_k\":38.7,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.001641,\"pointing_offset_dec_rad\":-0.005547,\"signal_strength\":6.504,\"snr_db\":8.5,\"band_hz\":1500000000.0,\"scan_progress\":0.2183}"
+    ],
+    "arl/rta/dish-061/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-061\",\"temperature_k\":295.01,\"elevation_rad\":0.51579,\"azimuth_rad\":4.05653,\"power_w\":1321,\"system_temperature_k\":31.32,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.005859,\"pointing_offset_dec_rad\":-0.006953,\"signal_strength\":11.637,\"snr_db\":12.63,\"band_hz\":1500000000.0,\"scan_progress\":0.31}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-061\",\"temperature_k\":295.01,\"elevation_rad\":0.51579,\"azimuth_rad\":4.05653,\"power_w\":1319,\"system_temperature_k\":31.32,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.002891,\"pointing_offset_dec_rad\":-0.005859,\"signal_strength\":4.117,\"snr_db\":7.96,\"band_hz\":1500000000.0,\"scan_progress\":0.3117}"
+    ],
+    "arl/rta/dish-063/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-063\",\"temperature_k\":294.99,\"elevation_rad\":0.5156,\"azimuth_rad\":4.05646,\"power_w\":1270,\"system_temperature_k\":37.22,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.006641,\"pointing_offset_dec_rad\":0.007109,\"signal_strength\":4.215,\"snr_db\":6.27,\"band_hz\":1500000000.0,\"scan_progress\":0.3217}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-063\",\"temperature_k\":294.99,\"elevation_rad\":0.5156,\"azimuth_rad\":4.05646,\"power_w\":1299,\"system_temperature_k\":37.22,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.000703,\"pointing_offset_dec_rad\":0.005078,\"signal_strength\":10.569,\"snr_db\":11.2,\"band_hz\":1500000000.0,\"scan_progress\":0.3233}"
+    ],
+    "arl/rta/dish-064/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-064\",\"temperature_k\":294.95,\"elevation_rad\":0.51579,\"azimuth_rad\":4.05653,\"power_w\":1333,\"system_temperature_k\":46.55,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.003984,\"pointing_offset_dec_rad\":0.008359,\"signal_strength\":7.01,\"snr_db\":9.16,\"band_hz\":1500000000.0,\"scan_progress\":0.3467}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-064\",\"temperature_k\":294.95,\"elevation_rad\":0.51579,\"azimuth_rad\":4.05653,\"power_w\":1313,\"system_temperature_k\":46.55,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.002109,\"pointing_offset_dec_rad\":-0.005859,\"signal_strength\":7.061,\"snr_db\":9.21,\"band_hz\":1500000000.0,\"scan_progress\":0.3483}"
+    ],
+    "arl/rta/dish-065/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-065\",\"temperature_k\":295.06,\"elevation_rad\":0.51535,\"azimuth_rad\":4.05638,\"power_w\":3885,\"system_temperature_k\":35.93,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.000703,\"pointing_offset_dec_rad\":-0.009609,\"signal_strength\":1.871,\"snr_db\":6.07,\"band_hz\":1500000000.0,\"scan_progress\":0.2767}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-065\",\"temperature_k\":295.06,\"elevation_rad\":0.51535,\"azimuth_rad\":4.05638,\"power_w\":1281,\"system_temperature_k\":35.93,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.009922,\"pointing_offset_dec_rad\":0.008672,\"signal_strength\":5.021,\"snr_db\":8.75,\"band_hz\":1500000000.0,\"scan_progress\":0.2783}"
+    ],
+    "arl/rta/dish-066/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-066\",\"temperature_k\":295.07,\"elevation_rad\":0.5157,\"azimuth_rad\":4.0565,\"power_w\":1282,\"system_temperature_k\":33.86,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.009297,\"pointing_offset_dec_rad\":0.005859,\"signal_strength\":5.546,\"snr_db\":9.64,\"band_hz\":1500000000.0,\"scan_progress\":0.27}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-066\",\"temperature_k\":295.07,\"elevation_rad\":0.5157,\"azimuth_rad\":4.0565,\"power_w\":1329,\"system_temperature_k\":33.86,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.006797,\"pointing_offset_dec_rad\":0.009609,\"signal_strength\":2.448,\"snr_db\":4.0,\"band_hz\":1500000000.0,\"scan_progress\":0.2717}"
+    ],
+    "arl/rta/dish-068/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-068\",\"temperature_k\":295.15,\"elevation_rad\":0.51575,\"azimuth_rad\":4.05651,\"power_w\":1321,\"system_temperature_k\":35.0,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.004609,\"pointing_offset_dec_rad\":0.005391,\"signal_strength\":7.13,\"snr_db\":9.9,\"band_hz\":1500000000.0,\"scan_progress\":0.2167}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-068\",\"temperature_k\":295.15,\"elevation_rad\":0.51575,\"azimuth_rad\":4.05651,\"power_w\":1338,\"system_temperature_k\":35.0,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.009297,\"pointing_offset_dec_rad\":0.001797,\"signal_strength\":12.394,\"snr_db\":12.45,\"band_hz\":1500000000.0,\"scan_progress\":0.2183}"
+    ],
+    "arl/rta/dish-069/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-069\",\"temperature_k\":295.01,\"elevation_rad\":0.51575,\"azimuth_rad\":4.05651,\"power_w\":1292,\"system_temperature_k\":36.33,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.006016,\"pointing_offset_dec_rad\":-0.008203,\"signal_strength\":11.727,\"snr_db\":11.59,\"band_hz\":1500000000.0,\"scan_progress\":0.3083}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-069\",\"temperature_k\":295.01,\"elevation_rad\":0.51575,\"azimuth_rad\":4.05651,\"power_w\":1287,\"system_temperature_k\":36.33,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.009297,\"pointing_offset_dec_rad\":-0.001172,\"signal_strength\":5.179,\"snr_db\":8.33,\"band_hz\":1500000000.0,\"scan_progress\":0.31}"
+    ],
+    "arl/rta/dish-070/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-070\",\"temperature_k\":295.04,\"elevation_rad\":0.51565,\"azimuth_rad\":4.05648,\"power_w\":1328,\"system_temperature_k\":40.02,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.005703,\"pointing_offset_dec_rad\":-0.004453,\"signal_strength\":7.045,\"snr_db\":8.39,\"band_hz\":1500000000.0,\"scan_progress\":0.2867}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-070\",\"temperature_k\":295.04,\"elevation_rad\":0.51565,\"azimuth_rad\":4.05648,\"power_w\":1323,\"system_temperature_k\":40.02,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.005391,\"pointing_offset_dec_rad\":-0.009609,\"signal_strength\":4.989,\"snr_db\":8.0,\"band_hz\":1500000000.0,\"scan_progress\":0.2883}"
+    ],
+    "arl/rta/dish-071/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-071\",\"temperature_k\":295.03,\"elevation_rad\":0.51579,\"azimuth_rad\":4.05653,\"power_w\":1317,\"system_temperature_k\":31.99,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.002109,\"pointing_offset_dec_rad\":0.007422,\"signal_strength\":11.701,\"snr_db\":12.59,\"band_hz\":1500000000.0,\"scan_progress\":0.2917}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-071\",\"temperature_k\":295.03,\"elevation_rad\":0.51579,\"azimuth_rad\":4.05653,\"power_w\":1305,\"system_temperature_k\":31.99,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.008828,\"pointing_offset_dec_rad\":0.004609,\"signal_strength\":4.004,\"snr_db\":7.73,\"band_hz\":1500000000.0,\"scan_progress\":0.2933}"
+    ],
+    "arl/rta/dish-072/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-072\",\"temperature_k\":295.08,\"elevation_rad\":0.51555,\"azimuth_rad\":4.05645,\"power_w\":1294,\"system_temperature_k\":43.06,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.008984,\"pointing_offset_dec_rad\":-0.005391,\"signal_strength\":6.048,\"snr_db\":9.26,\"band_hz\":1500000000.0,\"scan_progress\":0.265}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-072\",\"temperature_k\":295.08,\"elevation_rad\":0.51555,\"azimuth_rad\":4.05645,\"power_w\":1313,\"system_temperature_k\":43.06,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.003984,\"pointing_offset_dec_rad\":-0.006953,\"signal_strength\":1.55,\"snr_db\":2.35,\"band_hz\":1500000000.0,\"scan_progress\":0.2667}"
+    ],
+    "arl/rta/dish-073/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-073\",\"temperature_k\":295.02,\"elevation_rad\":0.51555,\"azimuth_rad\":4.05645,\"power_w\":1329,\"system_temperature_k\":38.67,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.008203,\"pointing_offset_dec_rad\":-0.008203,\"signal_strength\":6.263,\"snr_db\":9.47,\"band_hz\":1500000000.0,\"scan_progress\":0.3017}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-073\",\"temperature_k\":295.02,\"elevation_rad\":0.51555,\"azimuth_rad\":4.05645,\"power_w\":1313,\"system_temperature_k\":38.67,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.007578,\"pointing_offset_dec_rad\":-0.004453,\"signal_strength\":11.245,\"snr_db\":11.79,\"band_hz\":1500000000.0,\"scan_progress\":0.3033}"
+    ],
+    "arl/rta/dish-074/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-074\",\"temperature_k\":294.95,\"elevation_rad\":0.51584,\"azimuth_rad\":4.05654,\"power_w\":1321,\"system_temperature_k\":32.2,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.004609,\"pointing_offset_dec_rad\":0.003359,\"signal_strength\":10.953,\"snr_db\":12.69,\"band_hz\":1500000000.0,\"scan_progress\":0.3483}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-074\",\"temperature_k\":294.95,\"elevation_rad\":0.5153,\"azimuth_rad\":4.05637,\"power_w\":3910,\"system_temperature_k\":32.21,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.006641,\"pointing_offset_dec_rad\":-0.002891,\"signal_strength\":10.981,\"snr_db\":11.98,\"band_hz\":1500000000.0,\"scan_progress\":0.35}"
+    ],
+    "arl/rta/dish-075/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-075\",\"temperature_k\":294.97,\"elevation_rad\":0.51584,\"azimuth_rad\":4.05654,\"power_w\":1275,\"system_temperature_k\":37.5,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.008516,\"pointing_offset_dec_rad\":0.005547,\"signal_strength\":2.461,\"snr_db\":6.49,\"band_hz\":1500000000.0,\"scan_progress\":0.33}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-075\",\"temperature_k\":294.98,\"elevation_rad\":0.5153,\"azimuth_rad\":4.05637,\"power_w\":3781,\"system_temperature_k\":37.51,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.001797,\"pointing_offset_dec_rad\":0.008672,\"signal_strength\":2.728,\"snr_db\":6.46,\"band_hz\":1500000000.0,\"scan_progress\":0.3317}"
+    ],
+    "arl/rta/dish-076/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-076\",\"temperature_k\":295.06,\"elevation_rad\":0.51584,\"azimuth_rad\":4.05654,\"power_w\":1308,\"system_temperature_k\":46.08,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.003047,\"pointing_offset_dec_rad\":0.002109,\"signal_strength\":9.702,\"snr_db\":9.81,\"band_hz\":1500000000.0,\"scan_progress\":0.275}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-076\",\"temperature_k\":295.06,\"elevation_rad\":0.5153,\"azimuth_rad\":4.05637,\"power_w\":3903,\"system_temperature_k\":46.09,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.007266,\"pointing_offset_dec_rad\":-0.006953,\"signal_strength\":6.0,\"snr_db\":7.65,\"band_hz\":1500000000.0,\"scan_progress\":0.2767}"
+    ],
+    "arl/rta/dish-077/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-077\",\"temperature_k\":295.08,\"elevation_rad\":0.51555,\"azimuth_rad\":4.05645,\"power_w\":1263,\"system_temperature_k\":41.69,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.003516,\"pointing_offset_dec_rad\":-0.005703,\"signal_strength\":6.197,\"snr_db\":8.4,\"band_hz\":1500000000.0,\"scan_progress\":0.265}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-077\",\"temperature_k\":295.08,\"elevation_rad\":0.51555,\"azimuth_rad\":4.05645,\"power_w\":1295,\"system_temperature_k\":41.69,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.007109,\"pointing_offset_dec_rad\":-0.002109,\"signal_strength\":6.888,\"snr_db\":8.68,\"band_hz\":1500000000.0,\"scan_progress\":0.2667}"
+    ],
+    "arl/rta/dish-078/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-078\",\"temperature_k\":295.03,\"elevation_rad\":0.51535,\"azimuth_rad\":4.05638,\"power_w\":3843,\"system_temperature_k\":37.79,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.001797,\"pointing_offset_dec_rad\":-0.004922,\"signal_strength\":5.72,\"snr_db\":8.65,\"band_hz\":1500000000.0,\"scan_progress\":0.295}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-078\",\"temperature_k\":295.03,\"elevation_rad\":0.51535,\"azimuth_rad\":4.05638,\"power_w\":1310,\"system_temperature_k\":37.79,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.005078,\"pointing_offset_dec_rad\":0.003828,\"signal_strength\":11.555,\"snr_db\":11.9,\"band_hz\":1500000000.0,\"scan_progress\":0.2967}"
+    ],
+    "arl/rta/dish-079/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-079\",\"temperature_k\":295.08,\"elevation_rad\":0.51555,\"azimuth_rad\":4.05645,\"power_w\":1329,\"system_temperature_k\":33.25,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.005234,\"pointing_offset_dec_rad\":0.000859,\"signal_strength\":10.172,\"snr_db\":11.39,\"band_hz\":1500000000.0,\"scan_progress\":0.265}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-079\",\"temperature_k\":295.08,\"elevation_rad\":0.51555,\"azimuth_rad\":4.05645,\"power_w\":1322,\"system_temperature_k\":33.25,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.000234,\"pointing_offset_dec_rad\":-0.008516,\"signal_strength\":5.658,\"snr_db\":9.81,\"band_hz\":1500000000.0,\"scan_progress\":0.2667}"
+    ],
+    "arl/rta/dish-080/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-080\",\"temperature_k\":295.17,\"elevation_rad\":0.51555,\"azimuth_rad\":4.05645,\"power_w\":1327,\"system_temperature_k\":32.63,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.004453,\"pointing_offset_dec_rad\":-0.008203,\"signal_strength\":4.17,\"snr_db\":7.72,\"band_hz\":1500000000.0,\"scan_progress\":0.2104}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-080\",\"temperature_k\":295.17,\"elevation_rad\":0.51555,\"azimuth_rad\":4.05645,\"power_w\":1318,\"system_temperature_k\":32.63,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.003203,\"pointing_offset_dec_rad\":-0.004141,\"signal_strength\":8.013,\"snr_db\":10.93,\"band_hz\":1500000000.0,\"scan_progress\":0.212}"
+    ],
+    "arl/rta/dish-081/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-081\",\"temperature_k\":295.07,\"elevation_rad\":0.5156,\"azimuth_rad\":4.05646,\"power_w\":1284,\"system_temperature_k\":44.65,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.004609,\"pointing_offset_dec_rad\":0.005234,\"signal_strength\":5.668,\"snr_db\":8.29,\"band_hz\":1500000000.0,\"scan_progress\":0.2676}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-081\",\"temperature_k\":295.07,\"elevation_rad\":0.5156,\"azimuth_rad\":4.05646,\"power_w\":1326,\"system_temperature_k\":44.65,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.004609,\"pointing_offset_dec_rad\":0.002109,\"signal_strength\":6.706,\"snr_db\":8.49,\"band_hz\":1500000000.0,\"scan_progress\":0.2692}"
+    ],
+    "arl/rta/dish-082/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-082\",\"temperature_k\":295.04,\"elevation_rad\":0.51575,\"azimuth_rad\":4.05651,\"power_w\":1282,\"system_temperature_k\":35.09,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.002266,\"pointing_offset_dec_rad\":-0.002578,\"signal_strength\":6.595,\"snr_db\":9.71,\"band_hz\":1500000000.0,\"scan_progress\":0.2915}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-082\",\"temperature_k\":295.04,\"elevation_rad\":0.51575,\"azimuth_rad\":4.05651,\"power_w\":1263,\"system_temperature_k\":35.09,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.001953,\"pointing_offset_dec_rad\":0.004297,\"signal_strength\":10.128,\"snr_db\":11.73,\"band_hz\":1500000000.0,\"scan_progress\":0.2931}"
+    ],
+    "arl/rta/dish-083/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-083\",\"temperature_k\":295.04,\"elevation_rad\":0.5157,\"azimuth_rad\":4.0565,\"power_w\":1322,\"system_temperature_k\":37.15,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.001797,\"pointing_offset_dec_rad\":0.001953,\"signal_strength\":10.889,\"snr_db\":11.57,\"band_hz\":1500000000.0,\"scan_progress\":0.2898}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-083\",\"temperature_k\":295.04,\"elevation_rad\":0.5157,\"azimuth_rad\":4.0565,\"power_w\":1271,\"system_temperature_k\":37.15,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.004453,\"pointing_offset_dec_rad\":-0.009766,\"signal_strength\":1.638,\"snr_db\":2.6,\"band_hz\":1500000000.0,\"scan_progress\":0.2915}"
+    ],
+    "arl/rta/dish-084/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-084\",\"temperature_k\":295.07,\"elevation_rad\":0.51565,\"azimuth_rad\":4.05648,\"power_w\":1306,\"system_temperature_k\":44.88,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.000234,\"pointing_offset_dec_rad\":0.002266,\"signal_strength\":5.489,\"snr_db\":8.55,\"band_hz\":1500000000.0,\"scan_progress\":0.2697}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-084\",\"temperature_k\":295.07,\"elevation_rad\":0.51565,\"azimuth_rad\":4.05648,\"power_w\":1314,\"system_temperature_k\":44.88,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.000703,\"pointing_offset_dec_rad\":0.007891,\"signal_strength\":10.392,\"snr_db\":10.82,\"band_hz\":1500000000.0,\"scan_progress\":0.2714}"
+    ],
+    "arl/rta/dish-085/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-085\",\"temperature_k\":295.12,\"elevation_rad\":0.51584,\"azimuth_rad\":4.05654,\"power_w\":1279,\"system_temperature_k\":32.52,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.004766,\"pointing_offset_dec_rad\":0.000234,\"signal_strength\":8.291,\"snr_db\":10.97,\"band_hz\":1500000000.0,\"scan_progress\":0.2395}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-085\",\"temperature_k\":295.12,\"elevation_rad\":0.5153,\"azimuth_rad\":4.05637,\"power_w\":3799,\"system_temperature_k\":32.52,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.008203,\"pointing_offset_dec_rad\":0.008359,\"signal_strength\":2.158,\"snr_db\":5.11,\"band_hz\":1500000000.0,\"scan_progress\":0.2412}"
+    ],
+    "arl/rta/dish-088/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-088\",\"temperature_k\":295.12,\"elevation_rad\":0.51535,\"azimuth_rad\":4.05638,\"power_w\":3793,\"system_temperature_k\":31.35,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.003516,\"pointing_offset_dec_rad\":-0.006797,\"signal_strength\":1.366,\"snr_db\":5.53,\"band_hz\":1500000000.0,\"scan_progress\":0.2412}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-088\",\"temperature_k\":295.12,\"elevation_rad\":0.51535,\"azimuth_rad\":4.05638,\"power_w\":1270,\"system_temperature_k\":31.35,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.001797,\"pointing_offset_dec_rad\":0.006797,\"signal_strength\":3.304,\"snr_db\":8.16,\"band_hz\":1500000000.0,\"scan_progress\":0.2429}"
+    ],
+    "arl/rta/dish-089/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-089\",\"temperature_k\":295.01,\"elevation_rad\":0.51565,\"azimuth_rad\":4.05648,\"power_w\":1334,\"system_temperature_k\":37.53,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.009453,\"pointing_offset_dec_rad\":0.009922,\"signal_strength\":1.983,\"snr_db\":2.85,\"band_hz\":1500000000.0,\"scan_progress\":0.3065}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-089\",\"temperature_k\":295.01,\"elevation_rad\":0.51565,\"azimuth_rad\":4.05648,\"power_w\":1312,\"system_temperature_k\":37.53,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.000859,\"pointing_offset_dec_rad\":-0.003672,\"signal_strength\":3.291,\"snr_db\":7.36,\"band_hz\":1500000000.0,\"scan_progress\":0.3082}"
+    ],
+    "arl/rta/dish-090/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-090\",\"temperature_k\":295.05,\"elevation_rad\":0.51555,\"azimuth_rad\":4.05645,\"power_w\":1313,\"system_temperature_k\":32.07,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.003359,\"pointing_offset_dec_rad\":0.008359,\"signal_strength\":5.328,\"snr_db\":9.06,\"band_hz\":1500000000.0,\"scan_progress\":0.2848}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-090\",\"temperature_k\":295.05,\"elevation_rad\":0.51555,\"azimuth_rad\":4.05645,\"power_w\":1298,\"system_temperature_k\":32.07,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.001172,\"pointing_offset_dec_rad\":-0.005703,\"signal_strength\":2.44,\"snr_db\":6.17,\"band_hz\":1500000000.0,\"scan_progress\":0.2864}"
+    ],
+    "arl/rta/dish-091/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-091\",\"temperature_k\":295.06,\"elevation_rad\":0.5154,\"azimuth_rad\":4.0564,\"power_w\":1283,\"system_temperature_k\":35.84,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.001016,\"pointing_offset_dec_rad\":0.004922,\"signal_strength\":7.192,\"snr_db\":10.02,\"band_hz\":1500000000.0,\"scan_progress\":0.2797}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-091\",\"temperature_k\":295.06,\"elevation_rad\":0.5154,\"azimuth_rad\":4.0564,\"power_w\":1323,\"system_temperature_k\":35.84,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.006484,\"pointing_offset_dec_rad\":0.000859,\"signal_strength\":10.179,\"snr_db\":10.93,\"band_hz\":1500000000.0,\"scan_progress\":0.2814}"
+    ],
+    "arl/rta/dish-092/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-092\",\"temperature_k\":295.11,\"elevation_rad\":0.51545,\"azimuth_rad\":4.05641,\"power_w\":1321,\"system_temperature_k\":34.71,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.001016,\"pointing_offset_dec_rad\":-0.004297,\"signal_strength\":3.955,\"snr_db\":7.39,\"band_hz\":1500000000.0,\"scan_progress\":0.2446}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-092\",\"temperature_k\":295.11,\"elevation_rad\":0.51545,\"azimuth_rad\":4.05641,\"power_w\":1262,\"system_temperature_k\":34.71,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.007891,\"pointing_offset_dec_rad\":0.006484,\"signal_strength\":2.178,\"snr_db\":5.81,\"band_hz\":1500000000.0,\"scan_progress\":0.2462}"
+    ],
+    "arl/rta/dish-093/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-093\",\"temperature_k\":295.09,\"elevation_rad\":0.51535,\"azimuth_rad\":4.05638,\"power_w\":3735,\"system_temperature_k\":46.31,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.000547,\"pointing_offset_dec_rad\":-0.000078,\"signal_strength\":7.226,\"snr_db\":8.6,\"band_hz\":1500000000.0,\"scan_progress\":0.2596}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-093\",\"temperature_k\":295.09,\"elevation_rad\":0.51535,\"azimuth_rad\":4.05638,\"power_w\":1291,\"system_temperature_k\":46.31,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.003828,\"pointing_offset_dec_rad\":0.004609,\"signal_strength\":9.397,\"snr_db\":9.72,\"band_hz\":1500000000.0,\"scan_progress\":0.2613}"
+    ],
+    "arl/rta/dish-094/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-094\",\"temperature_k\":295.1,\"elevation_rad\":0.5157,\"azimuth_rad\":4.0565,\"power_w\":1321,\"system_temperature_k\":36.5,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.000859,\"pointing_offset_dec_rad\":-0.008203,\"signal_strength\":4.025,\"snr_db\":7.46,\"band_hz\":1500000000.0,\"scan_progress\":0.2529}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-094\",\"temperature_k\":295.1,\"elevation_rad\":0.5157,\"azimuth_rad\":4.0565,\"power_w\":1280,\"system_temperature_k\":36.5,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.009609,\"pointing_offset_dec_rad\":0.008984,\"signal_strength\":4.596,\"snr_db\":7.25,\"band_hz\":1500000000.0,\"scan_progress\":0.2546}"
+    ],
+    "arl/rta/dish-095/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-095\",\"temperature_k\":295.12,\"elevation_rad\":0.51535,\"azimuth_rad\":4.05638,\"power_w\":3891,\"system_temperature_k\":34.97,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.001328,\"pointing_offset_dec_rad\":-0.007109,\"signal_strength\":4.117,\"snr_db\":7.71,\"band_hz\":1500000000.0,\"scan_progress\":0.2412}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-095\",\"temperature_k\":295.12,\"elevation_rad\":0.51535,\"azimuth_rad\":4.05638,\"power_w\":1282,\"system_temperature_k\":34.97,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.000234,\"pointing_offset_dec_rad\":-0.003984,\"signal_strength\":5.473,\"snr_db\":8.14,\"band_hz\":1500000000.0,\"scan_progress\":0.2429}"
+    ],
+    "arl/rta/dish-099/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-099\",\"temperature_k\":295.12,\"elevation_rad\":0.51575,\"azimuth_rad\":4.05651,\"power_w\":1330,\"system_temperature_k\":45.72,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.005703,\"pointing_offset_dec_rad\":-0.002891,\"signal_strength\":12.066,\"snr_db\":11.47,\"band_hz\":1500000000.0,\"scan_progress\":0.2362}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-099\",\"temperature_k\":295.12,\"elevation_rad\":0.51575,\"azimuth_rad\":4.05651,\"power_w\":1313,\"system_temperature_k\":45.72,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.001172,\"pointing_offset_dec_rad\":-0.004141,\"signal_strength\":2.983,\"snr_db\":4.91,\"band_hz\":1500000000.0,\"scan_progress\":0.2379}"
+    ],
+    "arl/rta/dish-100/telemetry/scan": [
+      "{\"v\":1,\"ts\":1793612031000,\"seq\":213,\"entity\":\"dish-100\",\"temperature_k\":295.08,\"elevation_rad\":0.51545,\"azimuth_rad\":4.05641,\"power_w\":1301,\"system_temperature_k\":39.45,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":-0.009609,\"pointing_offset_dec_rad\":0.001484,\"signal_strength\":4.981,\"snr_db\":8.07,\"band_hz\":1500000000.0,\"scan_progress\":0.263}",
+      "{\"v\":1,\"ts\":1793612032000,\"seq\":214,\"entity\":\"dish-100\",\"temperature_k\":295.08,\"elevation_rad\":0.51545,\"azimuth_rad\":4.05641,\"power_w\":1336,\"system_temperature_k\":39.45,\"fault_code\":\"none\",\"status\":true,\"scan_id\":\"scan-0001\",\"pointing_offset_ra_rad\":0.004766,\"pointing_offset_dec_rad\":-0.008516,\"signal_strength\":4.113,\"snr_db\":7.64,\"band_hz\":1500000000.0,\"scan_progress\":0.2647}"
+    ],
+    "arl/opg/global/telemetry/power": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":35,\"entity\":\"global\",\"total_generation_w\":258901,\"total_load_w\":184587,\"supply_mode\":\"solar\"}"
+    ],
+    "arl/lwm/lwm-1/telemetry/weather": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":35,\"entity\":\"lwm-1\",\"backfill\":false,\"battery_v\":12.91,\"humidity_pct\":31.6,\"irradiance_wm2\":227.0,\"lightning_strikes\":0,\"pressure_hpa\":878.3,\"rainfall_mm\":0.0,\"status\":true,\"temperature_k\":292.66,\"wind_direction_rad\":5.187,\"wind_gust_ms\":8.4,\"wind_speed_ms\":5.1}"
+    ],
+    "arl/lwm/lwm-2/telemetry/weather": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":35,\"entity\":\"lwm-2\",\"backfill\":false,\"battery_v\":13.26,\"humidity_pct\":30.8,\"irradiance_wm2\":230.0,\"lightning_strikes\":0,\"pressure_hpa\":878.3,\"rainfall_mm\":0.0,\"status\":true,\"temperature_k\":292.16,\"wind_direction_rad\":5.329,\"wind_gust_ms\":10.7,\"wind_speed_ms\":6.4}"
+    ],
+    "arl/lwm/lwm-3/telemetry/weather": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":35,\"entity\":\"lwm-3\",\"backfill\":false,\"battery_v\":12.86,\"humidity_pct\":28.9,\"irradiance_wm2\":235.0,\"lightning_strikes\":0,\"pressure_hpa\":878.1,\"rainfall_mm\":0.0,\"status\":true,\"temperature_k\":292.14,\"wind_direction_rad\":5.042,\"wind_gust_ms\":13.1,\"wind_speed_ms\":6.3}"
+    ],
+    "arl/lwm/lwm-3/telemetry/sonic": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":35,\"entity\":\"lwm-3\",\"backfill\":false,\"direction_std_rad\":0.098,\"gust_factor\":1.64,\"sonic_temperature_k\":292.16,\"turbulence_intensity\":0.18,\"wind_u_ms\":5.89,\"wind_v_ms\":-2.02,\"wind_w_ms\":0.01}"
+    ],
+    "arl/lwm/lwm-4/telemetry/weather": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":35,\"entity\":\"lwm-4\",\"backfill\":false,\"battery_v\":13.25,\"humidity_pct\":31.7,\"irradiance_wm2\":245.0,\"lightning_strikes\":0,\"pressure_hpa\":878.1,\"rainfall_mm\":0.0,\"status\":true,\"temperature_k\":291.3,\"wind_direction_rad\":5.263,\"wind_gust_ms\":9.4,\"wind_speed_ms\":5.3}"
+    ],
+    "arl/lwm/lwm-4/telemetry/soiling": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":35,\"entity\":\"lwm-4\",\"backfill\":false,\"exposed_irradiance_wm2\":224.0,\"reference_irradiance_wm2\":230.0,\"soiling_ratio\":0.971}"
+    ],
+    "arl/lwm/lwm-5/telemetry/weather": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":35,\"entity\":\"lwm-5\",\"backfill\":false,\"battery_v\":12.79,\"humidity_pct\":36.8,\"irradiance_wm2\":235.0,\"lightning_strikes\":0,\"pressure_hpa\":878.3,\"rainfall_mm\":0.0,\"status\":true,\"temperature_k\":292.33,\"wind_direction_rad\":5.217,\"wind_gust_ms\":9.5,\"wind_speed_ms\":6.1}"
+    ],
+    "arl/rta/dish-001/telemetry/normal": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":17,\"entity\":\"dish-001\",\"temperature_k\":294.87,\"elevation_rad\":1.1127,\"azimuth_rad\":5.87967,\"power_w\":296,\"system_temperature_k\":40.32,\"fault_code\":\"none\",\"status\":false}"
+    ],
+    "arl/rta/dish-005/telemetry/normal": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":17,\"entity\":\"dish-005\",\"temperature_k\":294.87,\"elevation_rad\":0.94445,\"azimuth_rad\":1.79322,\"power_w\":294,\"system_temperature_k\":30.7,\"fault_code\":\"none\",\"status\":false}"
+    ],
+    "arl/rta/dish-007/telemetry/normal": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":17,\"entity\":\"dish-007\",\"temperature_k\":294.87,\"elevation_rad\":1.54666,\"azimuth_rad\":2.53771,\"power_w\":308,\"system_temperature_k\":35.62,\"fault_code\":\"none\",\"status\":false}"
+    ],
+    "arl/rta/dish-021/telemetry/normal": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":17,\"entity\":\"dish-021\",\"temperature_k\":294.87,\"elevation_rad\":1.29807,\"azimuth_rad\":2.43795,\"power_w\":307,\"system_temperature_k\":38.83,\"fault_code\":\"none\",\"status\":false}"
+    ],
+    "arl/rta/dish-028/telemetry/normal": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":17,\"entity\":\"dish-028\",\"temperature_k\":294.87,\"elevation_rad\":0.37765,\"azimuth_rad\":5.63853,\"power_w\":304,\"system_temperature_k\":35.24,\"fault_code\":\"none\",\"status\":false}"
+    ],
+    "arl/rta/dish-041/telemetry/normal": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":17,\"entity\":\"dish-041\",\"temperature_k\":294.87,\"elevation_rad\":1.4064,\"azimuth_rad\":2.58118,\"power_w\":291,\"system_temperature_k\":37.02,\"fault_code\":\"none\",\"status\":false}"
+    ],
+    "arl/rta/dish-045/telemetry/normal": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":17,\"entity\":\"dish-045\",\"temperature_k\":294.87,\"elevation_rad\":0.65554,\"azimuth_rad\":4.55475,\"power_w\":304,\"system_temperature_k\":38.02,\"fault_code\":\"none\",\"status\":false}"
+    ],
+    "arl/rta/dish-048/telemetry/normal": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":17,\"entity\":\"dish-048\",\"temperature_k\":294.87,\"elevation_rad\":0.55616,\"azimuth_rad\":2.27195,\"power_w\":299,\"system_temperature_k\":35.12,\"fault_code\":\"none\",\"status\":false}"
+    ],
+    "arl/rta/dish-055/telemetry/normal": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":17,\"entity\":\"dish-055\",\"temperature_k\":294.87,\"elevation_rad\":0.3921,\"azimuth_rad\":0.73592,\"power_w\":291,\"system_temperature_k\":34.07,\"fault_code\":\"none\",\"status\":false}"
+    ],
+    "arl/rta/dish-056/telemetry/normal": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":17,\"entity\":\"dish-056\",\"temperature_k\":294.87,\"elevation_rad\":1.51872,\"azimuth_rad\":1.66191,\"power_w\":292,\"system_temperature_k\":26.56,\"fault_code\":\"none\",\"status\":false}"
+    ],
+    "arl/rta/dish-058/telemetry/normal": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":17,\"entity\":\"dish-058\",\"temperature_k\":294.87,\"elevation_rad\":0.36516,\"azimuth_rad\":1.02691,\"power_w\":306,\"system_temperature_k\":33.14,\"fault_code\":\"none\",\"status\":false}"
+    ],
+    "arl/rta/dish-062/telemetry/normal": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":17,\"entity\":\"dish-062\",\"temperature_k\":294.87,\"elevation_rad\":0.78769,\"azimuth_rad\":4.68795,\"power_w\":307,\"system_temperature_k\":32.78,\"fault_code\":\"none\",\"status\":false}"
+    ],
+    "arl/rta/dish-067/telemetry/normal": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":17,\"entity\":\"dish-067\",\"temperature_k\":294.87,\"elevation_rad\":0.86657,\"azimuth_rad\":0.6635,\"power_w\":295,\"system_temperature_k\":40.49,\"fault_code\":\"none\",\"status\":false}"
+    ],
+    "arl/rta/dish-086/telemetry/normal": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":17,\"entity\":\"dish-086\",\"temperature_k\":294.87,\"elevation_rad\":1.26792,\"azimuth_rad\":2.97666,\"power_w\":294,\"system_temperature_k\":38.06,\"fault_code\":\"none\",\"status\":false}"
+    ],
+    "arl/rta/dish-087/telemetry/normal": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":17,\"entity\":\"dish-087\",\"temperature_k\":294.87,\"elevation_rad\":1.20973,\"azimuth_rad\":3.64256,\"power_w\":309,\"system_temperature_k\":34.36,\"fault_code\":\"none\",\"status\":false}"
+    ],
+    "arl/rta/dish-096/telemetry/normal": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":17,\"entity\":\"dish-096\",\"temperature_k\":294.87,\"elevation_rad\":0.38992,\"azimuth_rad\":4.22482,\"power_w\":295,\"system_temperature_k\":43.97,\"fault_code\":\"none\",\"status\":false}"
+    ],
+    "arl/rta/dish-097/telemetry/normal": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":17,\"entity\":\"dish-097\",\"temperature_k\":294.87,\"elevation_rad\":0.3527,\"azimuth_rad\":1.1735,\"power_w\":293,\"system_temperature_k\":40.95,\"fault_code\":\"none\",\"status\":false}"
+    ],
+    "arl/rta/dish-098/telemetry/normal": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":17,\"entity\":\"dish-098\",\"temperature_k\":294.87,\"elevation_rad\":0.47991,\"azimuth_rad\":3.27164,\"power_w\":292,\"system_temperature_k\":32.54,\"fault_code\":\"none\",\"status\":false}"
+    ],
+    "arl/opg/solar/telemetry/power": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":35,\"entity\":\"solar\",\"power_output_w\":258901,\"irradiance_wm2\":230,\"panel_temperature_k\":299.24,\"inverter_status\":\"online\"}"
+    ],
+    "arl/opg/batteries/telemetry/power": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":35,\"entity\":\"batteries\",\"state_of_charge_pct\":71.8,\"battery_power_w\":74314,\"battery_temperature_k\":292.66,\"battery_health_pct\":92.6}"
+    ],
+    "arl/opg/diesel/telemetry/power": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":35,\"entity\":\"diesel\",\"fuel_level_pct\":80.0,\"power_output_w\":0,\"generator_status\":\"off\",\"runtime_h\":1716.94}"
+    ],
+    "arl/lwm/lwm-5/telemetry/pan": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":35,\"entity\":\"lwm-5\",\"backfill\":false,\"evaporation_mm\":0.01,\"pan_level_mm\":196.4}"
+    ],
+    "arl/lwm/global/telemetry/lightning": [
+      "{\"v\":1,\"ts\":1793612040000,\"seq\":35,\"entity\":\"global\",\"nearest_strike_km\":null,\"strikes_last_min\":0}"
+    ]
+  },
+  "state": {
+    "arl/rta/dish-001/state/commanded": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-001\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":5.87967,\"elevation_rad\":1.1127}}"
+    ],
+    "arl/rta/dish-001/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-001\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-001/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-001\",\"item\":\"last_calibration\",\"value\":1793015716953}"
+    ],
+    "arl/rta/dish-001/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-001\",\"item\":\"enabled\",\"value\":false}"
+    ],
+    "arl/rta/dish-001/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-001\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-002/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-002\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-002/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-002\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-002/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-002\",\"item\":\"last_calibration\",\"value\":1793385757790}"
+    ],
+    "arl/rta/dish-002/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-002\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-002/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-002\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-003/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-003\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-003/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-003\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-003/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-003\",\"item\":\"last_calibration\",\"value\":1793061955402}"
+    ],
+    "arl/rta/dish-003/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-003\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-003/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-003\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-004/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-004\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-004/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-004\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-004/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-004\",\"item\":\"last_calibration\",\"value\":1793406480347}"
+    ],
+    "arl/rta/dish-004/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-004\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-004/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-004\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-005/state/commanded": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-005\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":1.79322,\"elevation_rad\":0.94445}}"
+    ],
+    "arl/rta/dish-005/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-005\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-005/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-005\",\"item\":\"last_calibration\",\"value\":1793468835733}"
+    ],
+    "arl/rta/dish-005/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-005\",\"item\":\"enabled\",\"value\":false}"
+    ],
+    "arl/rta/dish-005/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-005\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-006/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-006\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-006/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-006\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-006/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-006\",\"item\":\"last_calibration\",\"value\":1792989331591}"
+    ],
+    "arl/rta/dish-006/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-006\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-006/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-006\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-007/state/commanded": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-007\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":2.53771,\"elevation_rad\":1.54666}}"
+    ],
+    "arl/rta/dish-007/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-007\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-007/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-007\",\"item\":\"last_calibration\",\"value\":1793174531839}"
+    ],
+    "arl/rta/dish-007/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-007\",\"item\":\"enabled\",\"value\":false}"
+    ],
+    "arl/rta/dish-007/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-007\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-008/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-008\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-008/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-008\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-008/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-008\",\"item\":\"last_calibration\",\"value\":1793596936866}"
+    ],
+    "arl/rta/dish-008/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-008\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-008/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-008\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-009/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-009\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-009/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-009\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-009/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-009\",\"item\":\"last_calibration\",\"value\":1792986954395}"
+    ],
+    "arl/rta/dish-009/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-009\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-009/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-009\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-010/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-010\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-010/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-010\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-010/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-010\",\"item\":\"last_calibration\",\"value\":1793196359140}"
+    ],
+    "arl/rta/dish-010/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-010\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-010/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-010\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-011/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-011\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-011/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-011\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-011/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-011\",\"item\":\"last_calibration\",\"value\":1793589193423}"
+    ],
+    "arl/rta/dish-011/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-011\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-011/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-011\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-012/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-012\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-012/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-012\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-012/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-012\",\"item\":\"last_calibration\",\"value\":1793177531179}"
+    ],
+    "arl/rta/dish-012/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-012\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-012/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-012\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-013/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-013\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-013/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-013\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-013/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-013\",\"item\":\"last_calibration\",\"value\":1793154898995}"
+    ],
+    "arl/rta/dish-013/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-013\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-013/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-013\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-014/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-014\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-014/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-014\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-014/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-014\",\"item\":\"last_calibration\",\"value\":1793500888898}"
+    ],
+    "arl/rta/dish-014/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-014\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-014/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-014\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-015/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-015\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-015/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-015\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-015/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-015\",\"item\":\"last_calibration\",\"value\":1793023497684}"
+    ],
+    "arl/rta/dish-015/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-015\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-015/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-015\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-016/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-016\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-016/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-016\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-016/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-016\",\"item\":\"last_calibration\",\"value\":1793036871755}"
+    ],
+    "arl/rta/dish-016/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-016\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-016/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-016\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-017/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-017\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-017/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-017\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-017/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-017\",\"item\":\"last_calibration\",\"value\":1793024939825}"
+    ],
+    "arl/rta/dish-017/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-017\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-017/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-017\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-018/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-018\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-018/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-018\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-018/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-018\",\"item\":\"last_calibration\",\"value\":1792942792377}"
+    ],
+    "arl/rta/dish-018/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-018\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-018/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-018\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-019/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-019\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-019/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-019\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-019/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-019\",\"item\":\"last_calibration\",\"value\":1793338308900}"
+    ],
+    "arl/rta/dish-019/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-019\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-019/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-019\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-020/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-020\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-020/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-020\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-020/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-020\",\"item\":\"last_calibration\",\"value\":1793495723846}"
+    ],
+    "arl/rta/dish-020/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-020\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-020/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-020\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-021/state/commanded": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-021\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":2.43795,\"elevation_rad\":1.29807}}"
+    ],
+    "arl/rta/dish-021/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-021\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-021/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-021\",\"item\":\"last_calibration\",\"value\":1793051660097}"
+    ],
+    "arl/rta/dish-021/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-021\",\"item\":\"enabled\",\"value\":false}"
+    ],
+    "arl/rta/dish-021/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-021\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-022/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-022\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-022/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-022\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-022/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-022\",\"item\":\"last_calibration\",\"value\":1793172573455}"
+    ],
+    "arl/rta/dish-022/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-022\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-022/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-022\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-023/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-023\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-023/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-023\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-023/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-023\",\"item\":\"last_calibration\",\"value\":1793386163623}"
+    ],
+    "arl/rta/dish-023/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-023\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-023/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-023\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-024/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-024\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-024/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-024\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-024/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-024\",\"item\":\"last_calibration\",\"value\":1793567659394}"
+    ],
+    "arl/rta/dish-024/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-024\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-024/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-024\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-025/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-025\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-025/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-025\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-025/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-025\",\"item\":\"last_calibration\",\"value\":1793109813428}"
+    ],
+    "arl/rta/dish-025/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-025\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-025/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-025\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-026/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-026\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-026/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-026\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-026/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-026\",\"item\":\"last_calibration\",\"value\":1793601980139}"
+    ],
+    "arl/rta/dish-026/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-026\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-026/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-026\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-027/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-027\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-027/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-027\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-027/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-027\",\"item\":\"last_calibration\",\"value\":1793333652328}"
+    ],
+    "arl/rta/dish-027/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-027\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-027/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-027\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-028/state/commanded": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-028\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":5.63853,\"elevation_rad\":0.37765}}"
+    ],
+    "arl/rta/dish-028/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-028\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-028/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-028\",\"item\":\"last_calibration\",\"value\":1793463524960}"
+    ],
+    "arl/rta/dish-028/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-028\",\"item\":\"enabled\",\"value\":false}"
+    ],
+    "arl/rta/dish-028/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-028\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-029/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-029\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-029/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-029\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-029/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-029\",\"item\":\"last_calibration\",\"value\":1793252804927}"
+    ],
+    "arl/rta/dish-029/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-029\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-029/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-029\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-030/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-030\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-030/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-030\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-030/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-030\",\"item\":\"last_calibration\",\"value\":1793358505006}"
+    ],
+    "arl/rta/dish-030/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-030\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-030/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-030\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-031/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-031\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-031/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-031\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-031/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-031\",\"item\":\"last_calibration\",\"value\":1793134007682}"
+    ],
+    "arl/rta/dish-031/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-031\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-031/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-031\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-032/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-032\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-032/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-032\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-032/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-032\",\"item\":\"last_calibration\",\"value\":1793459156669}"
+    ],
+    "arl/rta/dish-032/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-032\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-032/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-032\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-033/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-033\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-033/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-033\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-033/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-033\",\"item\":\"last_calibration\",\"value\":1793558938316}"
+    ],
+    "arl/rta/dish-033/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-033\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-033/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-033\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-034/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-034\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-034/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-034\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-034/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-034\",\"item\":\"last_calibration\",\"value\":1793120727113}"
+    ],
+    "arl/rta/dish-034/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-034\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-034/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-034\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-035/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-035\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-035/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-035\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-035/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-035\",\"item\":\"last_calibration\",\"value\":1793423407400}"
+    ],
+    "arl/rta/dish-035/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-035\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-035/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-035\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-036/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-036\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-036/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-036\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-036/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-036\",\"item\":\"last_calibration\",\"value\":1793364648102}"
+    ],
+    "arl/rta/dish-036/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-036\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-036/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-036\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-037/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-037\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-037/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-037\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-037/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-037\",\"item\":\"last_calibration\",\"value\":1793246104823}"
+    ],
+    "arl/rta/dish-037/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-037\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-037/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-037\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-038/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-038\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-038/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-038\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-038/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-038\",\"item\":\"last_calibration\",\"value\":1793240656396}"
+    ],
+    "arl/rta/dish-038/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-038\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-038/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-038\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-039/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-039\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-039/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-039\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-039/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-039\",\"item\":\"last_calibration\",\"value\":1793504056041}"
+    ],
+    "arl/rta/dish-039/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-039\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-039/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-039\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-040/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-040\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-040/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-040\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-040/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-040\",\"item\":\"last_calibration\",\"value\":1793387240472}"
+    ],
+    "arl/rta/dish-040/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-040\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-040/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-040\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-041/state/commanded": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-041\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":2.58118,\"elevation_rad\":1.4064}}"
+    ],
+    "arl/rta/dish-041/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-041\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-041/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-041\",\"item\":\"last_calibration\",\"value\":1793119725629}"
+    ],
+    "arl/rta/dish-041/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-041\",\"item\":\"enabled\",\"value\":false}"
+    ],
+    "arl/rta/dish-041/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-041\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-042/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-042\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-042/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-042\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-042/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-042\",\"item\":\"last_calibration\",\"value\":1793210911646}"
+    ],
+    "arl/rta/dish-042/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-042\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-042/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-042\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-043/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-043\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-043/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-043\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-043/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-043\",\"item\":\"last_calibration\",\"value\":1793429263789}"
+    ],
+    "arl/rta/dish-043/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-043\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-043/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-043\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-044/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-044\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-044/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-044\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-044/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-044\",\"item\":\"last_calibration\",\"value\":1793381621967}"
+    ],
+    "arl/rta/dish-044/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-044\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-044/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-044\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-045/state/commanded": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-045\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.55475,\"elevation_rad\":0.65554}}"
+    ],
+    "arl/rta/dish-045/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-045\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-045/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-045\",\"item\":\"last_calibration\",\"value\":1793239275727}"
+    ],
+    "arl/rta/dish-045/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-045\",\"item\":\"enabled\",\"value\":false}"
+    ],
+    "arl/rta/dish-045/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-045\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-046/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-046\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-046/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-046\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-046/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-046\",\"item\":\"last_calibration\",\"value\":1793268225531}"
+    ],
+    "arl/rta/dish-046/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-046\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-046/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-046\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-047/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-047\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-047/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-047\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-047/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-047\",\"item\":\"last_calibration\",\"value\":1793557502793}"
+    ],
+    "arl/rta/dish-047/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-047\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-047/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-047\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-048/state/commanded": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-048\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":2.27195,\"elevation_rad\":0.55616}}"
+    ],
+    "arl/rta/dish-048/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-048\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-048/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-048\",\"item\":\"last_calibration\",\"value\":1793399990906}"
+    ],
+    "arl/rta/dish-048/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-048\",\"item\":\"enabled\",\"value\":false}"
+    ],
+    "arl/rta/dish-048/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-048\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-049/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-049\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-049/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-049\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-049/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-049\",\"item\":\"last_calibration\",\"value\":1793467274000}"
+    ],
+    "arl/rta/dish-049/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-049\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-049/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-049\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-050/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-050\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-050/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-050\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-050/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-050\",\"item\":\"last_calibration\",\"value\":1793016549058}"
+    ],
+    "arl/rta/dish-050/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-050\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-050/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-050\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-051/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-051\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-051/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-051\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-051/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-051\",\"item\":\"last_calibration\",\"value\":1793074438745}"
+    ],
+    "arl/rta/dish-051/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-051\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-051/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-051\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-052/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-052\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-052/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-052\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-052/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-052\",\"item\":\"last_calibration\",\"value\":1793211402516}"
+    ],
+    "arl/rta/dish-052/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-052\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-052/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-052\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-053/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-053\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-053/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-053\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-053/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-053\",\"item\":\"last_calibration\",\"value\":1793360913533}"
+    ],
+    "arl/rta/dish-053/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-053\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-053/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-053\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-054/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-054\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-054/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-054\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-054/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-054\",\"item\":\"last_calibration\",\"value\":1793017114093}"
+    ],
+    "arl/rta/dish-054/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-054\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-054/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-054\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-055/state/commanded": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-055\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":0.73592,\"elevation_rad\":0.3921}}"
+    ],
+    "arl/rta/dish-055/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-055\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-055/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-055\",\"item\":\"last_calibration\",\"value\":1793508134167}"
+    ],
+    "arl/rta/dish-055/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-055\",\"item\":\"enabled\",\"value\":false}"
+    ],
+    "arl/rta/dish-055/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-055\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-056/state/commanded": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-056\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":1.66191,\"elevation_rad\":1.51872}}"
+    ],
+    "arl/rta/dish-056/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-056\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-056/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-056\",\"item\":\"last_calibration\",\"value\":1793566175617}"
+    ],
+    "arl/rta/dish-056/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-056\",\"item\":\"enabled\",\"value\":false}"
+    ],
+    "arl/rta/dish-056/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-056\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-057/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-057\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-057/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-057\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-057/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-057\",\"item\":\"last_calibration\",\"value\":1793137730071}"
+    ],
+    "arl/rta/dish-057/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-057\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-057/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-057\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-058/state/commanded": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-058\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":1.02691,\"elevation_rad\":0.36516}}"
+    ],
+    "arl/rta/dish-058/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-058\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-058/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-058\",\"item\":\"last_calibration\",\"value\":1793558990125}"
+    ],
+    "arl/rta/dish-058/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-058\",\"item\":\"enabled\",\"value\":false}"
+    ],
+    "arl/rta/dish-058/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-058\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-059/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-059\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-059/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-059\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-059/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-059\",\"item\":\"last_calibration\",\"value\":1793454378968}"
+    ],
+    "arl/rta/dish-059/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-059\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-059/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-059\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-060/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-060\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-060/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-060\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-060/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-060\",\"item\":\"last_calibration\",\"value\":1793261310623}"
+    ],
+    "arl/rta/dish-060/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-060\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-060/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-060\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-061/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-061\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-061/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-061\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-061/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-061\",\"item\":\"last_calibration\",\"value\":1793579520272}"
+    ],
+    "arl/rta/dish-061/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-061\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-061/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-061\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-062/state/commanded": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-062\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.68795,\"elevation_rad\":0.78769}}"
+    ],
+    "arl/rta/dish-062/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-062\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-062/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-062\",\"item\":\"last_calibration\",\"value\":1793423002458}"
+    ],
+    "arl/rta/dish-062/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-062\",\"item\":\"enabled\",\"value\":false}"
+    ],
+    "arl/rta/dish-062/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-062\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-063/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-063\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-063/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-063\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-063/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-063\",\"item\":\"last_calibration\",\"value\":1793324721173}"
+    ],
+    "arl/rta/dish-063/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-063\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-063/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-063\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-064/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-064\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-064/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-064\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-064/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-064\",\"item\":\"last_calibration\",\"value\":1792921443726}"
+    ],
+    "arl/rta/dish-064/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-064\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-064/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-064\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-065/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-065\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-065/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-065\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-065/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-065\",\"item\":\"last_calibration\",\"value\":1793380788694}"
+    ],
+    "arl/rta/dish-065/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-065\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-065/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-065\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-066/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-066\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-066/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-066\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-066/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-066\",\"item\":\"last_calibration\",\"value\":1793470031350}"
+    ],
+    "arl/rta/dish-066/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-066\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-066/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-066\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-067/state/commanded": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-067\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":0.6635,\"elevation_rad\":0.86657}}"
+    ],
+    "arl/rta/dish-067/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-067\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-067/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-067\",\"item\":\"last_calibration\",\"value\":1793066536109}"
+    ],
+    "arl/rta/dish-067/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-067\",\"item\":\"enabled\",\"value\":false}"
+    ],
+    "arl/rta/dish-067/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-067\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-068/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-068\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-068/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-068\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-068/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-068\",\"item\":\"last_calibration\",\"value\":1793421362852}"
+    ],
+    "arl/rta/dish-068/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-068\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-068/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-068\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-069/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-069\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-069/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-069\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-069/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-069\",\"item\":\"last_calibration\",\"value\":1793363073515}"
+    ],
+    "arl/rta/dish-069/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-069\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-069/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-069\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-070/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-070\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-070/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-070\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-070/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-070\",\"item\":\"last_calibration\",\"value\":1793204060897}"
+    ],
+    "arl/rta/dish-070/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-070\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-070/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-070\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-071/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-071\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-071/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-071\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-071/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-071\",\"item\":\"last_calibration\",\"value\":1793550698742}"
+    ],
+    "arl/rta/dish-071/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-071\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-071/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-071\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-072/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-072\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-072/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-072\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-072/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-072\",\"item\":\"last_calibration\",\"value\":1793072911863}"
+    ],
+    "arl/rta/dish-072/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-072\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-072/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-072\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-073/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-073\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-073/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-073\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-073/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-073\",\"item\":\"last_calibration\",\"value\":1793262358060}"
+    ],
+    "arl/rta/dish-073/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-073\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-073/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-073\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-074/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-074\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-074/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-074\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-074/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-074\",\"item\":\"last_calibration\",\"value\":1793541146259}"
+    ],
+    "arl/rta/dish-074/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-074\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-074/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-074\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-075/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-075\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-075/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-075\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-075/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-075\",\"item\":\"last_calibration\",\"value\":1793312300826}"
+    ],
+    "arl/rta/dish-075/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-075\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-075/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-075\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-076/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-076\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-076/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-076\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-076/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-076\",\"item\":\"last_calibration\",\"value\":1792941969797}"
+    ],
+    "arl/rta/dish-076/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-076\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-076/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-076\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-077/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-077\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-077/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-077\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-077/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-077\",\"item\":\"last_calibration\",\"value\":1793132096775}"
+    ],
+    "arl/rta/dish-077/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-077\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-077/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-077\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-078/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-078\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-078/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-078\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-078/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-078\",\"item\":\"last_calibration\",\"value\":1793300405777}"
+    ],
+    "arl/rta/dish-078/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-078\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-078/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-078\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-079/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-079\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-079/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-079\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-079/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-079\",\"item\":\"last_calibration\",\"value\":1793496487890}"
+    ],
+    "arl/rta/dish-079/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-079\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-079/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-079\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-080/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-080\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-080/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-080\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-080/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-080\",\"item\":\"last_calibration\",\"value\":1793523950720}"
+    ],
+    "arl/rta/dish-080/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-080\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-080/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-080\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-081/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-081\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-081/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-081\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-081/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-081\",\"item\":\"last_calibration\",\"value\":1793003977781}"
+    ],
+    "arl/rta/dish-081/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-081\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-081/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-081\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-082/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-082\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-082/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-082\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-082/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-082\",\"item\":\"last_calibration\",\"value\":1793416809190}"
+    ],
+    "arl/rta/dish-082/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-082\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-082/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-082\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-083/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-083\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-083/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-083\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-083/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-083\",\"item\":\"last_calibration\",\"value\":1793327712980}"
+    ],
+    "arl/rta/dish-083/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-083\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-083/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-083\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-084/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-084\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-084/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-084\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-084/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-084\",\"item\":\"last_calibration\",\"value\":1792994290207}"
+    ],
+    "arl/rta/dish-084/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-084\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-084/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-084\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-085/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-085\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-085/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-085\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-085/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-085\",\"item\":\"last_calibration\",\"value\":1793528265108}"
+    ],
+    "arl/rta/dish-085/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-085\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-085/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-085\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-086/state/commanded": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-086\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":2.97666,\"elevation_rad\":1.26792}}"
+    ],
+    "arl/rta/dish-086/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-086\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-086/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-086\",\"item\":\"last_calibration\",\"value\":1793088746087}"
+    ],
+    "arl/rta/dish-086/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-086\",\"item\":\"enabled\",\"value\":false}"
+    ],
+    "arl/rta/dish-086/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-086\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-087/state/commanded": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-087\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":3.64256,\"elevation_rad\":1.20973}}"
+    ],
+    "arl/rta/dish-087/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-087\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-087/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-087\",\"item\":\"last_calibration\",\"value\":1793256599035}"
+    ],
+    "arl/rta/dish-087/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-087\",\"item\":\"enabled\",\"value\":false}"
+    ],
+    "arl/rta/dish-087/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-087\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-088/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-088\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-088/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-088\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-088/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-088\",\"item\":\"last_calibration\",\"value\":1793579105601}"
+    ],
+    "arl/rta/dish-088/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-088\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-088/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-088\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-089/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-089\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-089/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-089\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-089/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-089\",\"item\":\"last_calibration\",\"value\":1793311269614}"
+    ],
+    "arl/rta/dish-089/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-089\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-089/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-089\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-090/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-090\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-090/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-090\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-090/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-090\",\"item\":\"last_calibration\",\"value\":1793547321930}"
+    ],
+    "arl/rta/dish-090/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-090\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-090/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-090\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-091/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-091\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-091/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-091\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-091/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-091\",\"item\":\"last_calibration\",\"value\":1793384556078}"
+    ],
+    "arl/rta/dish-091/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-091\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-091/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-091\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-092/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-092\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-092/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-092\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-092/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-092\",\"item\":\"last_calibration\",\"value\":1793433645615}"
+    ],
+    "arl/rta/dish-092/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-092\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-092/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-092\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-093/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-093\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-093/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-093\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-093/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-093\",\"item\":\"last_calibration\",\"value\":1792932511855}"
+    ],
+    "arl/rta/dish-093/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-093\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-093/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-093\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-094/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-094\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-094/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-094\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-094/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-094\",\"item\":\"last_calibration\",\"value\":1793356019138}"
+    ],
+    "arl/rta/dish-094/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-094\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-094/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-094\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-095/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-095\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-095/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-095\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-095/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-095\",\"item\":\"last_calibration\",\"value\":1793422444954}"
+    ],
+    "arl/rta/dish-095/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-095\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-095/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-095\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-096/state/commanded": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-096\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.22482,\"elevation_rad\":0.38992}}"
+    ],
+    "arl/rta/dish-096/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-096\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-096/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-096\",\"item\":\"last_calibration\",\"value\":1793081200938}"
+    ],
+    "arl/rta/dish-096/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-096\",\"item\":\"enabled\",\"value\":false}"
+    ],
+    "arl/rta/dish-096/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-096\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-097/state/commanded": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-097\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":1.1735,\"elevation_rad\":0.3527}}"
+    ],
+    "arl/rta/dish-097/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-097\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-097/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-097\",\"item\":\"last_calibration\",\"value\":1793226861445}"
+    ],
+    "arl/rta/dish-097/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-097\",\"item\":\"enabled\",\"value\":false}"
+    ],
+    "arl/rta/dish-097/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-097\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-098/state/commanded": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-098\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":3.27164,\"elevation_rad\":0.47991}}"
+    ],
+    "arl/rta/dish-098/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-098\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-098/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-098\",\"item\":\"last_calibration\",\"value\":1793539953126}"
+    ],
+    "arl/rta/dish-098/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-098\",\"item\":\"enabled\",\"value\":false}"
+    ],
+    "arl/rta/dish-098/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-098\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-099/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-099\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-099/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-099\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-099/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-099\",\"item\":\"last_calibration\",\"value\":1792957989295}"
+    ],
+    "arl/rta/dish-099/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-099\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-099/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-099\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/dish-100/state/commanded": [
+      "{\"v\":1,\"ts\":1793612028000,\"entity\":\"dish-100\",\"item\":\"commanded\",\"value\":{\"azimuth_rad\":4.05643,\"elevation_rad\":0.5155}}"
+    ],
+    "arl/rta/dish-100/state/subarray": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-100\",\"item\":\"subarray\",\"value\":\"main\"}"
+    ],
+    "arl/rta/dish-100/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-100\",\"item\":\"last_calibration\",\"value\":1793228930567}"
+    ],
+    "arl/rta/dish-100/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-100\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/rta/dish-100/state/stowed": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"dish-100\",\"item\":\"stowed\",\"value\":false}"
+    ],
+    "arl/rta/global/state/active_dishes": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"global\",\"item\":\"active_dishes\",\"value\":82}"
+    ],
+    "arl/rta/global/state/wind_stow": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"global\",\"item\":\"wind_stow\",\"value\":false}"
+    ],
+    "arl/rta/global/state/active_alerts": [
+      "{\"v\":1,\"ts\":1793611908000,\"entity\":\"global\",\"item\":\"active_alerts\",\"value\":[\"rta-dish_calibration-dish-006-0001\",\"rta-dish_calibration-dish-009-0001\",\"rta-dish_calibration-dish-018-0001\",\"rta-dish_calibration-dish-064-0001\",\"rta-dish_calibration-dish-076-0001\",\"rta-dish_calibration-dish-081-0001\",\"rta-dish_calibration-dish-084-0001\",\"rta-dish_calibration-dish-093-0001\",\"rta-dish_calibration-dish-099-0001\"]}"
+    ],
+    "arl/rta/global/state/online": [
+      "{\"v\":1,\"ts\":1793609924440,\"entity\":\"global\",\"item\":\"online\",\"value\":true}"
+    ],
+    "arl/rta/main/state/members": [
+      "{\"v\":1,\"ts\":1793611818000,\"entity\":\"main\",\"item\":\"members\",\"value\":[\"dish-001\",\"dish-002\",\"dish-003\",\"dish-004\",\"dish-005\",\"dish-006\",\"dish-007\",\"dish-008\",\"dish-009\",\"dish-010\",\"dish-011\",\"dish-012\",\"dish-013\",\"dish-014\",\"dish-015\",\"dish-016\",\"dish-017\",\"dish-018\",\"dish-019\",\"dish-020\",\"dish-021\",\"dish-022\",\"dish-023\",\"dish-024\",\"dish-025\",\"dish-026\",\"dish-027\",\"dish-028\",\"dish-029\",\"dish-030\",\"dish-031\",\"dish-032\",\"dish-033\",\"dish-034\",\"dish-035\",\"dish-036\",\"dish-037\",\"dish-038\",\"dish-039\",\"dish-040\",\"dish-041\",\"dish-042\",\"dish-043\",\"dish-044\",\"dish-045\",\"dish-046\",\"dish-047\",\"dish-048\",\"dish-049\",\"dish-050\",\"dish-051\",\"dish-052\",\"dish-053\",\"dish-054\",\"dish-055\",\"dish-056\",\"dish-057\",\"dish-058\",\"dish-059\",\"dish-060\",\"dish-061\",\"dish-062\",\"dish-063\",\"dish-064\",\"dish-065\",\"dish-066\",\"dish-067\",\"dish-068\",\"dish-069\",\"dish-070\",\"dish-071\",\"dish-072\",\"dish-073\",\"dish-074\",\"dish-075\",\"dish-076\",\"dish-077\",\"dish-078\",\"dish-079\",\"dish-080\",\"dish-081\",\"dish-082\",\"dish-083\",\"dish-084\",\"dish-085\",\"dish-086\",\"dish-087\",\"dish-088\",\"dish-089\",\"dish-090\",\"dish-091\",\"dish-092\",\"dish-093\",\"dish-094\",\"dish-095\",\"dish-096\",\"dish-097\",\"dish-098\",\"dish-099\",\"dish-100\"]}"
+    ],
+    "arl/rta/main/state/scan_state": [
+      "{\"v\":1,\"ts\":1793611818000,\"entity\":\"main\",\"item\":\"scan_state\",\"value\":\"running\"}"
+    ],
+    "arl/rta/main/state/target": [
+      "{\"v\":1,\"ts\":1793611818000,\"entity\":\"main\",\"item\":\"target\",\"value\":\"tgt-vel\"}"
+    ],
+    "arl/rta/main/state/observation_frequency": [
+      "{\"v\":1,\"ts\":1793611818000,\"entity\":\"main\",\"item\":\"observation_frequency\",\"value\":1500000000.0}"
+    ],
+    "arl/rta/main/state/next_scan": [
+      "{\"v\":1,\"ts\":1793611818000,\"entity\":\"main\",\"item\":\"next_scan\",\"value\":0}"
+    ],
+    "arl/rta/main/state/scan_id": [
+      "{\"v\":1,\"ts\":1793611818000,\"entity\":\"main\",\"item\":\"scan_id\",\"value\":\"scan-0001\"}"
+    ],
+    "arl/lwm/lwm-1/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924411,\"entity\":\"lwm-1\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/lwm/lwm-1/state/sample_interval_s": [
+      "{\"v\":1,\"ts\":1793609924411,\"entity\":\"lwm-1\",\"item\":\"sample_interval_s\",\"value\":60}"
+    ],
+    "arl/lwm/lwm-1/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924411,\"entity\":\"lwm-1\",\"item\":\"last_calibration\",\"value\":1792828800000}"
+    ],
+    "arl/lwm/lwm-1/state/last_anemometer_service": [
+      "{\"v\":1,\"ts\":1793609924411,\"entity\":\"lwm-1\",\"item\":\"last_anemometer_service\",\"value\":null}"
+    ],
+    "arl/lwm/lwm-1/state/position": [
+      "{\"v\":1,\"ts\":1793609924411,\"entity\":\"lwm-1\",\"item\":\"position\",\"value\":{\"lat\":-31.1999578,\"lon\":21.6730752}}"
+    ],
+    "arl/lwm/lwm-2/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924411,\"entity\":\"lwm-2\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/lwm/lwm-2/state/sample_interval_s": [
+      "{\"v\":1,\"ts\":1793609924411,\"entity\":\"lwm-2\",\"item\":\"sample_interval_s\",\"value\":60}"
+    ],
+    "arl/lwm/lwm-2/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924411,\"entity\":\"lwm-2\",\"item\":\"last_calibration\",\"value\":1791532800000}"
+    ],
+    "arl/lwm/lwm-2/state/last_anemometer_service": [
+      "{\"v\":1,\"ts\":1793609924411,\"entity\":\"lwm-2\",\"item\":\"last_anemometer_service\",\"value\":null}"
+    ],
+    "arl/lwm/lwm-2/state/position": [
+      "{\"v\":1,\"ts\":1793609924411,\"entity\":\"lwm-2\",\"item\":\"position\",\"value\":{\"lat\":-31.1895282,\"lon\":21.7070772}}"
+    ],
+    "arl/lwm/lwm-3/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924411,\"entity\":\"lwm-3\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/lwm/lwm-3/state/sample_interval_s": [
+      "{\"v\":1,\"ts\":1793609924411,\"entity\":\"lwm-3\",\"item\":\"sample_interval_s\",\"value\":60}"
+    ],
+    "arl/lwm/lwm-3/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924411,\"entity\":\"lwm-3\",\"item\":\"last_calibration\",\"value\":1793606400000}"
+    ],
+    "arl/lwm/lwm-3/state/last_anemometer_service": [
+      "{\"v\":1,\"ts\":1793609924411,\"entity\":\"lwm-3\",\"item\":\"last_anemometer_service\",\"value\":null}"
+    ],
+    "arl/lwm/lwm-3/state/position": [
+      "{\"v\":1,\"ts\":1793609924411,\"entity\":\"lwm-3\",\"item\":\"position\",\"value\":{\"lat\":-31.2072053,\"lon\":21.7293189}}"
+    ],
+    "arl/lwm/lwm-4/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924411,\"entity\":\"lwm-4\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/lwm/lwm-4/state/sample_interval_s": [
+      "{\"v\":1,\"ts\":1793609924411,\"entity\":\"lwm-4\",\"item\":\"sample_interval_s\",\"value\":60}"
+    ],
+    "arl/lwm/lwm-4/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924411,\"entity\":\"lwm-4\",\"item\":\"last_calibration\",\"value\":1792396800000}"
+    ],
+    "arl/lwm/lwm-4/state/last_anemometer_service": [
+      "{\"v\":1,\"ts\":1793609924411,\"entity\":\"lwm-4\",\"item\":\"last_anemometer_service\",\"value\":null}"
+    ],
+    "arl/lwm/lwm-4/state/position": [
+      "{\"v\":1,\"ts\":1793609924411,\"entity\":\"lwm-4\",\"item\":\"position\",\"value\":{\"lat\":-31.2283236,\"lon\":21.7009074}}"
+    ],
+    "arl/lwm/lwm-4/state/last_cleaning": [
+      "{\"v\":1,\"ts\":1793609924411,\"entity\":\"lwm-4\",\"item\":\"last_cleaning\",\"value\":null}"
+    ],
+    "arl/lwm/lwm-5/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924411,\"entity\":\"lwm-5\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/lwm/lwm-5/state/sample_interval_s": [
+      "{\"v\":1,\"ts\":1793609924411,\"entity\":\"lwm-5\",\"item\":\"sample_interval_s\",\"value\":60}"
+    ],
+    "arl/lwm/lwm-5/state/last_calibration": [
+      "{\"v\":1,\"ts\":1793609924411,\"entity\":\"lwm-5\",\"item\":\"last_calibration\",\"value\":1791964800000}"
+    ],
+    "arl/lwm/lwm-5/state/last_anemometer_service": [
+      "{\"v\":1,\"ts\":1793609924411,\"entity\":\"lwm-5\",\"item\":\"last_anemometer_service\",\"value\":null}"
+    ],
+    "arl/lwm/lwm-5/state/position": [
+      "{\"v\":1,\"ts\":1793609924411,\"entity\":\"lwm-5\",\"item\":\"position\",\"value\":{\"lat\":-31.227084,\"lon\":21.6635505}}"
+    ],
+    "arl/lwm/lwm-5/state/last_refill": [
+      "{\"v\":1,\"ts\":1793609924411,\"entity\":\"lwm-5\",\"item\":\"last_refill\",\"value\":null}"
+    ],
+    "arl/lwm/global/state/active_sites": [
+      "{\"v\":1,\"ts\":1793609924411,\"entity\":\"global\",\"item\":\"active_sites\",\"value\":5}"
+    ],
+    "arl/lwm/global/state/active_alerts": [
+      "{\"v\":1,\"ts\":1793609924411,\"entity\":\"global\",\"item\":\"active_alerts\",\"value\":[]}"
+    ],
+    "arl/lwm/global/state/online": [
+      "{\"v\":1,\"ts\":1793609924411,\"entity\":\"global\",\"item\":\"online\",\"value\":true}"
+    ],
+    "arl/opg/global/state/generation_priority": [
+      "{\"v\":1,\"ts\":1793609924327,\"entity\":\"global\",\"item\":\"generation_priority\",\"value\":\"solar_first\"}"
+    ],
+    "arl/opg/global/state/load_shed": [
+      "{\"v\":1,\"ts\":1793609924327,\"entity\":\"global\",\"item\":\"load_shed\",\"value\":false}"
+    ],
+    "arl/opg/global/state/active_alerts": [
+      "{\"v\":1,\"ts\":1793609924327,\"entity\":\"global\",\"item\":\"active_alerts\",\"value\":[]}"
+    ],
+    "arl/opg/global/state/online": [
+      "{\"v\":1,\"ts\":1793609924327,\"entity\":\"global\",\"item\":\"online\",\"value\":true}"
+    ],
+    "arl/opg/solar/state/enabled": [
+      "{\"v\":1,\"ts\":1793609924327,\"entity\":\"solar\",\"item\":\"enabled\",\"value\":true}"
+    ],
+    "arl/opg/batteries/state/reserve_pct": [
+      "{\"v\":1,\"ts\":1793609924327,\"entity\":\"batteries\",\"item\":\"reserve_pct\",\"value\":20.0}"
+    ]
+  }
+}

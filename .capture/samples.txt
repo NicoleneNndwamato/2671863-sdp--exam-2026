@@ -1,0 +1,254 @@
+### TELEMETRY SAMPLES ###
+arl/lwm/global/telemetry/lightning
+  {"v":1,"ts":1793612040000,"seq":35,"entity":"global","nearest_strike_km":null,"strikes_last_min":0}
+arl/lwm/lwm-1/telemetry/weather
+  {"v":1,"ts":1793612040000,"seq":35,"entity":"lwm-1","backfill":false,"battery_v":12.91,"humidity_pct":31.6,"irradiance_wm2":227.0,"lightning_strikes":0,"pressure_hpa":878.3,"rainfall_mm":0.0,"status":true,"temperature_k":292.66,"wind_direction_rad":5.187,"wind_gust_ms":8.4,"wind_speed_ms":5.1}
+arl/lwm/lwm-2/telemetry/weather
+  {"v":1,"ts":1793612040000,"seq":35,"entity":"lwm-2","backfill":false,"battery_v":13.26,"humidity_pct":30.8,"irradiance_wm2":230.0,"lightning_strikes":0,"pressure_hpa":878.3,"rainfall_mm":0.0,"status":true,"temperature_k":292.16,"wind_direction_rad":5.329,"wind_gust_ms":10.7,"wind_speed_ms":6.4}
+arl/lwm/lwm-3/telemetry/sonic
+  {"v":1,"ts":1793612040000,"seq":35,"entity":"lwm-3","backfill":false,"direction_std_rad":0.098,"gust_factor":1.64,"sonic_temperature_k":292.16,"turbulence_intensity":0.18,"wind_u_ms":5.89,"wind_v_ms":-2.02,"wind_w_ms":0.01}
+arl/lwm/lwm-3/telemetry/weather
+  {"v":1,"ts":1793612040000,"seq":35,"entity":"lwm-3","backfill":false,"battery_v":12.86,"humidity_pct":28.9,"irradiance_wm2":235.0,"lightning_strikes":0,"pressure_hpa":878.1,"rainfall_mm":0.0,"status":true,"temperature_k":292.14,"wind_direction_rad":5.042,"wind_gust_ms":13.1,"wind_speed_ms":6.3}
+arl/lwm/lwm-4/telemetry/soiling
+  {"v":1,"ts":1793612040000,"seq":35,"entity":"lwm-4","backfill":false,"exposed_irradiance_wm2":224.0,"reference_irradiance_wm2":230.0,"soiling_ratio":0.971}
+arl/lwm/lwm-4/telemetry/weather
+  {"v":1,"ts":1793612040000,"seq":35,"entity":"lwm-4","backfill":false,"battery_v":13.25,"humidity_pct":31.7,"irradiance_wm2":245.0,"lightning_strikes":0,"pressure_hpa":878.1,"rainfall_mm":0.0,"status":true,"temperature_k":291.3,"wind_direction_rad":5.263,"wind_gust_ms":9.4,"wind_speed_ms":5.3}
+arl/lwm/lwm-5/telemetry/pan
+  {"v":1,"ts":1793612040000,"seq":35,"entity":"lwm-5","backfill":false,"evaporation_mm":0.01,"pan_level_mm":196.4}
+arl/lwm/lwm-5/telemetry/weather
+  {"v":1,"ts":1793612040000,"seq":35,"entity":"lwm-5","backfill":false,"battery_v":12.79,"humidity_pct":36.8,"irradiance_wm2":235.0,"lightning_strikes":0,"pressure_hpa":878.3,"rainfall_mm":0.0,"status":true,"temperature_k":292.33,"wind_direction_rad":5.217,"wind_gust_ms":9.5,"wind_speed_ms":6.1}
+arl/opg/batteries/telemetry/power
+  {"v":1,"ts":1793612040000,"seq":35,"entity":"batteries","state_of_charge_pct":71.8,"battery_power_w":74314,"battery_temperature_k":292.66,"battery_health_pct":92.6}
+arl/opg/diesel/telemetry/power
+  {"v":1,"ts":1793612040000,"seq":35,"entity":"diesel","fuel_level_pct":80.0,"power_output_w":0,"generator_status":"off","runtime_h":1716.94}
+arl/opg/global/telemetry/power
+  {"v":1,"ts":1793612040000,"seq":35,"entity":"global","total_generation_w":258901,"total_load_w":184587,"supply_mode":"solar"}
+arl/opg/solar/telemetry/power
+  {"v":1,"ts":1793612040000,"seq":35,"entity":"solar","power_output_w":258901,"irradiance_wm2":230,"panel_temperature_k":299.24,"inverter_status":"online"}
+arl/rta/dish-001/telemetry/normal
+  {"v":1,"ts":1793612040000,"seq":17,"entity":"dish-001","temperature_k":294.87,"elevation_rad":1.1127,"azimuth_rad":5.87967,"power_w":296,"system_temperature_k":40.32,"fault_code":"none","status":false}
+arl/rta/dish-002/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-002","temperature_k":295.03,"elevation_rad":0.51535,"azimuth_rad":4.05638,"power_w":3800,"system_temperature_k":35.81,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.000234,"pointing_offset_dec_rad":-0.004297,"signal_strength":6.58,"snr_db":9.69,"band_hz":1500000000.0,"scan_progress":0.296}
+arl/rta/dish-003/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-003","temperature_k":295.13,"elevation_rad":0.5156,"azimuth_rad":4.05646,"power_w":1326,"system_temperature_k":43.32,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.000078,"pointing_offset_dec_rad":0.006953,"signal_strength":5.933,"snr_db":7.34,"band_hz":1500000000.0,"scan_progress":0.2304}
+arl/rta/dish-004/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-004","temperature_k":295.07,"elevation_rad":0.51565,"azimuth_rad":4.05648,"power_w":1318,"system_temperature_k":35.33,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.001172,"pointing_offset_dec_rad":0.003984,"signal_strength":4.932,"snr_db":8.53,"band_hz":1500000000.0,"scan_progress":0.2683}
+arl/rta/dish-005/telemetry/normal
+  {"v":1,"ts":1793612040000,"seq":17,"entity":"dish-005","temperature_k":294.87,"elevation_rad":0.94445,"azimuth_rad":1.79322,"power_w":294,"system_temperature_k":30.7,"fault_code":"none","status":false}
+arl/rta/dish-006/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-006","temperature_k":295.06,"elevation_rad":0.51584,"azimuth_rad":4.05654,"power_w":1284,"system_temperature_k":44.99,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.003203,"pointing_offset_dec_rad":-0.001484,"signal_strength":7.736,"snr_db":9.12,"band_hz":1500000000.0,"scan_progress":0.275}
+arl/rta/dish-007/telemetry/normal
+  {"v":1,"ts":1793612040000,"seq":17,"entity":"dish-007","temperature_k":294.87,"elevation_rad":1.54666,"azimuth_rad":2.53771,"power_w":308,"system_temperature_k":35.62,"fault_code":"none","status":false}
+arl/rta/dish-008/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-008","temperature_k":295.08,"elevation_rad":0.51545,"azimuth_rad":4.05641,"power_w":1316,"system_temperature_k":30.93,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.000859,"pointing_offset_dec_rad":-0.009922,"signal_strength":14.707,"snr_db":13.43,"band_hz":1500000000.0,"scan_progress":0.2617}
+arl/rta/dish-009/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-009","temperature_k":295.15,"elevation_rad":0.51584,"azimuth_rad":4.05654,"power_w":1268,"system_temperature_k":45.05,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.001641,"pointing_offset_dec_rad":0.007891,"signal_strength":5.619,"snr_db":8.88,"band_hz":1500000000.0,"scan_progress":0.22}
+arl/rta/dish-010/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-010","temperature_k":294.99,"elevation_rad":0.5156,"azimuth_rad":4.05646,"power_w":1301,"system_temperature_k":40.19,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.005547,"pointing_offset_dec_rad":-0.008203,"signal_strength":5.775,"snr_db":8.96,"band_hz":1500000000.0,"scan_progress":0.3217}
+arl/rta/dish-011/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-011","temperature_k":295.07,"elevation_rad":0.51575,"azimuth_rad":4.05651,"power_w":1282,"system_temperature_k":31.1,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.007578,"pointing_offset_dec_rad":0.008203,"signal_strength":3.281,"snr_db":7.21,"band_hz":1500000000.0,"scan_progress":0.2717}
+arl/rta/dish-012/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-012","temperature_k":295.09,"elevation_rad":0.51535,"azimuth_rad":4.05638,"power_w":3902,"system_temperature_k":40.64,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.009922,"pointing_offset_dec_rad":-0.005391,"signal_strength":4.714,"snr_db":8.0,"band_hz":1500000000.0,"scan_progress":0.2583}
+arl/rta/dish-013/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-013","temperature_k":295.09,"elevation_rad":0.51584,"azimuth_rad":4.05654,"power_w":1320,"system_temperature_k":41.16,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.002891,"pointing_offset_dec_rad":-0.001953,"signal_strength":4.967,"snr_db":8.85,"band_hz":1500000000.0,"scan_progress":0.2567}
+arl/rta/dish-014/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-014","temperature_k":294.97,"elevation_rad":0.5154,"azimuth_rad":4.0564,"power_w":1282,"system_temperature_k":33.14,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.000078,"pointing_offset_dec_rad":0.000703,"signal_strength":10.303,"snr_db":12.27,"band_hz":1500000000.0,"scan_progress":0.3333}
+arl/rta/dish-015/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-015","temperature_k":295.06,"elevation_rad":0.5154,"azimuth_rad":4.0564,"power_w":1332,"system_temperature_k":44.2,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.001484,"pointing_offset_dec_rad":-0.009453,"signal_strength":4.099,"snr_db":6.86,"band_hz":1500000000.0,"scan_progress":0.2783}
+arl/rta/dish-016/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-016","temperature_k":295.17,"elevation_rad":0.5155,"azimuth_rad":4.05643,"power_w":1304,"system_temperature_k":43.9,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.009453,"pointing_offset_dec_rad":-0.008359,"signal_strength":3.883,"snr_db":7.79,"band_hz":1500000000.0,"scan_progress":0.2083}
+arl/rta/dish-017/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-017","temperature_k":295.03,"elevation_rad":0.5154,"azimuth_rad":4.0564,"power_w":1298,"system_temperature_k":44.16,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.005547,"pointing_offset_dec_rad":-0.003359,"signal_strength":7.586,"snr_db":9.19,"band_hz":1500000000.0,"scan_progress":0.2967}
+arl/rta/dish-018/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-018","temperature_k":295.11,"elevation_rad":0.51545,"azimuth_rad":4.05641,"power_w":1282,"system_temperature_k":46.07,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.001016,"pointing_offset_dec_rad":-0.006953,"signal_strength":6.624,"snr_db":7.23,"band_hz":1500000000.0,"scan_progress":0.2433}
+arl/rta/dish-019/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-019","temperature_k":295.15,"elevation_rad":0.51575,"azimuth_rad":4.05651,"power_w":1279,"system_temperature_k":36.92,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.007266,"pointing_offset_dec_rad":0.009922,"signal_strength":2.578,"snr_db":4.86,"band_hz":1500000000.0,"scan_progress":0.2167}
+arl/rta/dish-020/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-020","temperature_k":294.98,"elevation_rad":0.51575,"azimuth_rad":4.05651,"power_w":1303,"system_temperature_k":33.26,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.002109,"pointing_offset_dec_rad":-0.008359,"signal_strength":4.544,"snr_db":8.66,"band_hz":1500000000.0,"scan_progress":0.3267}
+arl/rta/dish-021/telemetry/normal
+  {"v":1,"ts":1793612040000,"seq":17,"entity":"dish-021","temperature_k":294.87,"elevation_rad":1.29807,"azimuth_rad":2.43795,"power_w":307,"system_temperature_k":38.83,"fault_code":"none","status":false}
+arl/rta/dish-022/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-022","temperature_k":295.01,"elevation_rad":0.51579,"azimuth_rad":4.05653,"power_w":1332,"system_temperature_k":40.74,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.009453,"pointing_offset_dec_rad":0.005703,"signal_strength":4.817,"snr_db":7.06,"band_hz":1500000000.0,"scan_progress":0.31}
+arl/rta/dish-023/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-023","temperature_k":295.16,"elevation_rad":0.5156,"azimuth_rad":4.05646,"power_w":1331,"system_temperature_k":35.81,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.009922,"pointing_offset_dec_rad":-0.003672,"signal_strength":3.562,"snr_db":7.83,"band_hz":1500000000.0,"scan_progress":0.2117}
+arl/rta/dish-024/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-024","temperature_k":295.06,"elevation_rad":0.5154,"azimuth_rad":4.0564,"power_w":1269,"system_temperature_k":31.6,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.001172,"pointing_offset_dec_rad":0.007891,"signal_strength":8.142,"snr_db":11.35,"band_hz":1500000000.0,"scan_progress":0.2783}
+arl/rta/dish-025/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-025","temperature_k":295.09,"elevation_rad":0.51584,"azimuth_rad":4.05654,"power_w":1329,"system_temperature_k":42.2,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.008984,"pointing_offset_dec_rad":-0.006016,"signal_strength":15.163,"snr_db":12.4,"band_hz":1500000000.0,"scan_progress":0.2567}
+arl/rta/dish-026/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-026","temperature_k":295.05,"elevation_rad":0.5156,"azimuth_rad":4.05646,"power_w":1292,"system_temperature_k":30.81,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.003203,"pointing_offset_dec_rad":-0.006172,"signal_strength":4.127,"snr_db":6.92,"band_hz":1500000000.0,"scan_progress":0.285}
+arl/rta/dish-027/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-027","temperature_k":295.0,"elevation_rad":0.51535,"azimuth_rad":4.05638,"power_w":3806,"system_temperature_k":37.02,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.003984,"pointing_offset_dec_rad":-0.003984,"signal_strength":9.579,"snr_db":10.75,"band_hz":1500000000.0,"scan_progress":0.3133}
+arl/rta/dish-028/telemetry/normal
+  {"v":1,"ts":1793612040000,"seq":17,"entity":"dish-028","temperature_k":294.87,"elevation_rad":0.37765,"azimuth_rad":5.63853,"power_w":304,"system_temperature_k":35.24,"fault_code":"none","status":false}
+arl/rta/dish-029/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-029","temperature_k":295.0,"elevation_rad":0.51535,"azimuth_rad":4.05638,"power_w":3820,"system_temperature_k":38.89,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.001328,"pointing_offset_dec_rad":-0.003984,"signal_strength":3.465,"snr_db":6.84,"band_hz":1500000000.0,"scan_progress":0.3133}
+arl/rta/dish-030/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-030","temperature_k":294.99,"elevation_rad":0.5156,"azimuth_rad":4.05646,"power_w":1332,"system_temperature_k":36.44,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.001016,"pointing_offset_dec_rad":-0.004453,"signal_strength":4.123,"snr_db":8.15,"band_hz":1500000000.0,"scan_progress":0.3217}
+arl/rta/dish-031/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-031","temperature_k":295.07,"elevation_rad":0.51565,"azimuth_rad":4.05648,"power_w":1275,"system_temperature_k":41.64,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.008359,"pointing_offset_dec_rad":-0.004609,"signal_strength":7.493,"snr_db":9.33,"band_hz":1500000000.0,"scan_progress":0.2683}
+arl/rta/dish-032/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-032","temperature_k":295.1,"elevation_rad":0.5156,"azimuth_rad":4.05646,"power_w":1307,"system_temperature_k":34.12,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.000859,"pointing_offset_dec_rad":0.003672,"signal_strength":9.612,"snr_db":11.25,"band_hz":1500000000.0,"scan_progress":0.2483}
+arl/rta/dish-033/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-033","temperature_k":295.03,"elevation_rad":0.51579,"azimuth_rad":4.05653,"power_w":1273,"system_temperature_k":31.8,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.001797,"pointing_offset_dec_rad":0.000703,"signal_strength":11.877,"snr_db":12.08,"band_hz":1500000000.0,"scan_progress":0.2917}
+arl/rta/dish-034/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-034","temperature_k":295.09,"elevation_rad":0.5154,"azimuth_rad":4.0564,"power_w":1331,"system_temperature_k":41.95,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.008203,"pointing_offset_dec_rad":0.007891,"signal_strength":3.506,"snr_db":6.5,"band_hz":1500000000.0,"scan_progress":0.26}
+arl/rta/dish-035/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-035","temperature_k":295.0,"elevation_rad":0.51579,"azimuth_rad":4.05653,"power_w":1304,"system_temperature_k":34.93,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.006484,"pointing_offset_dec_rad":0.009609,"signal_strength":1.365,"snr_db":5.19,"band_hz":1500000000.0,"scan_progress":0.3133}
+arl/rta/dish-036/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-036","temperature_k":294.94,"elevation_rad":0.51545,"azimuth_rad":4.05641,"power_w":1281,"system_temperature_k":36.29,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.004297,"pointing_offset_dec_rad":-0.002266,"signal_strength":8.275,"snr_db":10.48,"band_hz":1500000000.0,"scan_progress":0.3533}
+arl/rta/dish-037/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-037","temperature_k":295.03,"elevation_rad":0.51579,"azimuth_rad":4.05653,"power_w":1273,"system_temperature_k":39.04,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.008047,"pointing_offset_dec_rad":-0.000391,"signal_strength":6.691,"snr_db":9.21,"band_hz":1500000000.0,"scan_progress":0.2917}
+arl/rta/dish-038/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-038","temperature_k":294.94,"elevation_rad":0.51579,"azimuth_rad":4.05653,"power_w":1286,"system_temperature_k":39.16,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.003047,"pointing_offset_dec_rad":-0.005703,"signal_strength":6.538,"snr_db":9.21,"band_hz":1500000000.0,"scan_progress":0.3517}
+arl/rta/dish-039/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-039","temperature_k":295.07,"elevation_rad":0.51575,"azimuth_rad":4.05651,"power_w":1334,"system_temperature_k":33.07,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.008359,"pointing_offset_dec_rad":-0.004141,"signal_strength":18.559,"snr_db":14.36,"band_hz":1500000000.0,"scan_progress":0.2717}
+arl/rta/dish-040/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-040","temperature_k":295.13,"elevation_rad":0.51565,"azimuth_rad":4.05648,"power_w":1299,"system_temperature_k":35.79,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.009766,"pointing_offset_dec_rad":0.005234,"signal_strength":2.279,"snr_db":6.36,"band_hz":1500000000.0,"scan_progress":0.2317}
+arl/rta/dish-041/telemetry/normal
+  {"v":1,"ts":1793612040000,"seq":17,"entity":"dish-041","temperature_k":294.87,"elevation_rad":1.4064,"azimuth_rad":2.58118,"power_w":291,"system_temperature_k":37.02,"fault_code":"none","status":false}
+arl/rta/dish-042/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-042","temperature_k":295.0,"elevation_rad":0.51584,"azimuth_rad":4.05654,"power_w":1276,"system_temperature_k":39.85,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.004609,"pointing_offset_dec_rad":0.008828,"signal_strength":0.938,"snr_db":2.51,"band_hz":1500000000.0,"scan_progress":0.3117}
+arl/rta/dish-043/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-043","temperature_k":295.09,"elevation_rad":0.51579,"azimuth_rad":4.05653,"power_w":1263,"system_temperature_k":34.81,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.002734,"pointing_offset_dec_rad":0.000234,"signal_strength":9.141,"snr_db":11.27,"band_hz":1500000000.0,"scan_progress":0.255}
+arl/rta/dish-044/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-044","temperature_k":295.03,"elevation_rad":0.51584,"azimuth_rad":4.05654,"power_w":1289,"system_temperature_k":35.9,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.000859,"pointing_offset_dec_rad":0.008359,"signal_strength":6.068,"snr_db":9.29,"band_hz":1500000000.0,"scan_progress":0.2933}
+arl/rta/dish-045/telemetry/normal
+  {"v":1,"ts":1793612040000,"seq":17,"entity":"dish-045","temperature_k":294.87,"elevation_rad":0.65554,"azimuth_rad":4.55475,"power_w":304,"system_temperature_k":38.02,"fault_code":"none","status":false}
+arl/rta/dish-046/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-046","temperature_k":295.09,"elevation_rad":0.5154,"azimuth_rad":4.0564,"power_w":1327,"system_temperature_k":38.54,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.007734,"pointing_offset_dec_rad":0.009141,"signal_strength":2.183,"snr_db":4.81,"band_hz":1500000000.0,"scan_progress":0.26}
+arl/rta/dish-047/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-047","temperature_k":295.15,"elevation_rad":0.51579,"azimuth_rad":4.05653,"power_w":1336,"system_temperature_k":31.85,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.002109,"pointing_offset_dec_rad":-0.002578,"signal_strength":5.5,"snr_db":9.19,"band_hz":1500000000.0,"scan_progress":0.2183}
+arl/rta/dish-048/telemetry/normal
+  {"v":1,"ts":1793612040000,"seq":17,"entity":"dish-048","temperature_k":294.87,"elevation_rad":0.55616,"azimuth_rad":2.27195,"power_w":299,"system_temperature_k":35.12,"fault_code":"none","status":false}
+arl/rta/dish-049/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-049","temperature_k":295.16,"elevation_rad":0.51565,"azimuth_rad":4.05648,"power_w":1316,"system_temperature_k":33.94,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.000703,"pointing_offset_dec_rad":-0.008359,"signal_strength":6.604,"snr_db":9.37,"band_hz":1500000000.0,"scan_progress":0.2133}
+arl/rta/dish-050/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-050","temperature_k":295.09,"elevation_rad":0.5154,"azimuth_rad":4.0564,"power_w":1285,"system_temperature_k":44.36,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.003984,"pointing_offset_dec_rad":-0.000078,"signal_strength":4.909,"snr_db":8.31,"band_hz":1500000000.0,"scan_progress":0.26}
+arl/rta/dish-051/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-051","temperature_k":295.08,"elevation_rad":0.51555,"azimuth_rad":4.05645,"power_w":1286,"system_temperature_k":43.02,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.002891,"pointing_offset_dec_rad":0.008984,"signal_strength":6.21,"snr_db":9.0,"band_hz":1500000000.0,"scan_progress":0.265}
+arl/rta/dish-052/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-052","temperature_k":294.95,"elevation_rad":0.5157,"azimuth_rad":4.0565,"power_w":1334,"system_temperature_k":39.84,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.008516,"pointing_offset_dec_rad":-0.009766,"signal_strength":3.876,"snr_db":4.91,"band_hz":1500000000.0,"scan_progress":0.3433}
+arl/rta/dish-053/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-053","temperature_k":295.07,"elevation_rad":0.5157,"azimuth_rad":4.0565,"power_w":1300,"system_temperature_k":36.39,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.009453,"pointing_offset_dec_rad":0.007734,"signal_strength":1.519,"snr_db":3.13,"band_hz":1500000000.0,"scan_progress":0.27}
+arl/rta/dish-054/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-054","temperature_k":295.03,"elevation_rad":0.5154,"azimuth_rad":4.0564,"power_w":1268,"system_temperature_k":44.35,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.005547,"pointing_offset_dec_rad":0.001172,"signal_strength":10.955,"snr_db":10.54,"band_hz":1500000000.0,"scan_progress":0.2967}
+arl/rta/dish-055/telemetry/normal
+  {"v":1,"ts":1793612040000,"seq":17,"entity":"dish-055","temperature_k":294.87,"elevation_rad":0.3921,"azimuth_rad":0.73592,"power_w":291,"system_temperature_k":34.07,"fault_code":"none","status":false}
+arl/rta/dish-056/telemetry/normal
+  {"v":1,"ts":1793612040000,"seq":17,"entity":"dish-056","temperature_k":294.87,"elevation_rad":1.51872,"azimuth_rad":1.66191,"power_w":292,"system_temperature_k":26.56,"fault_code":"none","status":false}
+arl/rta/dish-057/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-057","temperature_k":295.07,"elevation_rad":0.5157,"azimuth_rad":4.0565,"power_w":1338,"system_temperature_k":41.55,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.000391,"pointing_offset_dec_rad":-0.001953,"signal_strength":5.477,"snr_db":7.37,"band_hz":1500000000.0,"scan_progress":0.27}
+arl/rta/dish-058/telemetry/normal
+  {"v":1,"ts":1793612040000,"seq":17,"entity":"dish-058","temperature_k":294.87,"elevation_rad":0.36516,"azimuth_rad":1.02691,"power_w":306,"system_temperature_k":33.14,"fault_code":"none","status":false}
+arl/rta/dish-059/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-059","temperature_k":295.09,"elevation_rad":0.51579,"azimuth_rad":4.05653,"power_w":1294,"system_temperature_k":34.23,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.004141,"pointing_offset_dec_rad":0.000547,"signal_strength":8.168,"snr_db":10.89,"band_hz":1500000000.0,"scan_progress":0.255}
+arl/rta/dish-060/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-060","temperature_k":295.15,"elevation_rad":0.51575,"azimuth_rad":4.05651,"power_w":1292,"system_temperature_k":38.7,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.003516,"pointing_offset_dec_rad":0.006641,"signal_strength":5.026,"snr_db":7.5,"band_hz":1500000000.0,"scan_progress":0.2167}
+arl/rta/dish-061/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-061","temperature_k":295.01,"elevation_rad":0.51579,"azimuth_rad":4.05653,"power_w":1321,"system_temperature_k":31.32,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.005859,"pointing_offset_dec_rad":-0.006953,"signal_strength":11.637,"snr_db":12.63,"band_hz":1500000000.0,"scan_progress":0.31}
+arl/rta/dish-062/telemetry/normal
+  {"v":1,"ts":1793612040000,"seq":17,"entity":"dish-062","temperature_k":294.87,"elevation_rad":0.78769,"azimuth_rad":4.68795,"power_w":307,"system_temperature_k":32.78,"fault_code":"none","status":false}
+arl/rta/dish-063/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-063","temperature_k":294.99,"elevation_rad":0.5156,"azimuth_rad":4.05646,"power_w":1270,"system_temperature_k":37.22,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.006641,"pointing_offset_dec_rad":0.007109,"signal_strength":4.215,"snr_db":6.27,"band_hz":1500000000.0,"scan_progress":0.3217}
+arl/rta/dish-064/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-064","temperature_k":294.95,"elevation_rad":0.51579,"azimuth_rad":4.05653,"power_w":1333,"system_temperature_k":46.55,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.003984,"pointing_offset_dec_rad":0.008359,"signal_strength":7.01,"snr_db":9.16,"band_hz":1500000000.0,"scan_progress":0.3467}
+arl/rta/dish-065/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-065","temperature_k":295.06,"elevation_rad":0.51535,"azimuth_rad":4.05638,"power_w":3885,"system_temperature_k":35.93,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.000703,"pointing_offset_dec_rad":-0.009609,"signal_strength":1.871,"snr_db":6.07,"band_hz":1500000000.0,"scan_progress":0.2767}
+arl/rta/dish-066/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-066","temperature_k":295.07,"elevation_rad":0.5157,"azimuth_rad":4.0565,"power_w":1282,"system_temperature_k":33.86,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.009297,"pointing_offset_dec_rad":0.005859,"signal_strength":5.546,"snr_db":9.64,"band_hz":1500000000.0,"scan_progress":0.27}
+arl/rta/dish-067/telemetry/normal
+  {"v":1,"ts":1793612040000,"seq":17,"entity":"dish-067","temperature_k":294.87,"elevation_rad":0.86657,"azimuth_rad":0.6635,"power_w":295,"system_temperature_k":40.49,"fault_code":"none","status":false}
+arl/rta/dish-068/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-068","temperature_k":295.15,"elevation_rad":0.51575,"azimuth_rad":4.05651,"power_w":1321,"system_temperature_k":35.0,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.004609,"pointing_offset_dec_rad":0.005391,"signal_strength":7.13,"snr_db":9.9,"band_hz":1500000000.0,"scan_progress":0.2167}
+arl/rta/dish-069/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-069","temperature_k":295.01,"elevation_rad":0.51575,"azimuth_rad":4.05651,"power_w":1292,"system_temperature_k":36.33,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.006016,"pointing_offset_dec_rad":-0.008203,"signal_strength":11.727,"snr_db":11.59,"band_hz":1500000000.0,"scan_progress":0.3083}
+arl/rta/dish-070/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-070","temperature_k":295.04,"elevation_rad":0.51565,"azimuth_rad":4.05648,"power_w":1328,"system_temperature_k":40.02,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.005703,"pointing_offset_dec_rad":-0.004453,"signal_strength":7.045,"snr_db":8.39,"band_hz":1500000000.0,"scan_progress":0.2867}
+arl/rta/dish-071/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-071","temperature_k":295.03,"elevation_rad":0.51579,"azimuth_rad":4.05653,"power_w":1317,"system_temperature_k":31.99,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.002109,"pointing_offset_dec_rad":0.007422,"signal_strength":11.701,"snr_db":12.59,"band_hz":1500000000.0,"scan_progress":0.2917}
+arl/rta/dish-072/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-072","temperature_k":295.08,"elevation_rad":0.51555,"azimuth_rad":4.05645,"power_w":1294,"system_temperature_k":43.06,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.008984,"pointing_offset_dec_rad":-0.005391,"signal_strength":6.048,"snr_db":9.26,"band_hz":1500000000.0,"scan_progress":0.265}
+arl/rta/dish-073/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-073","temperature_k":295.02,"elevation_rad":0.51555,"azimuth_rad":4.05645,"power_w":1329,"system_temperature_k":38.67,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.008203,"pointing_offset_dec_rad":-0.008203,"signal_strength":6.263,"snr_db":9.47,"band_hz":1500000000.0,"scan_progress":0.3017}
+arl/rta/dish-074/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-074","temperature_k":294.95,"elevation_rad":0.51584,"azimuth_rad":4.05654,"power_w":1321,"system_temperature_k":32.2,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.004609,"pointing_offset_dec_rad":0.003359,"signal_strength":10.953,"snr_db":12.69,"band_hz":1500000000.0,"scan_progress":0.3483}
+arl/rta/dish-075/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-075","temperature_k":294.97,"elevation_rad":0.51584,"azimuth_rad":4.05654,"power_w":1275,"system_temperature_k":37.5,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.008516,"pointing_offset_dec_rad":0.005547,"signal_strength":2.461,"snr_db":6.49,"band_hz":1500000000.0,"scan_progress":0.33}
+arl/rta/dish-076/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-076","temperature_k":295.06,"elevation_rad":0.51584,"azimuth_rad":4.05654,"power_w":1308,"system_temperature_k":46.08,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.003047,"pointing_offset_dec_rad":0.002109,"signal_strength":9.702,"snr_db":9.81,"band_hz":1500000000.0,"scan_progress":0.275}
+arl/rta/dish-077/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-077","temperature_k":295.08,"elevation_rad":0.51555,"azimuth_rad":4.05645,"power_w":1263,"system_temperature_k":41.69,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.003516,"pointing_offset_dec_rad":-0.005703,"signal_strength":6.197,"snr_db":8.4,"band_hz":1500000000.0,"scan_progress":0.265}
+arl/rta/dish-078/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-078","temperature_k":295.03,"elevation_rad":0.51535,"azimuth_rad":4.05638,"power_w":3843,"system_temperature_k":37.79,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.001797,"pointing_offset_dec_rad":-0.004922,"signal_strength":5.72,"snr_db":8.65,"band_hz":1500000000.0,"scan_progress":0.295}
+arl/rta/dish-079/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-079","temperature_k":295.08,"elevation_rad":0.51555,"azimuth_rad":4.05645,"power_w":1329,"system_temperature_k":33.25,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.005234,"pointing_offset_dec_rad":0.000859,"signal_strength":10.172,"snr_db":11.39,"band_hz":1500000000.0,"scan_progress":0.265}
+arl/rta/dish-080/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-080","temperature_k":295.17,"elevation_rad":0.51555,"azimuth_rad":4.05645,"power_w":1327,"system_temperature_k":32.63,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.004453,"pointing_offset_dec_rad":-0.008203,"signal_strength":4.17,"snr_db":7.72,"band_hz":1500000000.0,"scan_progress":0.2104}
+arl/rta/dish-081/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-081","temperature_k":295.07,"elevation_rad":0.5156,"azimuth_rad":4.05646,"power_w":1284,"system_temperature_k":44.65,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.004609,"pointing_offset_dec_rad":0.005234,"signal_strength":5.668,"snr_db":8.29,"band_hz":1500000000.0,"scan_progress":0.2676}
+arl/rta/dish-082/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-082","temperature_k":295.04,"elevation_rad":0.51575,"azimuth_rad":4.05651,"power_w":1282,"system_temperature_k":35.09,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.002266,"pointing_offset_dec_rad":-0.002578,"signal_strength":6.595,"snr_db":9.71,"band_hz":1500000000.0,"scan_progress":0.2915}
+arl/rta/dish-083/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-083","temperature_k":295.04,"elevation_rad":0.5157,"azimuth_rad":4.0565,"power_w":1322,"system_temperature_k":37.15,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.001797,"pointing_offset_dec_rad":0.001953,"signal_strength":10.889,"snr_db":11.57,"band_hz":1500000000.0,"scan_progress":0.2898}
+arl/rta/dish-084/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-084","temperature_k":295.07,"elevation_rad":0.51565,"azimuth_rad":4.05648,"power_w":1306,"system_temperature_k":44.88,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.000234,"pointing_offset_dec_rad":0.002266,"signal_strength":5.489,"snr_db":8.55,"band_hz":1500000000.0,"scan_progress":0.2697}
+arl/rta/dish-085/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-085","temperature_k":295.12,"elevation_rad":0.51584,"azimuth_rad":4.05654,"power_w":1279,"system_temperature_k":32.52,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.004766,"pointing_offset_dec_rad":0.000234,"signal_strength":8.291,"snr_db":10.97,"band_hz":1500000000.0,"scan_progress":0.2395}
+arl/rta/dish-086/telemetry/normal
+  {"v":1,"ts":1793612040000,"seq":17,"entity":"dish-086","temperature_k":294.87,"elevation_rad":1.26792,"azimuth_rad":2.97666,"power_w":294,"system_temperature_k":38.06,"fault_code":"none","status":false}
+arl/rta/dish-087/telemetry/normal
+  {"v":1,"ts":1793612040000,"seq":17,"entity":"dish-087","temperature_k":294.87,"elevation_rad":1.20973,"azimuth_rad":3.64256,"power_w":309,"system_temperature_k":34.36,"fault_code":"none","status":false}
+arl/rta/dish-088/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-088","temperature_k":295.12,"elevation_rad":0.51535,"azimuth_rad":4.05638,"power_w":3793,"system_temperature_k":31.35,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.003516,"pointing_offset_dec_rad":-0.006797,"signal_strength":1.366,"snr_db":5.53,"band_hz":1500000000.0,"scan_progress":0.2412}
+arl/rta/dish-089/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-089","temperature_k":295.01,"elevation_rad":0.51565,"azimuth_rad":4.05648,"power_w":1334,"system_temperature_k":37.53,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.009453,"pointing_offset_dec_rad":0.009922,"signal_strength":1.983,"snr_db":2.85,"band_hz":1500000000.0,"scan_progress":0.3065}
+arl/rta/dish-090/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-090","temperature_k":295.05,"elevation_rad":0.51555,"azimuth_rad":4.05645,"power_w":1313,"system_temperature_k":32.07,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.003359,"pointing_offset_dec_rad":0.008359,"signal_strength":5.328,"snr_db":9.06,"band_hz":1500000000.0,"scan_progress":0.2848}
+arl/rta/dish-091/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-091","temperature_k":295.06,"elevation_rad":0.5154,"azimuth_rad":4.0564,"power_w":1283,"system_temperature_k":35.84,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.001016,"pointing_offset_dec_rad":0.004922,"signal_strength":7.192,"snr_db":10.02,"band_hz":1500000000.0,"scan_progress":0.2797}
+arl/rta/dish-092/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-092","temperature_k":295.11,"elevation_rad":0.51545,"azimuth_rad":4.05641,"power_w":1321,"system_temperature_k":34.71,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.001016,"pointing_offset_dec_rad":-0.004297,"signal_strength":3.955,"snr_db":7.39,"band_hz":1500000000.0,"scan_progress":0.2446}
+arl/rta/dish-093/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-093","temperature_k":295.09,"elevation_rad":0.51535,"azimuth_rad":4.05638,"power_w":3735,"system_temperature_k":46.31,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.000547,"pointing_offset_dec_rad":-0.000078,"signal_strength":7.226,"snr_db":8.6,"band_hz":1500000000.0,"scan_progress":0.2596}
+arl/rta/dish-094/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-094","temperature_k":295.1,"elevation_rad":0.5157,"azimuth_rad":4.0565,"power_w":1321,"system_temperature_k":36.5,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.000859,"pointing_offset_dec_rad":-0.008203,"signal_strength":4.025,"snr_db":7.46,"band_hz":1500000000.0,"scan_progress":0.2529}
+arl/rta/dish-095/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-095","temperature_k":295.12,"elevation_rad":0.51535,"azimuth_rad":4.05638,"power_w":3891,"system_temperature_k":34.97,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.001328,"pointing_offset_dec_rad":-0.007109,"signal_strength":4.117,"snr_db":7.71,"band_hz":1500000000.0,"scan_progress":0.2412}
+arl/rta/dish-096/telemetry/normal
+  {"v":1,"ts":1793612040000,"seq":17,"entity":"dish-096","temperature_k":294.87,"elevation_rad":0.38992,"azimuth_rad":4.22482,"power_w":295,"system_temperature_k":43.97,"fault_code":"none","status":false}
+arl/rta/dish-097/telemetry/normal
+  {"v":1,"ts":1793612040000,"seq":17,"entity":"dish-097","temperature_k":294.87,"elevation_rad":0.3527,"azimuth_rad":1.1735,"power_w":293,"system_temperature_k":40.95,"fault_code":"none","status":false}
+arl/rta/dish-098/telemetry/normal
+  {"v":1,"ts":1793612040000,"seq":17,"entity":"dish-098","temperature_k":294.87,"elevation_rad":0.47991,"azimuth_rad":3.27164,"power_w":292,"system_temperature_k":32.54,"fault_code":"none","status":false}
+arl/rta/dish-099/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-099","temperature_k":295.12,"elevation_rad":0.51575,"azimuth_rad":4.05651,"power_w":1330,"system_temperature_k":45.72,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":0.005703,"pointing_offset_dec_rad":-0.002891,"signal_strength":12.066,"snr_db":11.47,"band_hz":1500000000.0,"scan_progress":0.2362}
+arl/rta/dish-100/telemetry/scan
+  {"v":1,"ts":1793612031000,"seq":213,"entity":"dish-100","temperature_k":295.08,"elevation_rad":0.51545,"azimuth_rad":4.05641,"power_w":1301,"system_temperature_k":39.45,"fault_code":"none","status":true,"scan_id":"scan-0001","pointing_offset_ra_rad":-0.009609,"pointing_offset_dec_rad":0.001484,"signal_strength":4.981,"snr_db":8.07,"band_hz":1500000000.0,"scan_progress":0.263}
+
+### STATE SAMPLES (first 25) ###
+arl/lwm/global/state/active_alerts  =>  {"v":1,"ts":1793609924411,"entity":"global","item":"active_alerts","value":[]}
+arl/lwm/global/state/active_sites  =>  {"v":1,"ts":1793609924411,"entity":"global","item":"active_sites","value":5}
+arl/lwm/global/state/online  =>  {"v":1,"ts":1793609924411,"entity":"global","item":"online","value":true}
+arl/lwm/lwm-1/state/enabled  =>  {"v":1,"ts":1793609924411,"entity":"lwm-1","item":"enabled","value":true}
+arl/lwm/lwm-1/state/last_anemometer_service  =>  {"v":1,"ts":1793609924411,"entity":"lwm-1","item":"last_anemometer_service","value":null}
+arl/lwm/lwm-1/state/last_calibration  =>  {"v":1,"ts":1793609924411,"entity":"lwm-1","item":"last_calibration","value":1792828800000}
+arl/lwm/lwm-1/state/position  =>  {"v":1,"ts":1793609924411,"entity":"lwm-1","item":"position","value":{"lat":-31.1999578,"lon":21.6730752}}
+arl/lwm/lwm-1/state/sample_interval_s  =>  {"v":1,"ts":1793609924411,"entity":"lwm-1","item":"sample_interval_s","value":60}
+arl/lwm/lwm-2/state/enabled  =>  {"v":1,"ts":1793609924411,"entity":"lwm-2","item":"enabled","value":true}
+arl/lwm/lwm-2/state/last_anemometer_service  =>  {"v":1,"ts":1793609924411,"entity":"lwm-2","item":"last_anemometer_service","value":null}
+arl/lwm/lwm-2/state/last_calibration  =>  {"v":1,"ts":1793609924411,"entity":"lwm-2","item":"last_calibration","value":1791532800000}
+arl/lwm/lwm-2/state/position  =>  {"v":1,"ts":1793609924411,"entity":"lwm-2","item":"position","value":{"lat":-31.1895282,"lon":21.7070772}}
+arl/lwm/lwm-2/state/sample_interval_s  =>  {"v":1,"ts":1793609924411,"entity":"lwm-2","item":"sample_interval_s","value":60}
+arl/lwm/lwm-3/state/enabled  =>  {"v":1,"ts":1793609924411,"entity":"lwm-3","item":"enabled","value":true}
+arl/lwm/lwm-3/state/last_anemometer_service  =>  {"v":1,"ts":1793609924411,"entity":"lwm-3","item":"last_anemometer_service","value":null}
+arl/lwm/lwm-3/state/last_calibration  =>  {"v":1,"ts":1793609924411,"entity":"lwm-3","item":"last_calibration","value":1793606400000}
+arl/lwm/lwm-3/state/position  =>  {"v":1,"ts":1793609924411,"entity":"lwm-3","item":"position","value":{"lat":-31.2072053,"lon":21.7293189}}
+arl/lwm/lwm-3/state/sample_interval_s  =>  {"v":1,"ts":1793609924411,"entity":"lwm-3","item":"sample_interval_s","value":60}
+arl/lwm/lwm-4/state/enabled  =>  {"v":1,"ts":1793609924411,"entity":"lwm-4","item":"enabled","value":true}
+arl/lwm/lwm-4/state/last_anemometer_service  =>  {"v":1,"ts":1793609924411,"entity":"lwm-4","item":"last_anemometer_service","value":null}
+arl/lwm/lwm-4/state/last_calibration  =>  {"v":1,"ts":1793609924411,"entity":"lwm-4","item":"last_calibration","value":1792396800000}
+arl/lwm/lwm-4/state/last_cleaning  =>  {"v":1,"ts":1793609924411,"entity":"lwm-4","item":"last_cleaning","value":null}
+arl/lwm/lwm-4/state/position  =>  {"v":1,"ts":1793609924411,"entity":"lwm-4","item":"position","value":{"lat":-31.2283236,"lon":21.7009074}}
+arl/lwm/lwm-4/state/sample_interval_s  =>  {"v":1,"ts":1793609924411,"entity":"lwm-4","item":"sample_interval_s","value":60}
+arl/lwm/lwm-5/state/enabled  =>  {"v":1,"ts":1793609924411,"entity":"lwm-5","item":"enabled","value":true}

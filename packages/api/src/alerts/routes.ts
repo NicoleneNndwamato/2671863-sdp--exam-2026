@@ -1,9 +1,11 @@
 import type { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
-import { and, desc, eq, gte, lte } from "drizzle-orm";
+import { and, desc, eq, inArray } from "drizzle-orm";
 import { z } from "zod";
+import type { AlertStatus, AlertView } from "@sdp/shared";
 import { db } from "../db/client";
-import { alerts, rawMessages } from "../db/schema";
-import { canAccessService, resolveResearcher, type Researcher } from "../auth/researcher";
+import { alerts, type AlertRow } from "../db/schema";
+import { recordAudit } from "../db/audit";
+import { resolveResearcher, verifyResearcher } from "../auth/researcher";
 import { AlertTransitionError, applyAcknowledge, applyResolve } from "./state";
 
 const codeHeader = "x-researcher-code";
@@ -14,56 +16,124 @@ const resolveBody = z.object({
 
 const idParam = z.object({ id: z.string().uuid() });
 
+const listQuery = z.object({
+  status: z.enum(["raised", "acknowledged", "resolved", "open"]).optional(),
+  service: z.string().optional(),
+  limit: z.coerce.number().int().positive().max(500).default(200)
+});
+
+function toView(row: AlertRow): AlertView {
+  return {
+    id: row.id,
+    service: row.service,
+    device: row.device,
+    code: row.code,
+    severity: row.severity,
+    cause: row.cause,
+    status: row.status,
+    raisedAt: row.raisedAt.toISOString(),
+    acknowledgedAt: row.acknowledgedAt?.toISOString() ?? null,
+    acknowledgedBy: row.acknowledgedBy ?? null,
+    resolvedAt: row.resolvedAt?.toISOString() ?? null,
+    resolvedBy: row.resolvedBy ?? null,
+    resolution: row.resolution ?? null
+  };
+}
+
 /**
- * Data is visible to everyone; only mutating a service requires an identity.
- * The code is checked against the ARL API on every control request - the
- * browser is not trusted to have checked anything.
+ * Alerts are readable by anyone; acting on one requires a researcher code that
+ * the ARL API says may operate the affected service.
+ *
+ * The service is taken from the alert row, not from the request, so a caller
+ * cannot claim a service they have access to in order to act on another.
  */
 async function authenticate(
   req: FastifyRequest,
   reply: FastifyReply,
-  service: string
-): Promise<Researcher | null> {
+  service: string,
+  action: string,
+  alertId: string
+): Promise<string | null> {
   const raw = req.headers[codeHeader];
   const code = Array.isArray(raw) ? raw[0] : raw;
 
   if (!code) {
-    reply.code(401).send({ error: "researcher code required" });
+    await recordAudit({
+      actor: "anonymous",
+      action,
+      service,
+      entity: alertId,
+      detail: "missing researcher code",
+      result: "rejected"
+    });
+    reply.code(401).send({ error: "missing_researcher_code" });
     return null;
   }
 
   const researcher = await resolveResearcher(code);
   if (!researcher) {
-    reply.code(403).send({ error: "unrecognised researcher code" });
+    await recordAudit({
+      actor: code,
+      action,
+      service,
+      entity: alertId,
+      detail: "unknown researcher code",
+      result: "rejected"
+    });
+    reply.code(403).send({ error: "invalid_researcher_code" });
     return null;
   }
 
-  if (!canAccessService(researcher, service)) {
-    reply.code(403).send({ error: `no access to ${service}` });
+  const verdict = await verifyResearcher(code, service);
+  if (!verdict.valid) {
+    await recordAudit({
+      actor: code,
+      action,
+      service,
+      entity: alertId,
+      detail: `not permitted on ${service} (${verdict.reason ?? "denied"})`,
+      result: "rejected"
+    });
+    reply.code(403).send({ error: "service_access_denied", detail: verdict.reason });
     return null;
   }
 
-  return researcher;
+  return researcher.code;
 }
 
 export async function alertRoutes(app: FastifyInstance) {
-  app.get("/alerts", async () => {
-    const rows = await db.select().from(alerts).orderBy(desc(alerts.raisedAt)).limit(200);
-    return rows;
+  app.get("/alerts", async (req, reply) => {
+    const parsed = listQuery.safeParse(req.query);
+    if (!parsed.success) return reply.code(400).send({ error: "invalid_query" });
+
+    const { status, service, limit } = parsed.data;
+    const filters = [];
+    if (service) filters.push(eq(alerts.service, service));
+    if (status === "open") filters.push(inArray(alerts.status, ["raised", "acknowledged"] as AlertStatus[]));
+    else if (status) filters.push(eq(alerts.status, status));
+
+    const rows = await db
+      .select()
+      .from(alerts)
+      .where(filters.length > 0 ? and(...filters) : undefined)
+      .orderBy(desc(alerts.raisedAt))
+      .limit(limit);
+
+    return { count: rows.length, alerts: rows.map(toView) };
   });
 
   app.post("/alerts/:id/acknowledge", async (req, reply) => {
     const params = idParam.safeParse(req.params);
-    if (!params.success) return reply.code(400).send({ error: "invalid alert id" });
+    if (!params.success) return reply.code(400).send({ error: "invalid_alert_id" });
 
     const [alert] = await db.select().from(alerts).where(eq(alerts.id, params.data.id)).limit(1);
-    if (!alert) return reply.code(404).send({ error: "alert not found" });
+    if (!alert) return reply.code(404).send({ error: "alert_not_found" });
 
-    const researcher = await authenticate(req, reply, alert.service);
-    if (!researcher) return;
+    const actor = await authenticate(req, reply, alert.service, "alert.acknowledge", alert.id);
+    if (!actor) return;
 
     try {
-      const next = applyAcknowledge(alert, researcher.code);
+      const next = applyAcknowledge(alert, actor);
       const [updated] = await db
         .update(alerts)
         .set({
@@ -74,28 +144,49 @@ export async function alertRoutes(app: FastifyInstance) {
         .where(eq(alerts.id, alert.id))
         .returning();
 
-      return updated;
+      await recordAudit({
+        actor,
+        action: "alert.acknowledge",
+        service: alert.service,
+        entity: alert.device,
+        detail: `acknowledged ${alert.code}`,
+        result: "accepted",
+        value: { alertId: alert.id }
+      });
+
+      return toView(updated);
     } catch (err) {
-      if (err instanceof AlertTransitionError) return reply.code(409).send({ error: err.message });
+      if (err instanceof AlertTransitionError) {
+        await recordAudit({
+          actor,
+          action: "alert.acknowledge",
+          service: alert.service,
+          entity: alert.device,
+          detail: err.message,
+          result: "rejected",
+          value: { alertId: alert.id }
+        });
+        return reply.code(409).send({ error: "invalid_transition", detail: err.message });
+      }
       throw err;
     }
   });
 
   app.post("/alerts/:id/resolve", async (req, reply) => {
     const params = idParam.safeParse(req.params);
-    if (!params.success) return reply.code(400).send({ error: "invalid alert id" });
+    if (!params.success) return reply.code(400).send({ error: "invalid_alert_id" });
 
     const body = resolveBody.safeParse(req.body);
-    if (!body.success) return reply.code(400).send({ error: "resolution note required" });
+    if (!body.success) return reply.code(400).send({ error: "resolution_required" });
 
     const [alert] = await db.select().from(alerts).where(eq(alerts.id, params.data.id)).limit(1);
-    if (!alert) return reply.code(404).send({ error: "alert not found" });
+    if (!alert) return reply.code(404).send({ error: "alert_not_found" });
 
-    const researcher = await authenticate(req, reply, alert.service);
-    if (!researcher) return;
+    const actor = await authenticate(req, reply, alert.service, "alert.resolve", alert.id);
+    if (!actor) return;
 
     try {
-      const next = applyResolve(alert, researcher.code, body.data.resolution);
+      const next = applyResolve(alert, actor, body.data.resolution);
       const [updated] = await db
         .update(alerts)
         .set({
@@ -107,48 +198,31 @@ export async function alertRoutes(app: FastifyInstance) {
         .where(eq(alerts.id, alert.id))
         .returning();
 
-      return updated;
+      await recordAudit({
+        actor,
+        action: "alert.resolve",
+        service: alert.service,
+        entity: alert.device,
+        detail: `resolved ${alert.code}: ${body.data.resolution}`,
+        result: "accepted",
+        value: { alertId: alert.id }
+      });
+
+      return toView(updated);
     } catch (err) {
-      if (err instanceof AlertTransitionError) return reply.code(409).send({ error: err.message });
+      if (err instanceof AlertTransitionError) {
+        await recordAudit({
+          actor,
+          action: "alert.resolve",
+          service: alert.service,
+          entity: alert.device,
+          detail: err.message,
+          result: "rejected",
+          value: { alertId: alert.id }
+        });
+        return reply.code(409).send({ error: "invalid_transition", detail: err.message });
+      }
       throw err;
     }
-  });
-}
-
-// --- Read-only replay window ------------------------------------------------
-
-const windowQuery = z.object({
-  from: z.string().datetime(),
-  to: z.string().datetime(),
-  device: z.string().optional(),
-  limit: z.coerce.number().int().positive().max(5000).default(1000)
-});
-
-export async function replayRoutes(app: FastifyInstance) {
-  app.get("/services/:id/readings", async (req, reply) => {
-    const serviceId = z.string().safeParse((req.params as { id: string }).id);
-    if (!serviceId.success) return reply.code(400).send({ error: "invalid service" });
-
-    const query = windowQuery.safeParse(req.query);
-    if (!query.success) return reply.code(400).send({ error: "from and to must be ISO timestamps" });
-
-    const from = new Date(query.data.from);
-    const to = new Date(query.data.to);
-
-    const filters = [
-      eq(rawMessages.service, serviceId.data),
-      gte(rawMessages.observedAt, from),
-      lte(rawMessages.observedAt, to)
-    ];
-    if (query.data.device) filters.push(eq(rawMessages.device, query.data.device));
-
-    const rows = await db
-      .select()
-      .from(rawMessages)
-      .where(and(...filters))
-      .orderBy(rawMessages.observedAt)
-      .limit(query.data.limit);
-
-    return rows;
   });
 }

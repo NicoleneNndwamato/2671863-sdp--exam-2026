@@ -4,6 +4,9 @@ import { env } from "./env";
 import { IngestBuffer } from "./mqtt/ingest";
 import { postgresWriter } from "./mqtt/writer";
 import { startBroker } from "./mqtt/broker";
+import { services } from "./services/registry";
+import { prefetchAlertLimits } from "./alerts/limits";
+import { setIngestStatsProvider } from "./state";
 
 async function main() {
   const app = await buildApp();
@@ -20,6 +23,12 @@ async function main() {
     maxBatch: env.INGEST_MAX_BATCH,
     maxQueue: env.INGEST_MAX_QUEUE
   });
+  setIngestStatsProvider(() => buffer.stats);
+
+  // Warm the alert-limit cache before the firehose starts: waiting for the
+  // first dish message to trigger a fetch would show every early alert as
+  // "limit unavailable".
+  await prefetchAlertLimits(services.map((service) => service.id));
 
   const client = startBroker(buffer, log);
 

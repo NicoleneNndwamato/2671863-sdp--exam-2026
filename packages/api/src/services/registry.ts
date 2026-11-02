@@ -1,12 +1,14 @@
 import type { ParsedMessage, ServiceDefinition } from "@sdp/shared";
 import { rta } from "./rta";
+import { lwm } from "./lwm";
+import { opg } from "./opg";
 
 /**
  * The registry is the only place that knows the list of services.
  * Adding LWM/MHE/OPG/OWT means implementing ServiceDefinition and adding it
  * here - nothing else in the ingest path changes.
  */
-export const services: ServiceDefinition[] = [rta];
+export const services: ServiceDefinition[] = [rta, lwm, opg];
 
 export function serviceById(id: string): ServiceDefinition | undefined {
   return services.find((s) => s.id === id);

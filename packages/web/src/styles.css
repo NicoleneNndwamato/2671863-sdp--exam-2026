@@ -1,0 +1,1023 @@
+/* Meridian global layout.
+ *
+ * Split of responsibility: this file owns everything that cannot be said in an
+ * inline style — the console grid, its breakpoints, pseudo-classes, and the
+ * motion. The palette arrives as CSS variables (see theme-provider), so the two
+ * halves never disagree about a colour.
+ *
+ * The grid is the argument: the brand owns the top-left corner, the service
+ * panel is the middle column, the annunciator is always on the right, and the
+ * replay transport always takes the bottom rail. An operator therefore never
+ * loses sight of an open alert, or of the fact that they are not looking at
+ * live data.
+ */
+
+:root {
+  --font-sans: "Inter", "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "IBM Plex Mono", "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font: 14px/1.45 var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.18s ease, color 0.18s ease;
+}
+
+/* Buttons are the only rounded element in the whole app. */
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+:focus-visible {
+  outline: 2px solid var(--info);
+  outline-offset: 1px;
+}
+
+/* ---------------------------------------------------------------- shell --- */
+
+.shell {
+  display: grid;
+  grid-template-columns: 228px minmax(0, 1fr) 336px;
+  grid-template-rows: 56px minmax(0, 1fr);
+  grid-template-areas:
+    "brand topbar topbar"
+    "sidebar main alerts";
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ---------- brand ---------- */
+.brand {
+  grid-area: brand;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 16px;
+  min-width: 0;
+}
+
+.brand-mark {
+  width: 26px;
+  height: 26px;
+  flex: 0 0 26px;
+  border: 1.5px solid rgba(255, 255, 255, 0.85);
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.brand-name {
+  font-size: 14px;
+  font-weight: 650;
+  letter-spacing: 0.01em;
+  line-height: 1.1;
+}
+
+.brand-sub {
+  font-size: 10.5px;
+  opacity: 0.72;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* ---------- topbar ---------- */
+.topbar {
+  grid-area: topbar;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 16px;
+  min-width: 0;
+  border-bottom: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 10px;
+  border: 1px solid var(--line);
+  font-size: 12px;
+  color: var(--muted);
+  background: var(--panel-2);
+  white-space: nowrap;
+}
+
+.pill b {
+  color: var(--text);
+  font-weight: 550;
+}
+
+.spacer {
+  flex: 1;
+  min-width: 0;
+}
+
+.clock {
+  font-variant-numeric: tabular-nums;
+  font-size: 13px;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.clock span {
+  color: var(--muted);
+  font-size: 11px;
+  margin-left: 5px;
+  letter-spacing: 0.06em;
+}
+
+.clock.replay b {
+  color: var(--crit);
+}
+
+.theme-toggle {
+  display: inline-flex;
+  border: 1px solid var(--line);
+  overflow: hidden;
+  background: var(--panel-2);
+  /* The theme switch and the researcher card must never be pushed out of the
+     top bar: they are the two things an operator looks for by position. */
+  flex: 0 0 auto;
+}
+
+.theme-toggle button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  padding: 5px 10px;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.theme-toggle button + button {
+  border-left: 1px solid var(--line);
+}
+
+.theme-toggle button[aria-pressed="true"] {
+  background: var(--primary);
+  color: var(--primary-fg, #fff);
+}
+
+.theme-toggle svg {
+  width: 12px;
+  height: 12px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+}
+
+/* ---------- researcher card ---------- */
+.researcher-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 10px;
+  align-self: stretch;
+  background: var(--primary);
+  color: #fff;
+  border: 1px solid var(--primary-hi);
+  flex: 0 0 auto;
+  min-width: 0;
+  max-width: 320px;
+}
+
+.researcher-card .rc-label {
+  font-size: 9.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.75;
+  white-space: nowrap;
+}
+
+.researcher-card .rc-name {
+  font-size: 13px;
+  font-weight: 650;
+  line-height: 1.15;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.researcher-card .rc-code {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  opacity: 0.85;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.researcher-card button {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 6px;
+  color: #fff;
+  padding: 3px 8px;
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  flex: 0 0 auto;
+}
+
+.researcher-card button:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.75);
+}
+
+/* ---------- sidebar ---------- */
+.sidebar {
+  grid-area: sidebar;
+  background: var(--panel);
+  border-right: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+  padding: 14px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  overflow-y: auto;
+  min-width: 0;
+}
+
+.nav-label {
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted-3);
+  padding: 12px 10px 6px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 9px 10px;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  text-align: left;
+  color: var(--nav-fg);
+  font-size: 13px;
+}
+
+.nav-item:hover {
+  background: var(--panel-2);
+  color: var(--text);
+}
+
+.nav-item.active {
+  background: var(--primary);
+  color: #fff;
+  font-weight: 550;
+}
+
+.nav-item .nav-badge {
+  margin-left: auto;
+  font-size: 11px;
+  font-weight: 600;
+  background: var(--primary-hi);
+  color: #fff;
+  padding: 1px 7px;
+}
+
+.nav-item.active .nav-badge {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.nav-item .ico {
+  width: 15px;
+  height: 15px;
+  flex: 0 0 15px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.9;
+}
+
+.nav-item .nav-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.nav-item .nav-hint {
+  font-size: 10px;
+  color: var(--muted-3);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nav-item.active .nav-hint {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.sidebar-foot {
+  margin-top: auto;
+  padding: 12px 10px 4px;
+  border-top: 1px solid var(--line);
+  font-size: 11px;
+  color: var(--muted-3);
+  line-height: 1.6;
+}
+
+.sidebar-foot b {
+  color: var(--strong);
+  font-weight: 550;
+}
+
+/* ---------- main ---------- */
+.main {
+  grid-area: main;
+  padding: 16px 18px 22px;
+  overflow-y: auto;
+  border-top: 1px solid var(--line);
+  min-width: 0;
+}
+
+.panel-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.panel-title {
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.panel-sub {
+  font-size: 12.5px;
+  color: var(--muted);
+  margin-top: 3px;
+}
+
+.panel-sub b {
+  color: var(--strong);
+  font-weight: 550;
+}
+
+.subarrays {
+  margin-left: auto;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  padding: 5px 11px;
+  border: 1px solid var(--line);
+  background: var(--panel-2);
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.chip.on {
+  border-color: var(--primary);
+  color: var(--text);
+  background: var(--chip-on-bg);
+}
+
+/* ---------- KPI row ---------- */
+/* Metrics are wide, one per row: a wall of small squares is hard to scan and
+ * the numbers get squeezed. Label left, value right, note furthest right. */
+.kpi-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.kpi {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, auto);
+  align-items: baseline;
+  column-gap: 14px;
+  padding: 11px 14px;
+  border: 1px solid var(--line);
+  min-width: 0;
+}
+
+.kpi-label {
+  font-size: 10.5px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--muted-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.kpi-value {
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.kpi-unit {
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--muted);
+  margin-left: 3px;
+}
+
+.kpi-hint {
+  font-size: 11px;
+  color: var(--muted);
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 42vw;
+}
+
+/* Panels: one per row, full width. */
+.stack {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.stack > * {
+  min-width: 0;
+}
+
+/* Two readings side by side inside a card, falling to one column when the card
+ * is too narrow to hold both without squeezing the numbers. */
+.split {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 16px;
+  align-items: center;
+}
+
+.split > * {
+  min-width: 0;
+}
+
+/* ---------- card grids ---------- */
+.grid-2 {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  align-items: start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+/* ---------- button ---------- */
+.btn:hover:not([disabled]) {
+  border-color: var(--muted-3);
+  color: var(--text);
+}
+
+/* ---------- alerts aside ---------- */
+.alerts {
+  grid-area: alerts;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  border-left: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+  background: var(--panel);
+}
+
+.alerts-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.alerts-head h2 {
+  font-size: 11px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.alerts-head .open {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.alerts-body {
+  padding: 10px;
+  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
+}
+
+/* ---------- replay rail ---------- */
+
+/* Only ever rendered inside the replay page, so it is a card rather than a
+ * fixed strip: nothing on the live dashboard suggests a transport is running. */
+.replay {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 14px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  min-width: 0;
+  flex-wrap: wrap;
+  position: sticky;
+  bottom: 0;
+}
+
+.replay-state {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.replay-state b {
+  color: #fff;
+  font-weight: 650;
+  background: var(--primary);
+  padding: 3px 8px;
+  letter-spacing: 0.08em;
+}
+
+.replay-state.live b {
+  background: var(--ok);
+  color: var(--ok-fg);
+}
+
+.replay-state .between {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+  text-transform: none;
+  font-size: 11.5px;
+}
+
+.transport {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.tbtn {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 11px;
+  color: var(--btn-fg);
+  font-variant-numeric: tabular-nums;
+}
+
+.tbtn:hover:not([disabled]) {
+  border-color: var(--muted-3);
+  color: var(--text);
+}
+
+.tbtn[disabled] {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.tbtn.play {
+  width: 38px;
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+.timeline {
+  flex: 1;
+  min-width: 0;
+}
+
+.tl-track {
+  position: relative;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  cursor: crosshair;
+}
+
+.tl-rail {
+  position: absolute;
+  inset: 11px 0 auto 0;
+  height: 4px;
+  background: var(--rail);
+}
+
+.tl-past {
+  position: absolute;
+  left: 0;
+  top: 11px;
+  height: 4px;
+  background: var(--rail-past);
+}
+
+.tl-window {
+  position: absolute;
+  top: 8px;
+  height: 10px;
+  background: var(--tl-window-bg);
+  border: 1px solid var(--tl-window-border);
+}
+
+.tl-cursor {
+  position: absolute;
+  top: 2px;
+  width: 2px;
+  height: 22px;
+  background: var(--cursor);
+  box-shadow: 0 0 0 3px rgba(140, 140, 150, 0.12);
+}
+
+.tl-cursor::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: 10px;
+  height: 10px;
+  background: var(--cursor);
+}
+
+.tl-marks {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10.5px;
+  color: var(--muted-3);
+  font-variant-numeric: tabular-nums;
+  padding-top: 2px;
+}
+
+.tl-input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  opacity: 0;
+  cursor: crosshair;
+}
+
+.speed {
+  display: flex;
+  gap: 2px;
+}
+
+.speed button {
+  background: none;
+  border: 1px solid transparent;
+  padding: 4px 8px;
+  font-size: 11.5px;
+  color: var(--muted-2);
+  font-variant-numeric: tabular-nums;
+}
+
+.speed button.on {
+  border-color: var(--line);
+  background: var(--panel-2);
+  color: var(--text);
+}
+
+.speed button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* ---------- modal ---------- */
+.modal-back {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  background: rgba(10, 10, 12, 0.45);
+  display: grid;
+  place-items: center;
+}
+
+.modal {
+  width: min(430px, calc(100vw - 40px));
+  background: var(--panel);
+  border: 1px solid var(--line);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  padding: 18px;
+}
+
+.modal h3 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.modal p {
+  font-size: 12.5px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.modal p b {
+  color: var(--text);
+}
+
+.modal input {
+  width: 100%;
+  margin-top: 10px;
+  background: var(--panel-3);
+  border: 1px solid var(--line);
+  color: var(--text);
+  padding: 8px 10px;
+  font: inherit;
+  font-size: 12.5px;
+  font-family: var(--font-mono);
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+/* ---------- tables ---------- */
+
+/* Fixed layout so a dense table can never push its own card wider than the
+ * grid track it sits in. Numbers are right-aligned and tabular; only the first
+ * column (a name) is ragged left. */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 11px;
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.data-table th {
+  font-size: 9.5px;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-align: right;
+  padding: 0 0 5px 3px;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--line);
+}
+
+.data-table td {
+  text-align: right;
+  padding: 6px 0 6px 3px;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--line-soft);
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.data-table th:first-child,
+.data-table td:first-child {
+  width: 26%;
+  text-align: left;
+  padding-left: 0;
+}
+
+.data-table tbody tr {
+  cursor: pointer;
+}
+
+.data-table tbody tr:hover td {
+  background: var(--panel-2);
+}
+
+.data-table tbody tr.is-current td {
+  background: var(--panel-2);
+  color: var(--text);
+}
+
+/* ---------- misc ---------- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translateY(6px);
+    opacity: 0;
+  }
+}
+
+/* Narrow control rooms: drop the annunciator column before the numbers clip. */
+@media (max-width: 1280px) {
+  .shell {
+    grid-template-columns: 190px minmax(0, 1fr) 280px;
+  }
+
+  /* The top bar sheds its statistics from the left before the theme switch or
+     the researcher card can be pushed off the end of the row. */
+  .topbar .pill.hide-md {
+    display: none;
+  }
+}
+
+@media (max-width: 1120px) {
+  .shell {
+    grid-template-columns: 176px minmax(0, 1fr) 250px;
+  }
+
+  .topbar .clock {
+    display: none;
+  }
+
+  .grid-2 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Laptop / tablet: the aside moves under the main panel rather than squeezing it. */
+@media (max-width: 940px) {
+  .shell {
+    grid-template-columns: 168px minmax(0, 1fr);
+    grid-template-rows: 56px minmax(0, 1fr) 300px;
+    grid-template-areas:
+      "brand topbar"
+      "sidebar main"
+      "sidebar alerts";
+  }
+
+  .topbar {
+    padding: 0 10px;
+    gap: 8px;
+  }
+
+  .researcher-card {
+    max-width: 220px;
+  }
+
+  .alerts {
+    border-top: 1px solid var(--line);
+  }
+}
+
+/* Phone: one column, nav becomes a scrolling row of chips. */
+@media (max-width: 720px) {
+  .shell {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto auto minmax(0, 1fr) 240px;
+    grid-template-areas:
+      "brand"
+      "topbar"
+      "sidebar"
+      "main"
+      "alerts";
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+  }
+
+  .brand {
+    height: 52px;
+  }
+
+  .topbar {
+    flex-wrap: wrap;
+    padding: 8px;
+    border-left: 0;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    padding: 8px;
+    overflow-x: auto;
+    border-right: 0;
+  }
+
+  .nav-label {
+    display: none;
+  }
+
+  .nav-item {
+    width: auto;
+    white-space: nowrap;
+    border: 1px solid var(--line);
+  }
+
+  .nav-item .nav-hint {
+    display: none;
+  }
+
+  .sidebar-foot {
+    display: none;
+  }
+
+  .main {
+    overflow: visible;
+  }
+
+  .alerts {
+    border-left: 0;
+    overflow: visible;
+  }
+
+  .researcher-card {
+    max-width: none;
+  }
+
+  .alerts-body {
+    overflow: visible;
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

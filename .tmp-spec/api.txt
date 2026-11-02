@@ -1,0 +1,1097 @@
+University of the Witwatersrand
+
+Contents
+
+ARL Spec: ARL API
+
+ARL Spec: ARL API
+Brendan Griffiths
+
+Contents
+1 Service overview . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ⁠2
+1.1 General state and routines . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ⁠2
+2 Transmitted data . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ⁠2
+2.1 Researchers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ⁠2
+2.2 Targets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ⁠3
+2.3 Alert limits . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ⁠3
+2.4 Backlog . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ⁠3
+2.5 Health . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ⁠4
+3 Controls . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ⁠5
+4 Alerts . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ⁠5
+5 Configuration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ⁠6
+
+1/7
+
+University of the Witwatersrand
+
+Transmitted data
+
+ARL Spec: ARL API
+
+1 Service overview
+The ARL API is the laboratory’s HTTP support service. It holds the researcher register (who may
+control which service), the RTA target catalogue, the alert limits of every service, and a backlog of
+everything the services have published to the broker. It does not publish to MQTT itself; the services ask
+it to verify researchers and read their alert limits from it.
+Aspect
+Base path
+
+Details
+/​v1 for the data endpoints. Interactive documentation at /​docs (Swagger UI) and the
+
+OpenAPI document at /​openapi.​json.
+
+Format
+
+JSON requests and responses (the backlog export is CSV). Errors are {"error":​ <code>,​
+"detail":​ <string or null>} with the matching HTTP status: not_​found (404), invalid_​
+request (400), forbidden (403), too_​many_​rows (413), rate_​limited (429), internal (500).
+
+Authentication
+
+None for reads.
+
+Live deployment
+
+Read only: every write endpoint returns 403 forbidden. Rate limited to 20 requests per
+second (burst 40) per client address, and one backlog download at a time per client; over the
+limit the API returns 429 with Retry-After:​ 1.
+
+Test deployment
+
+Targets can be created and deleted. Not rate limited.
+
+Services
+
+Service codes used in paths and records: rta, mhe, lwm, opg, owt.
+
+1.1 General state and routines
+• Researchers: each researcher has a code (e.g. arl-as3), a name, the experiments (service codes) they
+work on, and a status. Only active researchers whose experiments include a service may send that
+service commands; the services check this through the verify endpoint, so a command from anyone
+else is rejected (unknown_​researcher, researcher_​defunct or researcher_​not_​permitted).
+• Targets: the catalogue of named sky targets the RTA can observe by id. Ids are tgt- plus three letters.
+• Alert limits: the thresholds the services use to raise alerts, per service. The services re-read them, so
+the API is the single source of truth for every limit.
+• Backlog: the API records every telemetry, state and event message published by the services (never
+commands or acknowledgements) and serves it as CSV, up to 7 days per request. On the live
+deployment the backlog also contains history from before the deployment started (for example earlier
+MHE mission days and LWM weather history).
+
+2 Transmitted data
+2.1 Researchers
+GET /​v1/​researchers/​{code} returns one researcher (404 not_​found if the code is unknown).
+
+2/7
+
+University of the Witwatersrand
+
+Transmitted data
+
+ARL Spec: ARL API
+
+Measurement
+
+Key
+
+Level
+
+Type / unit
+
+Description
+
+Code
+
+code
+
+Researcher
+
+string
+
+The researcher’s code, as used in command
+payloads.
+
+Name
+
+name
+
+Researcher
+
+string
+
+The researcher’s name.
+
+Experiments
+
+experiments
+
+Researcher
+
+array of
+service codes
+
+The services the researcher works on and may
+control.
+
+Status
+
+status
+
+Researcher
+
+enum
+
+active or defunct. A defunct researcher may
+
+not control any service.
+
+2.2 Targets
+GET /​v1/​targets lists the catalogue (optionally ?category=<category>); GET /​v1/​targets/​{id}
+
+returns one target.
+Measurement
+
+Key
+
+Level
+
+Type / unit
+
+Description
+
+Id
+
+id
+
+Target
+
+string
+
+Target id, e.g. tgt-cen. Used by the RTA Set
+Target control.
+
+Name
+
+name
+
+Target
+
+string
+
+Common name, e.g. Centaurus A.
+
+Right ascension
+
+ra_​rad
+
+Target
+
+float, radians,
+0 to 2π
+
+Sky position of the target’s centre.
+
+Declination
+
+dec_​rad
+
+Target
+
+float, radians,
+−π/2 to π/2
+
+Sky position of the target’s centre.
+
+Field of view
+
+fov_​rad
+
+Target
+
+float, radians,
+0.0005 to 0.05
+
+Width of the region of sky an RTA scan of the
+target covers.
+
+Category
+
+category
+
+Target
+
+string
+
+Kind of object, e.g. radio galaxy.
+
+2.3 Alert limits
+GET /​v1/​alert-limits/​{service} returns the list of limits of a service (404 for an unknown service).
+
+The limit values and their alerts are listed under Alerts below.
+Measurement
+
+Key
+
+Level
+
+Type / unit
+
+Description
+
+Key
+
+key
+
+Service
+
+string
+
+The limit’s key within the service, e.g. high_​
+wind.​warn_​ms. In the service sheets it is written
+with the service prefix (lwm.​high_​wind.​warn_​
+ms).
+
+Value
+
+value
+
+Service
+
+float
+
+The limit.
+
+Unit
+
+unit
+
+Service
+
+string or null
+
+Unit of the value, derived from the key (K, m/​s,
+%, ppm, …). null for counts, ratios and scores.
+
+2.4 Backlog
+GET /​v1/​backlog/​{service}/​streams says what has been recorded for a service:
+
+3/7
+
+University of the Witwatersrand
+
+Transmitted data
+
+ARL Spec: ARL API
+
+Measurement
+
+Key
+
+Level
+
+Type / unit
+
+Description
+
+Telemetry
+streams
+
+telemetry
+
+Service
+
+array of
+strings
+
+Recorded telemetry stream names (e.g. weather).
+
+State items
+
+state
+
+Service
+
+array of
+strings
+
+Recorded state item names.
+
+Events
+
+events
+
+Service
+
+array of
+strings
+
+Recorded event kinds.
+
+Earliest
+
+earliest_​ts
+
+Service
+
+timestamp,
+ms or null
+
+Time of the oldest recorded message.
+
+Latest
+
+latest_​ts
+
+Service
+
+timestamp,
+ms or null
+
+Time of the newest recorded message.
+
+GET /​v1/​backlog/​{service}.​csv downloads recorded messages as CSV, ordered by ts then entity.
+
+Query parameters:
+Measurement
+
+Key
+
+Level
+
+Type / unit
+
+Description
+
+Kind
+
+kind
+
+Request
+
+enum
+
+telemetry, state or events. Required.
+
+Stream / item /
+event
+
+stream, item, event
+
+Request
+
+string
+
+The telemetry stream, state item or event kind
+to export (the one matching kind is required).
+
+From
+
+from
+
+Request
+
+timestamp,
+ms
+
+Start of the period, inclusive. Required.
+
+To
+
+to
+
+Request
+
+timestamp,
+ms
+
+End of the period, exclusive. Required; at most 7
+days after from.
+
+Entity
+
+entity
+
+Request
+
+string
+
+Optional: only this entity.
+
+CSV columns (one header row): telemetry ts,​entity,​ then the stream’s fields in $topology order
+(empty cell for null); state ts,​entity,​item,​value; events ts,​entity,​kind,​payload (value and
+payload are JSON text). At most 5,000,000 rows per request (413 too_​many_​rows beyond that; narrow
+the period or filter by entity).
+
+2.5 Health
+GET /​healthz:
+
+Measurement
+
+Key
+
+Level
+
+Type / unit
+
+Status
+
+status
+
+Global
+
+enum
+
+Database
+
+database
+
+Global
+
+boolean
+
+Whether the database is reachable.
+
+Broker
+
+broker
+
+Global
+
+boolean or
+
+Whether the backlog recorder is connected to
+the broker (null when it is not recording).
+
+null
+
+4/7
+
+Description
+ok, or degraded when the database or broker
+
+connection is down.
+
+University of the Witwatersrand
+
+Alerts
+
+ARL Spec: ARL API
+
+3 Controls
+Control
+
+Key
+
+Verify
+Researcher
+
+POST /​v1/​
+researchers/​
+verify
+
+Level
+
+Value (type /
+unit)
+
+Description
+
+Researcher
+
+JSON {code
+string, service
+service code}
+
+Checks whether a researcher may control a
+service. Returns {valid boolean, reason}
+where reason is unknown, defunct or not_​
+permitted when not valid, else null. Read
+only; allowed on the live deployment.
+
+Adds a target to the catalogue and returns it
+(201) with its new id. Test deployment only
+(403 on live).
+
+Removes a target (204, or 404 if unknown). Test
+deployment only (403 on live).
+
+Create Target
+
+POST /​v1/​targets
+
+Target
+
+JSON {name 1 to
+64 chars, ra_​rad
+0 to 2π, dec_​rad
+−π/2 to π/2,
+fov_​rad 0.0005
+to 0.05,
+category 1 to
+64 chars}
+
+Delete Target
+
+DELETE /​v1/​
+targets/​{id}
+
+Target
+
+path: target id
+
+4 Alerts
+The API raises no alerts itself. It serves the limits every service uses for its alerts (GET /​v1/​alertlimits/​{service}). Defaults:
+Service
+
+Key
+
+Default
+
+Unit
+
+Used by alert
+
+rta
+
+availability.​min_​active
+
+80
+
+dishes
+
+availability: minimum dishes in service
+
+rta
+
+wind_​stow.​gust_​ms
+
+15
+
+m/s
+
+wind_​stow: gust that engages wind stow
+
+rta
+
+wind_​stow.​release_​ms
+
+10
+
+m/s
+
+wind_​stow: gust below which it releases
+
+rta
+
+dish_​temperature.​warn_​k
+
+333
+
+K
+
+dish_​temperature warning
+
+rta
+
+dish_​temperature.​crit_​k
+
+343
+
+K
+
+dish_​temperature critical
+
+rta
+
+dish_​power.​max_​w
+
+5000
+
+W
+
+dish_​power
+
+rta
+
+calibration.​max_​age_​h
+
+168
+
+h
+
+dish_​calibration (overdue)
+
+rta
+
+scan.​min_​snr_​db
+
+3
+
+dB
+
+dish_​scan (low SNR)
+
+mhe
+
+crew.​hr_​min, crew.​hr_​max
+
+40, 150
+
+bpm
+
+crew_​health: heart rate
+
+mhe
+
+crew.​temp_​max_​k
+
+311.15
+
+K
+
+crew_​health: body temperature
+
+mhe
+
+crew.​resp_​max
+
+30
+
+breaths/
+min
+
+crew_​health: respiratory rate
+
+mhe
+
+crew.​spo2_​min
+
+92
+
+%
+
+crew_​health: blood oxygen
+
+mhe
+
+survey.​min_​mood
+
+4
+
+score
+
+survey_​wellbeing: 3-day mean mood
+
+mhe
+
+survey.​max_​stress
+
+7
+
+score
+
+survey_​wellbeing: 3-day mean stress
+
+mhe
+
+survey.​max_​decline
+
+2
+
+score
+
+survey_​wellbeing: mood drop over 7 days
+
+mhe
+
+room.​temp_​min_​k, room.​temp_​
+max_​k
+
+290, 298
+
+K
+
+room_​condition: temperature
+
+5/7
+
+University of the Witwatersrand
+
+Configuration
+
+ARL Spec: ARL API
+
+Service
+
+Key
+
+Default
+
+Unit
+
+Used by alert
+
+mhe
+
+room.​humidity_​min, room.​
+humidity_​max
+
+25, 75
+
+%
+
+room_​condition: humidity
+
+mhe
+
+room.​humidity_​max_​hydroponics
+
+85
+
+%
+
+room_​condition: humidity in hydroponics
+
+mhe
+
+air.​o2_​min_​ppm
+
+195000
+
+ppm
+
+air_​concentration: oxygen
+
+mhe
+
+air.​co2_​warn_​ppm, air.​co2_​
+crit_​ppm
+
+1500, 2500
+
+ppm
+
+air_​concentration: CO₂ warning, critical
+
+lwm
+
+high_​wind.​warn_​ms, high_​wind.​
+crit_​ms
+
+15, 20
+
+m/s
+
+high_​wind warning, critical
+
+lwm
+
+lightning.​max_​km
+
+10
+
+km
+
+lightning_​proximity
+
+lwm
+
+storm.​approach_​km
+
+25
+
+km
+
+storm_​approach
+
+lwm
+
+temperature.​min_​k,
+temperature.​max_​k
+
+268, 313
+
+K
+
+extreme_​temperature
+
+lwm
+
+rain.​max_​mm_​h
+
+10
+
+mm/h
+
+heavy_​rain
+
+lwm
+
+battery.​min_​v
+
+11.5
+
+V
+
+low_​battery
+
+lwm
+
+calibration.​max_​days
+
+30
+
+days
+
+calibration_​overdue
+
+lwm
+
+soiling.​min_​ratio
+
+0.95
+
+ratio
+
+soiling (site lwm-4)
+
+lwm
+
+pan.​min_​mm, pan.​max_​mm
+
+175, 230
+
+mm
+
+pan_​level (site lwm-5)
+
+opg
+
+solar.​min_​ratio
+
+0.8
+
+ratio
+
+solar_​underperformance
+
+opg
+
+battery.​warn_​pct
+
+30
+
+%
+
+low_​battery warning
+
+opg
+
+battery.​max_​temp_​k
+
+318
+
+K
+
+battery_​temperature
+
+opg
+
+fuel.​min_​pct
+
+25
+
+%
+
+low_​fuel
+
+owt
+
+intake.​max_​pct
+
+95
+
+%
+
+intake_​full
+
+owt
+
+quality.​max_​ntu
+
+1.0
+
+NTU
+
+water_​quality: turbidity
+
+owt
+
+quality.​ph_​min, quality.​ph_​max
+
+6.5, 8.5
+
+pH
+
+water_​quality: pH
+
+owt
+
+filter.​min_​pct
+
+20
+
+%
+
+filter_​clogged
+
+owt
+
+recycling.​min_​pct
+
+70
+
+%
+
+low_​recycling_​efficiency
+
+The unit column is the quantity’s unit; the API’s unit field is null for keys without a unit suffix (counts,
+ratios, scores, pH). Alerts with no limit (offline, fault and missed-survey alerts, and the OWT reserve,
+which is the storage_​reserve control) do not appear here.
+
+5 Configuration
+The API reads a TOML file (config/​api.​toml in the bundle, --config or ARL_​CONFIG for the binary).
+Environment variables override the file, and command-line options override both. Defaults are the
+values in the provided file.
+Key
+
+Type / unit
+
+Default
+
+Description
+
+mode
+
+enum
+
+"test"
+
+deleted, no rate limit) or live (read only, rate limited).
+Env API_​MODE, option --mode.
+
+port
+
+integer
+
+8080
+
+HTTP port. Env ARL_​API_​PORT, option --port.
+
+test for your local copy (targets can be created and
+
+6/7
+
+University of the Witwatersrand
+
+Key
+
+Configuration
+
+ARL Spec: ARL API
+
+Type / unit
+
+Default
+
+Description
+
+database_​url
+
+string
+
+"postgres:​/​/​
+arl:​
+arl@postgres/​
+arl"
+
+PostgreSQL connection URL. Env DATABASE_​URL, option
+--database-url.
+
+seed_​dir
+
+string, path
+
+"/​seed"
+
+Folder of the initial researchers, targets and alert limits,
+loaded into an empty database. Env ARL_​SEED_​DIR, option
+--seed-dir.
+
+retention_​days
+
+integer, days
+
+75
+
+How long recorded backlog data is kept.
+
+record
+
+boolean
+
+true
+
+Whether the API records the broker into the backlog.
+
+mqtt.​address
+
+string
+
+"mosquitto"
+
+MQTT broker host for the recorder. Env MQTT_​BROKER_​
+ADDRESS.
+
+mqtt.​port
+
+integer
+
+1883
+
+MQTT broker port. Env MQTT_​BROKER_​PORT.
+
+mqtt.​user
+
+string
+
+""
+
+Broker username, empty for anonymous. Env MQTT_​
+BROKER_​USER.
+
+mqtt.​password
+
+string
+
+""
+
+Broker password. Env MQTT_​BROKER_​PASSWORD.
+
+health.​port
+
+integer
+
+9100
+
+Port of the internal health endpoint used by healthcheck.
+Env HEALTH_​PORT.
+
+The binary also needs a reachable PostgreSQL database (DATABASE_​URL); the provided compose file runs
+one for you. docker compose -f arl-test.​yaml down -v deletes the database, so the seed data is
+loaded again on the next start.
+AI Declaration: Claude Code (Opus 5.5) - generated from the arl-sim source, reviewed
+
+7/7
+
+
