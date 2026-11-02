@@ -218,13 +218,13 @@ export function RtaView({ topology, snapshot, history, onSubmit, canControl, act
 
       <div className="stack">
         <Panel title="Scan view" subtitle={`${dishId} signal-to-noise`}>
-          <LineChart series={[{ label: "SNR (dB)", points: snrSeries, colour: t.info, fill: true }]} yDigits={1} unit="dB" height={140} />
+          <LineChart series={[{ label: "SNR (dB)", points: snrSeries, colour: t.chart2, fill: true }]} yDigits={1} unit="dB" height={140} />
         </Panel>
         <Panel title="Drive temperature" subtitle="drive sensor and normal stream, in °C">
           <LineChart
             series={[
-              { label: "dish", points: temperatureSeries, colour: t.warn },
-              { label: "dish (normal)", points: normalSeries, colour: t.muted2, dashed: true }
+              { label: "dish", points: temperatureSeries, colour: t.chart4 },
+              { label: "dish (normal)", points: normalSeries, colour: t.chart6, dashed: true }
             ]}
             yDigits={1}
             unit="°C"

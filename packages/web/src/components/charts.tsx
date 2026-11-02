@@ -1,5 +1,6 @@
 import type { CSSProperties } from "react";
 import { useTheme } from "../theme-provider";
+import { seriesColours } from "../theme";
 import { fmt } from "../format";
 
 export interface Point {
@@ -82,7 +83,8 @@ export function LineChart({
   const drawable = series.filter((s) => s.points.length > 0);
 
   const paths = drawable.map((s, index) => {
-    const colour = s.colour ?? [t.chartLine, t.ok, t.warn, t.crit, t.info][index % 5];
+    const palette = seriesColours(t);
+    const colour = s.colour ?? palette[index % palette.length];
     const ordered = [...s.points].sort((a, b) => a.x - b.x);
     const d = ordered.map((p, i) => `${i === 0 ? "M" : "L"}${toX(p.x).toFixed(2)},${toY(p.y).toFixed(2)}`).join(" ");
     const area = `${d} L${toX(ordered[ordered.length - 1].x).toFixed(2)},${H - pad} L${toX(ordered[0].x).toFixed(2)},${H - pad} Z`;
@@ -219,12 +221,13 @@ export function BarChart({
   unit,
   digits = 1
 }: {
-  data: Array<{ label: string; value: number | undefined; tone?: "ok" | "warn" | "crit" | "info" }>;
+  data: Array<{ label: string; value: number | undefined; tone?: "ok" | "warn" | "crit" | "info"; colour?: string }>;
   height?: number;
   unit?: string;
   digits?: number;
 }) {
   const { theme: t } = useTheme();
+  const palette = seriesColours(t);
   const values = data.map((d) => d.value).filter((v): v is number => v !== undefined);
   const hi = values.length > 0 ? Math.max(...values) : 1;
   const lo = values.length > 0 ? Math.min(0, Math.min(...values)) : 0;
@@ -232,10 +235,21 @@ export function BarChart({
   return (
     <div>
       <div style={{ display: "flex", alignItems: "flex-end", gap: 8, height, padding: "0 2px" }}>
-        {data.map((entry) => {
+        {data.map((entry, index) => {
           const fraction = entry.value === undefined ? 0 : Math.max(0, (entry.value - lo) / (hi - lo || 1));
+          // Colour by meaning first, then by position in the palette: an
+          // unlabelled comparison still gets a different hue per column.
           const colour =
-            entry.tone === "crit" ? t.crit : entry.tone === "warn" ? t.warn : entry.tone === "info" ? t.info : t.chartLine;
+            entry.colour ??
+            (entry.tone === "crit"
+              ? t.crit
+              : entry.tone === "warn"
+                ? t.warn
+                : entry.tone === "ok"
+                  ? t.ok
+                  : entry.tone === "info"
+                    ? t.info
+                    : palette[index % palette.length]);
           return (
             <div key={entry.label} style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "flex-end", height: "100%", gap: 4 }}>
               <span style={{ fontSize: 10, color: t.text, fontFamily: "var(--font-mono)", textAlign: "center" }}>

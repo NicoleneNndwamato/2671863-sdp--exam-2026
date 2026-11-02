@@ -1,5 +1,6 @@
 import type { ServiceTopology } from "@sdp/shared";
 import { useTheme } from "../theme-provider";
+import { shade } from "../theme";
 import { entitiesOfKind, numOf, stateBool, type Snapshot } from "../snapshot";
 import { fmt } from "../format";
 
@@ -78,6 +79,26 @@ export function DishGrid({
   const inkOf = (band: Band): string =>
     band === "offline" ? t.dishOfflineInk : band === "unknown" ? t.text : "#fff";
 
+  /**
+   * The band colour, lightened or deepened by where the dish sits inside its
+   * band. Four greens beat one green: the eye can rank dishes without reading
+   * a single number, and the band is still obvious because the hue never moves.
+   */
+  const shadeOf = (band: Band, celsius: number | undefined): string => {
+    const base = colourOf(band);
+    if (celsius === undefined) return base;
+    const limits: Record<string, [number, number]> = {
+      cool: [-25, BANDS.cool],
+      normal: [BANDS.cool, BANDS.normal],
+      warm: [BANDS.normal, BANDS.warm],
+      hot: [BANDS.warm, BANDS.warm + 20]
+    };
+    const limit = limits[band];
+    if (!limit) return base;
+    const position = Math.max(0, Math.min(1, (celsius - limit[0]) / (limit[1] - limit[0])));
+    return shade(base, 0.34 * (1 - position) - 0.16 * position);
+  };
+
   // Legend counts. Same lookups as a cell, kept here so the legend can say how
   // many dishes are in each band without a second render pass.
   const counts = dishes.reduce(
@@ -127,7 +148,7 @@ export function DishGrid({
         const band = bandOf(celsius, online);
         // A fault outranks temperature: a dish with a reported fault is red
         // whatever it reads, which is the one thing an operator must not miss.
-        const background = hasFault ? t.crit : colourOf(band);
+        const background = hasFault ? t.crit : shadeOf(band, celsius);
         const ink = hasFault ? "#fff" : inkOf(band);
         const label = dish.id.replace("dish-", "");
 

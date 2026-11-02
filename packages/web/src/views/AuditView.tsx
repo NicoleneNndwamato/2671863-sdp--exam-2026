@@ -66,11 +66,11 @@ export function AuditView({ service }: { service: string }) {
           <Empty>{loading ? "Loading…" : "No audited actions yet."}</Empty>
         </div>
       ) : (
-        <div style={{ overflow: "auto", maxHeight: "calc(100vh - 260px)" }}>
-          <table>
+        <div className="audit-scroll">
+          <table className="audit-table">
             <caption className="visually-hidden">Audited actions, newest first</caption>
-            <thead style={{ position: "sticky", top: 0, background: t.panel2, zIndex: 1 }}>
-              <tr style={{ color: t.muted, borderBottom: `1px solid ${t.line}` }}>
+            <thead>
+              <tr>
                 <th scope="col">When</th>
                 <th scope="col">Actor</th>
                 <th scope="col">Action</th>
@@ -82,7 +82,7 @@ export function AuditView({ service }: { service: string }) {
             </thead>
             <tbody style={{ fontSize: 11, fontFamily: "var(--font-mono)" }}>
               {entries.map((entry) => (
-                <tr key={entry.id} style={{ borderBottom: `1px solid ${t.lineSoft}` }}>
+                <tr key={entry.id}>
                   <td style={{ color: t.muted, whiteSpace: "nowrap" }}>{fmtDateTime(entry.at)}</td>
                   <td style={{ color: t.text }}>{entry.actor}</td>
                   <td style={{ color: t.text }}>{entry.action}</td>

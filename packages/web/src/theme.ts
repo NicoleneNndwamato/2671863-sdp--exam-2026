@@ -23,6 +23,9 @@ export const theme = {
     // Borders
     line: "#e3e3e8",
     lineSoft: "#ededf0",
+    // Ruled tables need a rule you can actually see; --line is a hairline for
+    // card edges, which disappears between white cells.
+    tableRule: "#b0b0bc",
 
     // Text
     text: "#1c1c1e",
@@ -67,9 +70,19 @@ export const theme = {
     rail: "#e6e6ea",
     railPast: "#b9b9c2",
 
-    // Charts
+    // Charts. chartLine is the default series colour; chart2..chart8 are the
+    // categorical palette. Separate hues, not tints of one colour, so a chart
+    // with four series stays readable in greyscale print and for colour-blind
+    // readers (blue / teal / violet / plum / ochre / slate / olive / brick).
     chartLine: "#2f6db5",
     chartFill: "#2f6db5",
+    chart2: "#17868b",
+    chart3: "#5f5aa8",
+    chart4: "#9c4b7d",
+    chart5: "#b4610f",
+    chart6: "#4f6b57",
+    chart7: "#7a6a12",
+    chart8: "#8c3547",
     gridline: "#ececef",
     axis: "#d8d8de",
     axisLabel: "#555555",
@@ -107,6 +120,7 @@ export const theme = {
     // Borders
     line: "#33333a",
     lineSoft: "#2a2a30",
+    tableRule: "#4c4c57",
 
     // Text
     text: "#f4f4f5",
@@ -152,6 +166,13 @@ export const theme = {
     // Charts
     chartLine: "#6aa8ea",
     chartFill: "#3f7fc4",
+    chart2: "#4fc3c7",
+    chart3: "#9a93e6",
+    chart4: "#e08ab6",
+    chart5: "#e0a34f",
+    chart6: "#8fbf9f",
+    chart7: "#cbc25e",
+    chart8: "#e0788b",
     gridline: "#2a2a30",
     axis: "#3a3a42",
     axisLabel: "#8b8e8e",
@@ -185,8 +206,53 @@ export type Theme = typeof theme.light;
 export function cssVariables(theme: Theme): Record<string, string> {
   const out: Record<string, string> = {};
   for (const [key, value] of Object.entries(theme)) {
-    // camelCase -> kebab-case: primaryHi -> --primary-hi
-    out[`--${key.replace(/[A-Z]/g, (letter) => `-${letter.toLowerCase()}`)}`] = String(value);
+    // camelCase -> kebab-case, and a dash before a trailing digit so that
+    // `panel2` becomes `--panel-2` - which is how styles.css spells it.
+    const name = key
+      .replace(/[A-Z]/g, (letter) => `-${letter.toLowerCase()}`)
+      .replace(/(?<=[a-z])(\d)/g, "-$1");
+    out[`--${name}`] = String(value);
   }
   return out;
+}
+
+/**
+ * The categorical series palette, in draw order.
+ *
+ * Charts ask for a colour by position, so three series are always blue, teal and
+ * violet no matter which page they appear on - the same reading looks the same
+ * in two places.
+ */
+export function seriesColours(theme: Theme): string[] {
+  return [
+    theme.chartLine,
+    theme.chart2,
+    theme.chart3,
+    theme.chart4,
+    theme.chart5,
+    theme.chart6,
+    theme.chart7,
+    theme.chart8
+  ];
+}
+
+/**
+ * Move a hex colour toward white (amount > 0) or black (amount < 0).
+ *
+ * The heatmap needs several shades inside one band - "green" is four different
+ * greens - and deriving them from the band colour keeps every shade in the same
+ * hue, so the band is still obvious at a glance.
+ */
+export function shade(hex: string, amount: number): string {
+  const raw = hex.replace("#", "");
+  if (raw.length !== 6) return hex;
+  const target = amount >= 0 ? 255 : 0;
+  const weight = Math.min(1, Math.abs(amount));
+  const channels = [0, 2, 4].map((offset) => {
+    const value = parseInt(raw.slice(offset, offset + 2), 16);
+    return Math.round(value + (target - value) * weight)
+      .toString(16)
+      .padStart(2, "0");
+  });
+  return `#${channels.join("")}`;
 }

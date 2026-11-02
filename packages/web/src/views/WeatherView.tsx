@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import { useTheme } from "../theme-provider";
+import { seriesColours } from "../theme";
 import { Badge, Btn, DetailRow, Dot, Empty, Kpi, Panel } from "../components/ui";
 import { BarChart, Compass, Gauge, LineChart, Meter, SiteMap } from "../components/charts";
 import { ControlList } from "../components/ControlPanel";
@@ -17,6 +18,7 @@ import type { ViewProps } from "../view-types";
  */
 export function WeatherView({ topology, snapshot, history, onSubmit, canControl, replayAt }: ViewProps) {
   const { theme: t } = useTheme();
+  const SERIES = seriesColours(t);
   const [site, setSite] = useState("lwm-1");
 
   const weather = topicsNamed(snapshot, "telemetry", "weather");
@@ -99,13 +101,14 @@ export function WeatherView({ topology, snapshot, history, onSubmit, canControl,
     [history, site]
   );
 
-  // Bars are in °C to match the column header; the wire format is kelvin.
-  const siteBars = weather.map((entry) => {
+  // Bars are in °C to match the column header; the wire format is kelvin. Each
+  // site keeps its own hue so the same station looks the same in every chart.
+  const siteBars = weather.map((entry, index) => {
     const kelvin = entry.item.payload.temperature_k;
     return {
       label: entry.entity,
       value: typeof kelvin === "number" ? kelvin - 273.15 : undefined,
-      tone: "info" as const
+      colour: SERIES[index % SERIES.length]
     };
   });
 
@@ -210,14 +213,14 @@ export function WeatherView({ topology, snapshot, history, onSubmit, canControl,
           <LineChart
             series={[
               { label: "wind (m/s)", points: windSeries, colour: t.chartLine, fill: true },
-              { label: "gust (m/s)", points: gustSeries, colour: t.warn }
+              { label: "gust (m/s)", points: gustSeries, colour: t.chart5 }
             ]}
             yDigits={1}
             unit="m/s"
             height={150}
           />
           <div style={{ marginTop: 10 }}>
-            <LineChart series={[{ label: "temperature (°C)", points: tempSeries, colour: t.ok }]} yDigits={1} unit="°C" height={110} />
+            <LineChart series={[{ label: "temperature (°C)", points: tempSeries, colour: t.chart4 }]} yDigits={1} unit="°C" height={110} />
           </div>
         </Panel>
 

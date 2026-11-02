@@ -124,8 +124,8 @@ export function PowerView({ topology, snapshot, history, onSubmit, canControl, r
           <StackedBar
             segments={[
               { label: "Load", value: (load ?? 0) / 1000, colour: t.chartLine },
-              { label: "Charging", value: Math.max(0, (batteryFlow ?? 0) / 1000), colour: t.ok },
-              { label: "Diesel", value: (dieselOutput ?? 0) / 1000, colour: t.warn }
+              { label: "Charging", value: Math.max(0, (batteryFlow ?? 0) / 1000), colour: t.chart2 },
+              { label: "Diesel", value: (dieselOutput ?? 0) / 1000, colour: t.chart5 }
             ]}
           />
           <div className="split" style={{ marginTop: 14 }}>
@@ -149,10 +149,10 @@ export function PowerView({ topology, snapshot, history, onSubmit, canControl, r
         <Panel title="Output by source" subtitle="instantaneous, in kW">
           <BarChart
             data={[
-              { label: "solar", value: solarOutput !== undefined ? solarOutput / 1000 : undefined, tone: "info" as const },
-              { label: "battery", value: batteryFlow !== undefined ? Math.abs(batteryFlow) / 1000 : undefined, tone: "ok" as const },
-              { label: "diesel", value: dieselOutput !== undefined ? dieselOutput / 1000 : undefined, tone: "warn" as const },
-              { label: "load", value: load !== undefined ? load / 1000 : undefined, tone: "crit" as const }
+              { label: "solar", value: solarOutput !== undefined ? solarOutput / 1000 : undefined, colour: t.chart5 },
+              { label: "battery", value: batteryFlow !== undefined ? Math.abs(batteryFlow) / 1000 : undefined, colour: t.chart2 },
+              { label: "diesel", value: dieselOutput !== undefined ? dieselOutput / 1000 : undefined, colour: t.chart8 },
+              { label: "load", value: load !== undefined ? load / 1000 : undefined, colour: t.chartLine }
             ]}
             digits={0}
             unit="kW"
@@ -171,8 +171,8 @@ export function PowerView({ topology, snapshot, history, onSubmit, canControl, r
         >
           <LineChart
             series={[
-              { label: "solar (kW)", points: solarSeries, colour: t.ok, fill: true },
-              { label: "diesel (kW)", points: dieselSeries, colour: t.warn, dashed: true },
+              { label: "solar (kW)", points: solarSeries, colour: t.chart5, fill: true },
+              { label: "diesel (kW)", points: dieselSeries, colour: t.chart8, dashed: true },
               { label: "total load (kW)", points: loadSeries, colour: t.chartLine }
             ]}
             yDigits={0}
@@ -180,7 +180,7 @@ export function PowerView({ topology, snapshot, history, onSubmit, canControl, r
             height={170}
           />
           <div style={{ marginTop: 10 }}>
-            <LineChart series={[{ label: "battery state of charge (%)", points: socSeries, colour: t.info }]} yDigits={1} unit="%" height={110} />
+            <LineChart series={[{ label: "battery state of charge (%)", points: socSeries, colour: t.chart2 }]} yDigits={1} unit="%" height={110} />
           </div>
         </Panel>
 

@@ -11,6 +11,8 @@ module.exports = {
   },
   setupFilesAfterEnv: ["<rootDir>/src/setupTests.ts"],
   coverageDirectory: "coverage",
-  collectCoverageFrom: ["src/**/*.{ts,tsx}", "!src/main.tsx", "!src/setupTests.ts"],
+  // view-types.ts is types only - it compiles to an empty module, so counting
+  // it would report a permanent 0% for a file that has no runtime behaviour.
+  collectCoverageFrom: ["src/**/*.{ts,tsx}", "!src/main.tsx", "!src/setupTests.ts", "!src/view-types.ts"],
   coverageReporters: ["text", "lcov", "json-summary", "cobertura"]
 };
