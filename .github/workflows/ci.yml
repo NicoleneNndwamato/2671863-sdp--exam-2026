@@ -20,20 +20,20 @@ jobs:
         run: npm run build
 
       - name: Test with coverage
-        run: npm run coverage
+        run: npm run coverage --verbose
 
-      - name: Upload API coverage
-        uses: codecov/codecov-action@v4
+      - name: Upload API coverage report
+        if: always()
+        uses: actions/upload-artifact@v4
         with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          files: packages/api/coverage/lcov.info
-          flags: api
-          fail_ci_if_error: false
+          name: api-coverage-report
+          path: packages/api/coverage
+          retention-days: 14
 
-      - name: Upload web coverage
-        uses: codecov/codecov-action@v4
+      - name: Upload web coverage report
+        if: always()
+        uses: actions/upload-artifact@v4
         with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          files: packages/web/coverage/lcov.info
-          flags: web
-          fail_ci_if_error: false
+          name: web-coverage-report
+          path: packages/web/coverage
+          retention-days: 14

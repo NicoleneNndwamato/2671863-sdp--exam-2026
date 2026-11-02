@@ -21,17 +21,23 @@ jobs:
         run: npm run build
 
       - name: Test with coverage
-        run: npm run coverage
+        run: npm run coverage --verbose
 
-      - name: Upload coverage reports
+      - name: Upload API coverage report
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: coverage
-          path: |
-            packages/api/coverage
-            packages/web/coverage
-          retention-days: 7
+          name: api-coverage-report
+          path: packages/api/coverage
+          retention-days: 14
+
+      - name: Upload web coverage report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: web-coverage-report
+          path: packages/web/coverage
+          retention-days: 14
 
       # When the integration tests need a database, add a service container:
       #
